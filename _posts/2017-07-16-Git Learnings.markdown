@@ -7,7 +7,7 @@ tags: [git]
 This post is to keep my git knowledge at one place. It consists of the commands used frequently and will evolve as I discover more about git.
 
 
-# Working Areas
+## Working Areas
 
 ### Basics
 
