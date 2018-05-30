@@ -17,7 +17,7 @@ I always find it useful to visualize the workspace you are working in. The best 
 
 Create a new repository and push to remote:
 
-``` sh
+``` js
 git checkout branch-name
 ```
 
