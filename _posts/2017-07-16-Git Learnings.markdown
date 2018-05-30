@@ -8,7 +8,7 @@ This post is to keep my git knowledge at one place. It consists of the commands 
 
 
 ## Working Areas
-I always find it useful to visualize the workspace you are working in. The best diagram for this is Oliver Steel.
+I always find it useful to visualize the workspace you are working in. The best diagram for this is Oliver Steel Git Data Transport Commands.
 
 <img src="{{ site.baseurl }}/images/blog/Git-data-transport-cmds.PNG" class="fullsize-image" alt="Git data transport commands">
 
@@ -17,7 +17,7 @@ I always find it useful to visualize the workspace you are working in. The best 
 
 Create a new repository and push to remote:
 
-``` js
+``` bash
 def print_hi(name)
   puts "Hi, #{name}"
 end
