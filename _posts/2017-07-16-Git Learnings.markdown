@@ -10,7 +10,7 @@ This post is to keep my git knowledge at one place. It consists of the commands 
 ## Working Areas
 I always find it useful to visualize the workspace you are working in. The best diagram for this is Oliver Steel.
 
-<img src="{{ site.baseurl }}/images/blog/Git-data-transport-commands.PNG" class="fullsize-image" alt="Git data transport commands">
+<img src="{{ site.baseurl }}/images/blog/Git-data-transport-cmds.PNG" class="fullsize-image" alt="Git data transport commands">
 
 
 ### W
