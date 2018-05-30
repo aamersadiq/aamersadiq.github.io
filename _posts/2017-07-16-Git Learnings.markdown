@@ -18,11 +18,7 @@ I always find it useful to visualize the workspace you are working in. The best 
 Create a new repository and push to remote:
 
 ``` sh
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+git checkout branch-name
 ```
 
 ### History, Status Etc
