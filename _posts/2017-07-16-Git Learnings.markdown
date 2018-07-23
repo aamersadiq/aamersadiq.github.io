@@ -14,19 +14,20 @@ I always find it useful to visualize the workspace you are working in. The best 
 
 For more information checkout <a href="https://osteele.com/">Oliver blog</a>
 
+Workspace: Your local directory where physical files are kept.
+Index: Staging area holds the files for next commit.
+Local Repository: Committed files ready to be pushed to remote.
+Remote Repository: Contains commits from all users.
+
 ### What is Head 
+HEAD is a reference to the last commit in the currently checked-out branch. There is a small exception to this, which is the detached HEAD. A detached HEAD is the situation you end up in whenever you check out a commit (or tag) instead of a branch. In this case, you have to imagine this as a temporary branch without a name; so instead of having a named branch reference, we only have HEAD. It will still allow you to make commits (which will update HEAD), so the above short definition is still true if you think of a detached HEAD as a temporary branch without a name.
 
-HEAD is a reference to the last commit in the currently checked-out branch.
-
-There is a small exception to this, which is the detached HEAD. A detached HEAD is the situation you end up in whenever you check out a commit (or tag) instead of a branch. In this case, you have to imagine this as a temporary branch without a name; so instead of having a named branch reference, we only have HEAD. It will still allow you to make commits (which will update HEAD), so the above short definition is still true if you think of a detached HEAD as a temporary branch without a name.
-
-Sometimes you don't want to have a detached head. The solution is to create a temp branch for that.
-
+If you don't want to have detached head, create a temp branch.
 ``` js
 git checkout -b temp-branch-name commit-hash
 ```
 
-Also HEAD is used together with tilde and carat. They are relative commit markers in Git. They both mean "parent" but in a different way. Always HEAD^1 (or HEAD^ for short) is the same as HEAD~ (or HEAD~1). 
+HEAD is used in together with tilde and carat. They are relative commit markers in Git. They both mean "parent" but in a different way. Always HEAD^1 (or HEAD^ for short) is the same as HEAD~ (or HEAD~1). 
 The difference comes when they stack. 
 So HEAD^2 means "The second parent of HEAD". This only means anything if there's been a merge. In a merge, the main branch is parent #1; the merged in branch is parent 2. So, HEAD^2 will be the merged parent, whereas HEAD^1 will be the parent merged into.
 Now, HEAD^^ is not the same as HEAD^2. HEAD^^ means the first parent of the first parent. This is just shorthand for HEAD^1^1. Evaluate from left to right.
@@ -46,6 +47,8 @@ HEAD^^ : 2 commits older than HEAD
 
 The ^ and ~ operators can be used for other references such as commits. 
 
+commit and Head are usually interchangeable.
+
 Remember:
 ref~ is shorthand for ref~1 and means the commit's first parent. ref~2 means the commit's first parent's first parent. ref~3 means the commit's first parent's first parent's first parent. And so on.
 
@@ -54,28 +57,235 @@ If commit was a merge, then
 first parent is the branch into which we merged,
 second parent is the branch we merged.
 
-### Starting out
+### Setup and Init
+``` js
+git config --global user.name “[firstname lastname]”
+# set a name that is identifiable for credit when review version history
+```
 
-Create a new repository and push to remote:
+``` js
+git config --global user.email “[valid-email]”
+# set an email address that will be associated with history
+```
+
+``` js
+git config --global color.ui auto
+# set automatic command line coloring for Git for easy reviewing
+```
 
 ``` js
 git init
-
-git add .
-
-# Adds the files in the local repository and stages them for commit. To unstage a file, use 'git reset HEAD YOUR-FILE'.
-
-
+# initialize an existing directory as a Git repository
 ```
 
-### Looking back
-git log -n 10 --oneline
+``` js
+git clone [url]
+# retrieve an entire repository from a hosted location via URL
+```
+
+### Staging
+``` js
+git status
+# show modified files in working directory, staged for your next commit
+```
+
+``` js
+git status -s
+# shorter version of status
+```
+
+``` js
+git add [file]
+# add a file as it looks now to your next commit (stage)
+```
+
+``` js
+git reset [file]
+# unstage a file while retaining the changes in working directory
+```
+
+``` js
+git diff
+# diff of what is changed but not staged
+```
+
+``` js
+git diff --staged
+# diff of what is staged but not yet committed
+```
+
+``` js
+git commit -m “[descriptive message]”
+# commit your staged content as a new commit snapshot
+```
+
+### Branching ops
+``` js
+git branch
+# list your branches. a * will appear next to the currently active branch
+```
+
+``` js
+git branch -r
+# list remote branches
+```
+
+``` js
+git branch [branch-name]
+# create a new branch at the current commit
+```
+
+``` js
+git checkout [branch-name]
+# switch to another branch and check it out into your working directory
+```
+
+``` js
+git merge [branch]
+# merge the specified branch’s history into the current one
+```
+
+``` js
+git log
+# show all commits in the current branch’s history
+```
+
+### Sharing Changes
+``` js
+git remote add [alias] [url]
+# add a git URL as an alias
+```
+
+``` js
+git remote -v
+# list remote alias
+```
+
+``` js
+git fetch [alias]
+# fetch down all the branches from that Git remote
+```
+
+``` js
+git merge [alias]/[branch]
+# merge a remote branch into your current branch to bring it up to date
+```
+
+``` js
+git push [alias] [branch]
+# transmit local branch commits to the remote repository branch
+```
+
+``` js
+git pull
+# fetch and merge any commits from the tracking remote branch
+```
+
+``` js
+git log
+# show all commits in the current branch’s history
+```
+
+### Discarding Changes For Local Changes
+``` js
+git reset --soft [commit]
+# resets HEAD back to another commit, does not touch the staged or the working directory at all (this leaves all your changed staged and marked for commit)
+```
+
+``` js
+git reset [commit] # (default parameter --mixed applied)
+# resets HEAD back to another commit, resets the staged to match it, does not touch the working directory (changed files are preserved but not marked for commit)
+```
+
+``` js
+git reset --hard [commit]
+# resets HEAD back to another commit, resets the staged to match it, and resets the working directory to match it as well (any changes to tracked files in the working tree are discarded)
+```
+
+``` js
+git reset [commit] [filepath]
+# reset A specific file, commonly used with HEAD rather than an arbitrary commit
+```
+
+``` js
+git clean -f -d
+# remove untracked, forced and remove directories
+```
+
+``` js
+git clean -fxd :/
+# cleans untracked and ignored files through the entire repo (without :/, the operation affects only the current directory)
+```
+
+### Discarding Changes For Pushed Changes
+
+### Exploring
+``` js
+git log
+show the commit history for the currently active branch
+```
+
+``` js
+git log branchB..branchA
+show the commits on branchA that are not on branchB
+```
+
+``` js
+git log --follow [file]
+show the commits that changed file, even across renames
+```
+
+``` js
+git diff branchB...branchA
+show the diff of what is in branchA that is not in branchB
+```
+
+``` js
+git show
+show various objects such as commit log
+```
+
+``` js
+git show [SHA]
+show any object in Git in human-readable format
+```
+
+
 
 ### Saving temp work
+``` js
+git stash
+# save modified and staged changes
+```
 
+``` js
+git stash list
+# list stack-order of stashed file changes
+```
 
-### Undoing
-Undoing a pushed merge
+``` js
+git stash pop
+# write working from top of stash stack
+```
+
+``` js
+git stash drop
+# iscard the changes from top of stash stack
+```
+
+### Ignoring Patterns
+logs/
+*.notes
+pattern*/
+# Save a file with desired patterns as .gitignore with either direct string matches or wildcard globs.
+```
+
+### Other
+
+``` js
+git config --global core.excludesfile [file]
+# system wide ignore patern for all local repositories
+```
 
 
 
@@ -99,32 +309,6 @@ Undoing a pushed merge
 
 # Discading local changes
 https://stackoverflow.com/questions/1090309/git-undo-all-working-dir-changes-including-new-files
-
-# Discarding changes one commit back
------------
-1. Changes committed locally but not pushed to remote. https://bytefreaks.net/programming-2/how-to-undo-a-git-commit-that-was-not-pushed
-1A. undoes the commit and leaves the changes you committed upstaged
-
-leaves changes as staged
-``` js
-$ git commit -m "Something terribly misguided"              (1)
-$ git reset HEAD~                                           (2)
-<< edit files as necessary >>                               (3)
-$ git add ...                                               (4)
-$ git commit -c ORIG_HEAD                                   (5)
-... 
-This is what you want to undo
-This leaves your working tree (the state of your files on disk) unchanged but undoes the commit and leaves the changes you committed unstaged (so they'll appear as "Changes not staged for commit" in git status, and you'll need to add them again before committing). If you only want to add more changes to the previous commit, or change the commit message1, you could use git reset --soft HEAD~ instead, which is like git reset HEAD~ (where HEAD~ is the same as HEAD~1) but leaves your existing changes staged.
-Make corrections to working tree files.
-git add anything that you want to include in your new commit.
-Commit the changes, reusing the old commit message. reset copied the old head to .git/ORIG_HEAD; commit with -c ORIG_HEAD will open an editor, which initially contains the log message from the old commit and allows you to edit it. If you do not need to edit the message, you could use the -C option.
-
-
-leaves changes as unstaged
-git reset HEAD~
-
-https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/
------
 
 Reset local repository branch to be just like remote repository HEAD - https://stackoverflow.com/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head
 git reset --hard origin/[name-of-remote]
