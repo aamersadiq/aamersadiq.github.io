@@ -53,7 +53,7 @@ If commit was a merge, then
 first parent is the branch into which we merged,
 second parent is the branch we merged.
 
-{% highlight git %}
+{% highlight shell %}
 def foo
   puts 'foo'
 end
