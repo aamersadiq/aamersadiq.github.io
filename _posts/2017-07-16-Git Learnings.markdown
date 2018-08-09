@@ -53,18 +53,13 @@ If commit was a merge, then
 first parent is the branch into which we merged,
 second parent is the branch we merged.
 
-``` console
-{% raw %}
-calcPoints[pts : {pcurr_, pnext1_, pnext2_, rest___}, f_, result_] :=
-  calcPoints[
-    {pnext1 + f*(pnext2 - pnext1), pnext2, rest, pcurr},
-    f,
-    {result, pcurr}
-  ] /; isNotTooShort[pts];
-
-calcPoints[pts_, _, result_] := Partition[Flatten[result], 2];
-{% endraw %}
-```
+<pre>
+<code>
+``` powershell
+git config --global user.name “[firstname lastname]”
+# set a name that is identifiable for credit when review version history
+</code>
+</pre>
 
 {% highlight js %}
 {% raw %}
