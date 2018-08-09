@@ -8,12 +8,13 @@ This post is to keep my git knowledge at one place. It consists of the commands 
 
 
 ### Working Areas
-I always find it useful to visualize the workspace you are working in. The best diagram for this is Oliver Steel Git Data Transport Commands.
+It's useful to visualize the workspace and the best diagram for this is Oliver Steel Git Data Transport Commands.
 
 <img src="{{ site.baseurl }}/images/blog/Git-data-transport-cmds.PNG" class="fullsize-image" alt="Git data transport commands">
 
 For more information checkout <a href="https://osteele.com/">Oliver blog</a>
 
+As per diagram git keeps your files at these distinct places.
 Workspace: Your local directory where physical files are kept.
 Index: Staging area holds the files for next commit.
 Local Repository: Committed files ready to be pushed to remote.
@@ -21,11 +22,6 @@ Remote Repository: Contains commits from all users.
 
 ### What is Head 
 HEAD is a reference to the last commit in the currently checked-out branch. There is a small exception to this, which is the detached HEAD. A detached HEAD is the situation you end up in whenever you check out a commit (or tag) instead of a branch. In this case, you have to imagine this as a temporary branch without a name; so instead of having a named branch reference, we only have HEAD. It will still allow you to make commits (which will update HEAD), so the above short definition is still true if you think of a detached HEAD as a temporary branch without a name.
-
-If you don't want to have detached head, create a temp branch.
-``` js
-git checkout -b temp-branch-name commit-hash
-```
 
 HEAD is used in together with tilde and carat. They are relative commit markers in Git. They both mean "parent" but in a different way. Always HEAD^1 (or HEAD^ for short) is the same as HEAD~ (or HEAD~1). 
 The difference comes when they stack. 
@@ -137,7 +133,12 @@ git branch [branch-name]
 
 ``` js
 git checkout [branch-name]
-# switch to another branch and check it out into your working directory
+
+```
+
+``` js
+git checkout -b temp-branch-name commit-hash
+# create a temp branch to avoid having detached head
 ```
 
 ``` js
@@ -193,7 +194,7 @@ git reset --soft [commit]
 ```
 
 ``` js
-git reset [commit] # (default parameter --mixed applied)
+git reset [commit] # (default parameter --mixed applied. if commit omitted resets to last commit)
 # resets HEAD back to another commit, resets the staged to match it, does not touch the working directory (changed files are preserved but not marked for commit)
 ```
 
@@ -208,6 +209,18 @@ git reset [commit] [filepath]
 ```
 
 ``` js
+git commit -a -m "saving my work"
+git branch my-saved-work
+# saving work to new branch before reseting
+```
+
+``` js 
+git fetch origin
+git reset --hard origin/[remote]
+# reset branch to exactly match the remote branch
+```
+
+``` js
 git clean -f -d
 # remove untracked, forced and remove directories
 ```
@@ -218,6 +231,7 @@ git clean -fxd :/
 ```
 
 ### Discarding Changes For Pushed Changes
+
 
 ### Exploring
 ``` js
@@ -249,8 +263,6 @@ show various objects such as commit log
 git show [SHA]
 show any object in Git in human-readable format
 ```
-
-
 
 ### Saving temp work
 ``` js
@@ -307,11 +319,7 @@ git config --global core.excludesfile [file]
 
 
 
-# Discading local changes
-https://stackoverflow.com/questions/1090309/git-undo-all-working-dir-changes-including-new-files
 
-Reset local repository branch to be just like remote repository HEAD - https://stackoverflow.com/questions/1628088/reset-local-repository-branch-to-be-just-like-remote-repository-head
-git reset --hard origin/[name-of-remote]
 
 2. Discard already pushed to remote http://christoph.ruegg.name/blog/git-howto-revert-a-commit-already-pushed-to-a-remote-reposit.html
 https://gist.github.com/gunjanpatel/18f9e4d1eb609597c50c2118e416e6a6
