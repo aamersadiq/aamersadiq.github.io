@@ -7,7 +7,7 @@ tags: [git]
 This post is to keep my git knowledge at one place. It consists of the commands used frequently and will evolve as I discover more about git.
 
 
-### Working Areas
+#### Working Areas
 It's useful to visualize the workspace and the best diagram for this is Oliver Steel Git Data Transport Commands.
 
 <img src="{{ site.baseurl }}/images/blog/Git-data-transport-cmds.PNG" class="fullsize-image" alt="Git data transport commands">
@@ -20,7 +20,7 @@ Index: Staging area holds the files for next commit. <br>
 Local Repository: Committed files ready to be pushed to remote. <br>
 Remote Repository: Contains commits from all users. <br>
 
-### What is Head 
+## What is Head 
 HEAD is a reference to the last commit in the currently checked-out branch. There is a small exception to this, which is the detached HEAD. A detached HEAD is the situation you end up in whenever you check out a commit (or tag) instead of a branch. In this case, you have to imagine this as a temporary branch without a name; so instead of having a named branch reference, we only have HEAD. It will still allow you to make commits (which will update HEAD), so the above short definition is still true if you think of a detached HEAD as a temporary branch without a name.
 
 HEAD is used in together with tilde and carat. They are relative commit markers in Git. They both mean "parent" but in a different way. Always HEAD^1 (or HEAD^ for short) is the same as HEAD~ (or HEAD~1). 
