@@ -20,7 +20,7 @@ Index: Staging area holds the files for next commit. <br>
 Local Repository: Committed files ready to be pushed to remote. <br>
 Remote Repository: Contains commits from all users. <br>
 
-## What is Head 
+### What is Head 
 HEAD is a reference to the last commit in the currently checked-out branch. There is a small exception to this, which is the detached HEAD. A detached HEAD is the situation you end up in whenever you check out a commit (or tag) instead of a branch. In this case, you have to imagine this as a temporary branch without a name; so instead of having a named branch reference, we only have HEAD. It will still allow you to make commits (which will update HEAD), so the above short definition is still true if you think of a detached HEAD as a temporary branch without a name.
 
 HEAD is used in together with tilde and carat. They are relative commit markers in Git. They both mean "parent" but in a different way. Always HEAD^1 (or HEAD^ for short) is the same as HEAD~ (or HEAD~1). 
@@ -53,8 +53,15 @@ If commit was a merge, then
 first parent is the branch into which we merged,
 second parent is the branch we merged.
 
+{% highlight ruby %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+
+
 ### Setup and Init
-``` code
+``` bash
 git config --global user.name “[firstname lastname]”
 # set a name that is identifiable for credit when review version history
 ```
