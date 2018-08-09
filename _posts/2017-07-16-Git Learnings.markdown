@@ -6,7 +6,7 @@ tags: [git]
 ---
 This post is to keep my git knowledge at one place. It consists of the commands used frequently and will evolve as I discover more about git.
 
-
+### Concepts
 #### Working Areas
 It's useful to visualize the workspace and the best diagram for this is Oliver Steel Git Data Transport Commands.
 
@@ -65,6 +65,19 @@ calcPoints[pts : {pcurr_, pnext1_, pnext2_, rest___}, f_, result_] :=
 calcPoints[pts_, _, result_] := Partition[Flatten[result], 2];
 {% endraw %}
 ```
+
+{% highlight js %}
+{% raw %}
+calcPoints[pts : {pcurr_, pnext1_, pnext2_, rest___}, f_, result_] :=
+  calcPoints[
+    {pnext1 + f*(pnext2 - pnext1), pnext2, rest, pcurr},
+    f,
+    {result, pcurr}
+  ] /; isNotTooShort[pts];
+
+calcPoints[pts_, _, result_] := Partition[Flatten[result], 2];
+{% endraw %}
+{% endhighlight %}
 
 ### Setup and Init
 ``` powershell
