@@ -54,7 +54,7 @@ first parent is the branch into which we merged,
 second parent is the branch we merged.
 
 ### Setup and Init
-``` js
+```bash
 git config --global user.name “[firstname lastname]”
 # set a name that is identifiable for credit when review version history
 ```
