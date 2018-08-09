@@ -54,9 +54,8 @@ first parent is the branch into which we merged,
 second parent is the branch we merged.
 
 {% highlight shell %}
-def foo
-  puts 'foo'
-end
+git config --global user.name “[firstname lastname]”
+# set a name that is identifiable for credit when review version history
 {% endhighlight %}
 
 
