@@ -14,11 +14,11 @@ It's useful to visualize the workspace and the best diagram for this is Oliver S
 
 For more information checkout <a href="https://osteele.com/">Oliver blog</a>
 
-As per diagram git keeps your files at these distinct places.
-Workspace: Your local directory where physical files are kept.
-Index: Staging area holds the files for next commit.
-Local Repository: Committed files ready to be pushed to remote.
-Remote Repository: Contains commits from all users.
+As per diagram git keeps your files at these distinct places. <br>
+Workspace: Your local directory where physical files are kept: <br>
+Index: Staging area holds the files for next commit. <br>
+Local Repository: Committed files ready to be pushed to remote. <br>
+Remote Repository: Contains commits from all users. <br>
 
 ### What is Head 
 HEAD is a reference to the last commit in the currently checked-out branch. There is a small exception to this, which is the detached HEAD. A detached HEAD is the situation you end up in whenever you check out a commit (or tag) instead of a branch. In this case, you have to imagine this as a temporary branch without a name; so instead of having a named branch reference, we only have HEAD. It will still allow you to make commits (which will update HEAD), so the above short definition is still true if you think of a detached HEAD as a temporary branch without a name.
