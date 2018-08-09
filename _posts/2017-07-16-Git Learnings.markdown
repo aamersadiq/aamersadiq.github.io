@@ -53,12 +53,12 @@ If commit was a merge, then
 first parent is the branch into which we merged,
 second parent is the branch we merged.
 
-
+<pre style="background-color: Gray">
 <code>
 git config --global user.name “[firstname lastname]”
 # set a name that is identifiable for credit when review version history
 </code>
-
+</pre>
 
 {% highlight js %}
 {% raw %}
