@@ -53,11 +53,10 @@ If commit was a merge, then
 first parent is the branch into which we merged,
 second parent is the branch we merged.
 
-{% highlight shell %}
-git config --global user.name “[firstname lastname]”
+``` powershell
+get-date
 # set a name that is identifiable for credit when review version history
-{% endhighlight %}
-
+```
 
 ### Setup and Init
 ``` powershell
