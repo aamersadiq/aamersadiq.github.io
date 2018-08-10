@@ -52,7 +52,6 @@ ref^ is shorthand for ref^1 and means the commit's first parent. But where the t
 If commit was a merge, then
 first parent is the branch into which we merged,
 second parent is the branch we merged.
-
 <br/>
 ### Git Commands
 **Setup and Init**<br/>
