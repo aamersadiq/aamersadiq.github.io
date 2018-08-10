@@ -6,8 +6,8 @@ tags: [git]
 ---
 This post is to keep my git knowledge at one place. It consists of the commands used frequently and will evolve as I discover more about git.
 <br/>
-#### Concepts
-**Working Areas**
+### Concepts
+**Working Areas**<br/>
 It's useful to visualize the workspace and the best diagram for this is Oliver Steel Git Data Transport Commands.
 
 <img src="{{ site.baseurl }}/images/blog/Git-data-transport-cmds.PNG" class="fullsize-image" alt="Git data transport commands">
