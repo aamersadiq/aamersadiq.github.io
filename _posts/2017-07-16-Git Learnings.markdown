@@ -4,6 +4,9 @@ date:   2017-07-17 15:04:23
 categories: [javascript]
 tags: [git]
 ---
+`code() dfafdfdsfasfd dsaf
+# fdfa 
+` 
 This post is to keep my git knowledge at one place. It consists of the commands used frequently and will evolve as I discover more about git.
 ### Concepts
 **Working Areas**<br/>
@@ -17,8 +20,7 @@ As per diagram git keeps your files at these distinct places. <br>
 Workspace: Your local directory where physical files are kept: <br>
 Index: Staging area holds the files for next commit. <br>
 Local Repository: Committed files ready to be pushed to remote. <br>
-Remote Repository: Contains commits from all users. <br>
-
+_Remote Repository_: Contains commits from all users. <br>
 **What is Head**<br/>
 HEAD is a reference to the last commit in the currently checked-out branch. There is a small exception to this, which is the detached HEAD. A detached HEAD is the situation you end up in whenever you check out a commit (or tag) instead of a branch. In this case, you have to imagine this as a temporary branch without a name; so instead of having a named branch reference, we only have HEAD. It will still allow you to make commits (which will update HEAD), so the above short definition is still true if you think of a detached HEAD as a temporary branch without a name.
 
