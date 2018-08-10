@@ -20,7 +20,7 @@ Index: Staging area holds the files for next commit. <br>
 Local Repository: Committed files ready to be pushed to remote. <br>
 Remote Repository: Contains commits from all users. <br>
 
-<b>What is Head</b>
+**What is Head**<br/>
 HEAD is a reference to the last commit in the currently checked-out branch. There is a small exception to this, which is the detached HEAD. A detached HEAD is the situation you end up in whenever you check out a commit (or tag) instead of a branch. In this case, you have to imagine this as a temporary branch without a name; so instead of having a named branch reference, we only have HEAD. It will still allow you to make commits (which will update HEAD), so the above short definition is still true if you think of a detached HEAD as a temporary branch without a name.
 
 HEAD is used in together with tilde and carat. They are relative commit markers in Git. They both mean "parent" but in a different way. Always HEAD^1 (or HEAD^ for short) is the same as HEAD~ (or HEAD~1). 
@@ -53,7 +53,9 @@ If commit was a merge, then
 first parent is the branch into which we merged,
 second parent is the branch we merged.
 
-### Setup and Init
+<br/>
+### Git Commands
+**Setup and Init**<br/>
 <pre><code>
 git config --global user.name “[firstname lastname]”
 <span># set a name that is identifiable for credit when review version history</span>
@@ -79,7 +81,7 @@ git clone [url]
 <span># retrieve an entire repository from a hosted location via URL</span>
 </code></pre>
 
-### Staging
+**Staging**<br/>
 <pre><code>
 git status
 <span># show modified files in working directory, staged for your next commit</span>
@@ -115,7 +117,7 @@ git commit -m “[descriptive message]”
 <span># commit your staged content as a new commit snapshot</span>
 </code></pre>
 
-### Branching ops
+**Branching**<br/>
 <pre><code>
 git branch
 <span># list your branches. a * will appear next to the currently active branch</span>
@@ -151,7 +153,7 @@ git log
 <span># show all commits in the current branch’s history</span>
 </code></pre>
 
-### Sharing Changes
+**Sharing Changes**<br/>
 <pre><code>
 git remote add [alias] [url]
 <span># add a git URL as an alias</span>
@@ -187,7 +189,7 @@ git log
 <span># show all commits in the current branch’s history</span>
 </code></pre>
 
-### Discarding Changes For Local Changes
+**Discarding Local Changes**<br/>
 <pre><code>
 git reset --soft [commit]
 <span># resets HEAD back to another commit, does not touch the staged or the working directory at all (this leaves all your changed staged and marked for commit)</span>
@@ -230,10 +232,9 @@ git clean -fxd :/
 <span># cleans untracked and ignored files through the entire repo (without :/, the operation affects only the current directory)</span>
 </code></pre>
 
-### Discarding Changes For Pushed Changes
+**Discarding Pushed Changes**<br/>
 
-
-### Exploring
+**Exploring**<br/>
 <pre><code>
 git log
 <span># show the commit history for the currently active branch</span>
@@ -264,7 +265,7 @@ git show [SHA]
 <span># show any object in Git in human-readable format</span>
 </code></pre>
 
-### Saving temp work
+**Saving temp work**<br/>
 <pre><code>
 git stash
 <span># save modified and staged changes</span>
@@ -283,20 +284,6 @@ git stash pop
 <pre><code>
 git stash drop
 <span># iscard the changes from top of stash stack</span>
-</code></pre>
-
-### Ignoring Patterns
-logs/
-*.notes
-pattern*/
-<span># save a file with desired patterns as .gitignore with either direct string matches or wildcard globs.</span>
-</code></pre>
-
-### Other
-
-<pre><code>
-git config --global core.excludesfile [file]
-<span># system wide ignore patern for all local repositories</span>
 </code></pre>
 
 
