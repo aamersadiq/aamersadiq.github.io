@@ -133,7 +133,7 @@ git branch [branch-name]
 
 <pre><code>
 git checkout [branch-name]
-
+<span># updates the files in the working directory to match the version stored in that branch</span>
 </code></pre>
 
 <pre><code>
@@ -194,7 +194,7 @@ git reset --soft [commit]
 </code></pre>
 
 <pre><code>
-git reset [commit] <span># (default parameter --mixed applied. if commit omitted resets to last commit)
+git reset [commit] (default parameter --mixed applied. if commit omitted resets to last commit)
 <span># resets HEAD back to another commit, resets the staged to match it, does not touch the working directory (changed files are preserved but not marked for commit)</span>
 </code></pre>
 
