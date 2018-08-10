@@ -14,9 +14,9 @@ It's useful to visualize the workspace and the best diagram for this is Oliver S
 For more information checkout <a href="https://osteele.com/">Oliver blog</a>
 
 As per diagram git keeps your files at these distinct places. <br>
-Workspace: Your local directory where physical files are kept: <br>
-Index: Staging area holds the files for next commit. <br>
-Local Repository: Committed files ready to be pushed to remote. <br>
+_Workspace_: Your local directory where physical files are kept: <br>
+_Index_: Staging area holds the files for next commit. <br>
+_Local Repository_: Committed files ready to be pushed to remote. <br>
 _Remote Repository_: Contains commits from all users. <br>
 
 
