@@ -53,271 +53,251 @@ If commit was a merge, then
 first parent is the branch into which we merged,
 second parent is the branch we merged.
 
-<pre>
-<code>
+### Setup and Init
+<pre><code>
 git config --global user.name “[firstname lastname]”
 <span># set a name that is identifiable for credit when review version history</span>
-</code>
-</pre>
+</code></pre>
 
-{% highlight js %}
-{% raw %}
-calcPoints[pts : {pcurr_, pnext1_, pnext2_, rest___}, f_, result_] :=
-  calcPoints[
-    {pnext1 + f*(pnext2 - pnext1), pnext2, rest, pcurr},
-    f,
-    {result, pcurr}
-  ] /; isNotTooShort[pts];
-
-calcPoints[pts_, _, result_] := Partition[Flatten[result], 2];
-{% endraw %}
-{% endhighlight %}
-
-### Setup and Init
-``` powershell
-git config --global user.name “[firstname lastname]”
-# set a name that is identifiable for credit when review version history
-```
-
-``` js
+<pre><code>
 git config --global user.email “[valid-email]”
-# set an email address that will be associated with history
-```
+<span># set an email address that will be associated with history</span>
+</code></pre>
 
-``` js
+<pre><code>
 git config --global color.ui auto
-# set automatic command line coloring for Git for easy reviewing
-```
+<span># set automatic command line coloring for Git for easy reviewing</span>
+</code></pre>
 
-``` js
+<pre><code>
 git init
-# initialize an existing directory as a Git repository
-```
+<span># initialize an existing directory as a Git repository</span>
+</code></pre>
 
-``` js
+<pre><code>
 git clone [url]
-# retrieve an entire repository from a hosted location via URL
-```
+<span># retrieve an entire repository from a hosted location via URL</span>
+</code></pre>
 
 ### Staging
-``` js
+<pre><code>
 git status
-# show modified files in working directory, staged for your next commit
-```
+<span># show modified files in working directory, staged for your next commit</span>
+</code></pre>
 
-``` js
+<pre><code>
 git status -s
-# shorter version of status
-```
+<span># shorter version of status</span>
+</code></pre>
 
-``` js
+<pre><code>
 git add [file]
-# add a file as it looks now to your next commit (stage)
-```
+<span># add a file as it looks now to your next commit (stage)</span>
+</code></pre>
 
-``` js
+<pre><code>
 git reset [file]
-# unstage a file while retaining the changes in working directory
-```
+<span># unstage a file while retaining the changes in working directory</span>
+</code></pre>
 
-``` js
+<pre><code>
 git diff
-# diff of what is changed but not staged
-```
+<span># diff of what is changed but not staged</span>
+</code></pre>
 
-``` js
+<pre><code>
 git diff --staged
-# diff of what is staged but not yet committed
-```
+<span># diff of what is staged but not yet committed</span>
+</code></pre>
 
-``` js
+<pre><code>
 git commit -m “[descriptive message]”
-# commit your staged content as a new commit snapshot
-```
+<span># commit your staged content as a new commit snapshot</span>
+</code></pre>
 
 ### Branching ops
-``` js
+<pre><code>
 git branch
-# list your branches. a * will appear next to the currently active branch
-```
+<span># list your branches. a * will appear next to the currently active branch</span>
+</code></pre>
 
-``` js
+<pre><code>
 git branch -r
-# list remote branches
-```
+<span># list remote branches</span>
+</code></pre>
 
-``` js
+<pre><code>
 git branch [branch-name]
-# create a new branch at the current commit
-```
+<span># create a new branch at the current commit</span>
+</code></pre>
 
-``` js
+<pre><code>
 git checkout [branch-name]
 
-```
+</code></pre>
 
-``` js
+<pre><code>
 git checkout -b temp-branch-name commit-hash
-# create a temp branch to avoid having detached head
-```
+<span># create a temp branch to avoid having detached head</span>
+</code></pre>
 
-``` js
+<pre><code>
 git merge [branch]
-# merge the specified branch’s history into the current one
-```
+<span># merge the specified branch’s history into the current one</span>
+</code></pre>
 
-``` js
+<pre><code>
 git log
-# show all commits in the current branch’s history
-```
+<span># show all commits in the current branch’s history</span>
+</code></pre>
 
 ### Sharing Changes
-``` js
+<pre><code>
 git remote add [alias] [url]
-# add a git URL as an alias
-```
+<span># add a git URL as an alias</span>
+</code></pre>
 
-``` js
+<pre><code>
 git remote -v
-# list remote alias
-```
+<span># list remote alias</span>
+</code></pre>
 
-``` js
+<pre><code>
 git fetch [alias]
-# fetch down all the branches from that Git remote
-```
+<span># fetch down all the branches from that Git remote</span>
+</code></pre>
 
-``` js
+<pre><code>
 git merge [alias]/[branch]
-# merge a remote branch into your current branch to bring it up to date
-```
+<span># merge a remote branch into your current branch to bring it up to date</span>
+</code></pre>
 
-``` js
+<pre><code>
 git push [alias] [branch]
-# transmit local branch commits to the remote repository branch
-```
+<span># transmit local branch commits to the remote repository branch</span>
+</code></pre>
 
-``` js
+<pre><code>
 git pull
-# fetch and merge any commits from the tracking remote branch
-```
+<span># fetch and merge any commits from the tracking remote branch</span>
+</code></pre>
 
-``` js
+<pre><code>
 git log
-# show all commits in the current branch’s history
-```
+<span># show all commits in the current branch’s history</span>
+</code></pre>
 
 ### Discarding Changes For Local Changes
-``` js
+<pre><code>
 git reset --soft [commit]
-# resets HEAD back to another commit, does not touch the staged or the working directory at all (this leaves all your changed staged and marked for commit)
-```
+<span># resets HEAD back to another commit, does not touch the staged or the working directory at all (this leaves all your changed staged and marked for commit)</span>
+</code></pre>
 
-``` js
-git reset [commit] # (default parameter --mixed applied. if commit omitted resets to last commit)
-# resets HEAD back to another commit, resets the staged to match it, does not touch the working directory (changed files are preserved but not marked for commit)
-```
+<pre><code>
+git reset [commit] <span># (default parameter --mixed applied. if commit omitted resets to last commit)
+<span># resets HEAD back to another commit, resets the staged to match it, does not touch the working directory (changed files are preserved but not marked for commit)</span>
+</code></pre>
 
-``` js
+<pre><code>
 git reset --hard [commit]
-# resets HEAD back to another commit, resets the staged to match it, and resets the working directory to match it as well (any changes to tracked files in the working tree are discarded)
-```
+<span># resets HEAD back to another commit, resets the staged to match it, and resets the working directory to match it as well (any changes to tracked files in the working tree are discarded)</span>
+</code></pre>
 
-``` js
+<pre><code>
 git reset [commit] [filepath]
-# reset A specific file, commonly used with HEAD rather than an arbitrary commit
-```
+<span># reset A specific file, commonly used with HEAD rather than an arbitrary commit</span>
+</code></pre>
 
-``` js
+<pre><code>
 git commit -a -m "saving my work"
 git branch my-saved-work
-# saving work to new branch before reseting
-```
+<span># saving work to new branch before reseting</span>
+</code></pre>
 
-``` js 
+<pre><code> 
 git fetch origin
 git reset --hard origin/[remote]
-# reset branch to exactly match the remote branch
-```
+<span># reset branch to exactly match the remote branch</span>
+</code></pre>
 
-``` js
+<pre><code>
 git clean -f -d
-# remove untracked, forced and remove directories
-```
+<span># remove untracked, forced and remove directories</span>
+</code></pre>
 
-``` js
+<pre><code>
 git clean -fxd :/
-# cleans untracked and ignored files through the entire repo (without :/, the operation affects only the current directory)
-```
+<span># cleans untracked and ignored files through the entire repo (without :/, the operation affects only the current directory)</span>
+</code></pre>
 
 ### Discarding Changes For Pushed Changes
 
 
 ### Exploring
-``` js
+<pre><code>
 git log
-show the commit history for the currently active branch
-```
+<span># show the commit history for the currently active branch</span>
+</code></pre>
 
-``` js
+<pre><code>
 git log branchB..branchA
-show the commits on branchA that are not on branchB
-```
+<span># show the commits on branchA that are not on branchB</span>
+</code></pre>
 
-``` js
+<pre><code>
 git log --follow [file]
-show the commits that changed file, even across renames
-```
+<span># show the commits that changed file, even across renames</span>
+</code></pre>
 
-``` js
+<pre><code>
 git diff branchB...branchA
-show the diff of what is in branchA that is not in branchB
-```
+<span># show the diff of what is in branchA that is not in branchB</span>
+</code></pre>
 
-``` js
+<pre><code>
 git show
-show various objects such as commit log
-```
+<span># show various objects such as commit log</span>
+</code></pre>
 
-``` js
+<pre><code>
 git show [SHA]
-show any object in Git in human-readable format
-```
+<span># show any object in Git in human-readable format</span>
+</code></pre>
 
 ### Saving temp work
-``` js
+<pre><code>
 git stash
-# save modified and staged changes
-```
+<span># save modified and staged changes</span>
+</code></pre>
 
-``` js
+<pre><code>
 git stash list
-# list stack-order of stashed file changes
-```
+<span># list stack-order of stashed file changes</span>
+</code></pre>
 
-``` js
+<pre><code>
 git stash pop
-# write working from top of stash stack
-```
+<span># write working from top of stash stack</span>
+</code></pre>
 
-``` js
+<pre><code>
 git stash drop
-# iscard the changes from top of stash stack
-```
+<span># iscard the changes from top of stash stack</span>
+</code></pre>
 
 ### Ignoring Patterns
 logs/
 *.notes
 pattern*/
-# Save a file with desired patterns as .gitignore with either direct string matches or wildcard globs.
-```
+<span># save a file with desired patterns as .gitignore with either direct string matches or wildcard globs.</span>
+</code></pre>
 
 ### Other
 
-``` js
+<pre><code>
 git config --global core.excludesfile [file]
-# system wide ignore patern for all local repositories
-```
+<span># system wide ignore patern for all local repositories</span>
+</code></pre>
 
 
 
