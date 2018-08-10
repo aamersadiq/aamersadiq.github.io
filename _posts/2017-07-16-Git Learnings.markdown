@@ -56,7 +56,7 @@ second parent is the branch we merged.
 <pre style="background-color: #383838; padding: 0 0 0 20px;">
 <code style="color: white;">
 git config --global user.name “[firstname lastname]”
-<span style="color: #F0F0F0;"># set a name that is identifiable for credit when review version history</span>
+<span style="color: #DCDCDC;"># set a name that is identifiable for credit when review version history</span>
 </code>
 </pre>
 
