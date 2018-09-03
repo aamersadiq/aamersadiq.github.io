@@ -4,7 +4,6 @@ date:   2017-09-26 15:04:23
 categories: [javascript]
 tags: [rxjs]
 ---
-In this post, I will cover ...
 
 ### Async Type Comparsions
   
