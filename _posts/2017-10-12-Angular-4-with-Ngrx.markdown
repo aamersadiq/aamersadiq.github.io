@@ -4,7 +4,7 @@ date:   2017-10-12 15:04:23
 categories: [javascript]
 tags: [angular4, redux, ngrx]
 ---
-Recently I created a proof of concept using angular utilizing redux. The code can be found @
+Recently I created a proof of concept using angular utilizing redux. The code can be found @ https://github.com/aamersadiq/angular4-ngrx-material
 
 [github-repo]:      https://github.com/aamersadiq/angular4-ngrx-material
 
