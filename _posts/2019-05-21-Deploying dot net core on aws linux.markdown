@@ -1,6 +1,6 @@
 ---
 title:  "Deploying dotnet core on AWS linux"
-date:   2017-10-12 15:04:23
+date:   2019-05-21 15:04:23
 categories: [dotnercore]
 tags: [dotnercore, linux, aws]
 ---
