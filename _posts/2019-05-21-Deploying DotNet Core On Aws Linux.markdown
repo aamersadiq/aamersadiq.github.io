@@ -6,7 +6,7 @@ tags: [dotnercore, linux, aws]
 ---
 In this post, I will share in details my experience of how to host Asp.Net Core Web Api on AWS EC2 Instance. Some of the steps are too detailed and it might feel like I am teaching a beginner, please skip those if you already know.
 
-<h4>Step 1: Create a DotNet Core Web Api project</h4>
+<h3>Step 1: Create a DotNet Core Web Api project</h3>
 
 <p>Fire up Visual Studio 2017 and click on File -> New -> Project. </p>
  <img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/1-create-dotnet-core-project.PNG" class="fullsize-image" alt="-----">
@@ -23,7 +23,7 @@ In this post, I will share in details my experience of how to host Asp.Net Core 
 <p>Run the application and you it will display results from the api/values call. </p>
 <img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/4-api-result.PNG" class="fullsize-image" alt="-----">
 
-<h4>Step 2: Create a deployment package</h4>
+<h3>Step 2: Create a deployment package</h3>
 
 <p>Let's create the deployment package which will be copied to ec2 instance. </p>
 
@@ -45,7 +45,7 @@ In this post, I will share in details my experience of how to host Asp.Net Core 
 
 
 
-<h4>Step 3: Create AWS Linux EC2 Instance</h4>
+<h3>Step 3: Create AWS Linux EC2 Instance</h3>
 <p>Let's create a ec2 instance by logging on to AWS management console at https://console.aws.amazon.com/console/home. </p>
 <img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/8-aws-console.PNG" class="fullsize-image" alt="-----">
 
@@ -78,13 +78,15 @@ In this post, I will share in details my experience of how to host Asp.Net Core 
 <img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/17-instance-list.PNG" class="fullsize-image" alt="-----">
 
 
-<h4>Step 4: Login to your LInux EC2 Instance</h4>
+<h3>Step 4: Login to your LInux EC2 Instance</h3>
+There are several ways to connect to Linux instance. I will be using PuTTy. Please go ahead and download from <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/" target="_blank">here</a> 
 
-<h4>Step 5: Prepare the machine for DotNet Core</h4>
+First thing to do is convert the 
+<h3>Step 5: Prepare the machine for DotNet Core</h3>
 
-<h4>Step 6: Deploy and run your application</h4>
+<h3>Step 6: Deploy and run your application</h3>
 
-<h4>Step 7: Running your application as service</h4>
+<h3>Step 7: Running your application as service</h3>
 
 
 
