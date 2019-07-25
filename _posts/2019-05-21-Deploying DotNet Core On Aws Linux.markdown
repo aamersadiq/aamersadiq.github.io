@@ -83,7 +83,8 @@ There are several ways to connect to Linux instance. I will be using PuTTy. Plea
 
 First thing after installing PuTTY is transform you private key (downloaded in previous step) into the format that PuTTY can understand. To do so, we will be using a utilty PuTTYgen. This utitity is included with PuTTY and should be installed on your system.
 
-Open PuTTYgen, and then choose the SSH-2 (or SSH-1) RSA option to specify the type of key that you want to generate. Next, click the Load button and then select your private key file (you will need to choose the All Files option in order to get the utility to display .PEM files). Now, click the Save Private Key (not Save Public Key) button as shown below (Don't worry about the message indicating that a pass phrase is not being used. Just specify a name for the private key file that is being created). Close the tool.
+Open PuTTYgen, and then choose the SSH-2 (or SSH-1) RSA option to specify the type of key that you want to generate. Next, click the Load button and then select your private key file (you will need to choose the All Files option in order to get the utility to display .PEM files). Now, click the Save Private Key (not Save Public Key) button as shown below (Don't worry about the message indicating that a pass phrase is not being used. Just specify a name for the private key file that is being created).
+<img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/18A-putty-gen.PNG" class="fullsize-image" alt="-----">
 
 Now launch PuTTY. The first thing that you will need to enter is the host name. In our case it will be ubuntu@{public dns name of instance}. Please insert the public dns name of instance noted in previous step as below.
 <img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/18-putty-host-name.PNG" class="fullsize-image" alt="-----">
@@ -122,6 +123,11 @@ Now install dotnet core with the following commands.
 sudo apt-get install apt-transport-https
 sudo apt-get update
 sudo apt-get install dotnet-sdk-2.1.200
+</code></pre>
+
+To check whether it has been installed properly or not, run below command in the Ubuntu console:
+<pre><code>
+dotnet --version
 </code></pre>
 
 <h3>Step 6: Deploy and run your application</h3>
