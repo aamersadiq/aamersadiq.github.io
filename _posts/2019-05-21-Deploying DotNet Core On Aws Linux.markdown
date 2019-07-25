@@ -71,18 +71,58 @@ In this post, I will share in details my experience of how to host Asp.Net Core 
 <img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/15-launch.PNG" class="fullsize-image" alt="-----">
 
 
-<p>Key pair dialog will be displayed. Choose Create a New Key Pair and give it a meaningful name. After downloading the key pair click Launch Instances. </p>
+<p> A pair dialog will be displayed. Choose Create a New Key Pair and give it a meaningful name and download to local disk. The key is cruicial for connecting to EC2 instance and will be used in later Step 4: Login to your Linux EC2 Instance. After downloading the key pair click Launch Instances. </p>Key
 <img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/16-launch-instance.PNG" class="fullsize-image" alt="-----">
 
-<p>Go to EC2 -> Instances view to see the list of launched instances. Our instance should be there. </p>
+<p>Go to EC2 -> Instances view to see the list of launched instances. Our instance should be there. Please note the Public DNS as it will be used in Step 4: Login to your Linux EC2 Instance. </p>
 <img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/17-instance-list.PNG" class="fullsize-image" alt="-----">
 
 
-<h3>Step 4: Login to your LInux EC2 Instance</h3>
+<h3>Step 4: Login to your Linux EC2 Instance</h3>
 There are several ways to connect to Linux instance. I will be using PuTTy. Please go ahead and download from <a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/" target="_blank">here</a> 
 
-First thing to do is convert the 
+First thing after installing PuTTY is transform you private key (downloaded in previous step) into the format that PuTTY can understand. To do so, we will be using a utilty PuTTYgen. This utitity is included with PuTTY and should be installed on your system.
+
+Open PuTTYgen, and then choose the SSH-2 (or SSH-1) RSA option to specify the type of key that you want to generate. Next, click the Load button and then select your private key file (you will need to choose the All Files option in order to get the utility to display .PEM files). Now, click the Save Private Key (not Save Public Key) button as shown below (Don't worry about the message indicating that a pass phrase is not being used. Just specify a name for the private key file that is being created). Close the tool.
+
+Now launch PuTTY. The first thing that you will need to enter is the host name. In our case it will be ubuntu@{public dns name of instance}. Please insert the public dns name of instance noted in previous step as below.
+<img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/18-putty-host-name.PNG" class="fullsize-image" alt="-----">
+
+Now, navigate through the PuTTY console tree to Connection | SSH | Auth. Click the Browse button, select the private key file that you just created, and then click Open. You can see what this looks like in Figure below.
+<img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/19-putty-auth.PNG" class="fullsize-image" alt="-----">
+
+You should be connected and logged in to your instance as below.
+<img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/20-putty-logged-in.PNG" class="fullsize-image" alt="-----">
+ 
 <h3>Step 5: Prepare the machine for DotNet Core</h3>
+It's always good idea to update the instance to latest packages with following commands:
+<pre><code>
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+</code></pre>
+
+First step is to deploy dotnet core. Now, before installing the dependencies, you should first check which .net core version you are using in your application. You can check by running below command in the console of machine where you are building your application.
+
+<pre><code>
+dotnet --version
+</code></pre>
+
+Our version is 2.1.200. I will install this version in the instance. 
+
+First, you’ll need to register the Microsoft key, register the product repository, and install required dependencies. This only needs to be done once per machine. Run the following commands on command prompt.
+
+<pre><code>
+wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
+sudo dpkg -i packages-microsoft-prod.deb
+</code></pre>
+
+Now install dotnet core with the following commands. 
+<pre><code>
+sudo apt-get install apt-transport-https
+sudo apt-get update
+sudo apt-get install dotnet-sdk-2.1.200
+</code></pre>
 
 <h3>Step 6: Deploy and run your application</h3>
 
