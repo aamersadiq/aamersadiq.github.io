@@ -249,6 +249,9 @@ Then, we need to enable the service and run it.
 <span>$</span> sudo systemctl status web-api-core.service
 </code></pre>
 
-Now, the status command should show the service as running if the configuration is correct. So, our web application is running. Kestrel by default listens on port 5000, so our application is available on http://localhost:5000.
+The status command should show the service as running as below: 
+<img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/29-service-running.PNG" class="fullsize-image" alt="-----">
+
+So, our web application is running. Kestrel by default listens on port 5000, so our application is available on http://localhost:5000.
 Now, if we close the PuTTY session, our web application is still running.
 
