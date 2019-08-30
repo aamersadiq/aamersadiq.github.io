@@ -99,8 +99,8 @@ You should be connected and logged in to your instance as below.
 It's always good idea to update the instance to latest packages with following commands:
 <pre><code>
 <span>$</span> sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get dist-upgrade
+<span>$</span> sudo apt-get upgrade
+<span>$</span> sudo apt-get dist-upgrade
 </code></pre>
 
 First step is to deploy dotnet core. Now, before installing the dependencies, you should first check which .net core version you are using in your application. You can check by running below command in the console of machine where you are building your application.
@@ -114,34 +114,36 @@ Our version is 2.1.200. I will install this version in the instance.
 First, you’ll need to register the Microsoft key, register the product repository, and install required dependencies. This only needs to be done once per machine. Run the following commands on command prompt.
 
 <pre><code>
-wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
-sudo dpkg -i packages-microsoft-prod.deb
+<span>$</span> wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
+<span>$</span> sudo dpkg -i packages-microsoft-prod.deb
 </code></pre>
 
 Now install dotnet core with the following commands. 
 <pre><code>
-sudo add-apt-repository universe
-sudo apt-get install apt-transport-https
-sudo apt-get update
-sudo apt-get install dotnet-sdk-2.1.200
+<span>$</span> sudo add-apt-repository universe
+<span>$</span> sudo apt-get install apt-transport-https
+<span>$</span> sudo apt-get update
+<span>$</span> sudo apt-get install dotnet-sdk-2.1.200
+<span>$</span> dotnet --version # to check dotnet core installed correctly
 </code></pre>
+
 
 Let's now install nginx as reverse proxy for our application. It will be equivalent of iis on windows. We will use apt-get to install Nginx. The installer creates a systemd init script that runs Nginx as daemon on system startup. We will run the below command:
 <pre><code>
-sudo -s
-nginx=stable # use nginx=development for latest development version
-add-apt-repository ppa:nginx/$nginx
-apt-get update
-apt-get install nginx
+<span>$</span> sudo -s
+<span>$</span> nginx=stable # use nginx=development for latest development version
+<span>$</span> add-apt-repository ppa:nginx/$nginx
+<span>$</span> apt-get update
+<span>$</span> apt-get install nginx
 </code></pre>
 
 Since Nginx was installed for the first time, we have to explicitly start it by running:
 <pre><code>
-sudo service nginx start
+<span>$</span> sudo service nginx start
 </code></pre>
 
-We can verify whether browser displays the default landing page for Nginx. The landing page is reachable at http://<server_IP_address>/index.nginx-debian.html. t should look as below:
-Insert nginx web page
+We can verify whether browser displays the default landing page for Nginx. The landing page is reachable at http://server_IP_address/index.nginx-debian.html (you can use public ip address or public dns ). Tt should look as below:
+<img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/21-nginx-index-page.PNG" class="fullsize-image" alt="-----">
 
 Lets configure Nginx as a reverse proxy to forward requests to our ASP.NET Core app, we need to modify /etc/nginx/sites-available/default. Let’s open it in a text editor, and replace the contents with the following:
 <pre><code>
