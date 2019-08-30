@@ -162,6 +162,18 @@ server {
 }
 </code></pre>
 
+Nginx is listening to port 80. We have enabled the port 80 on the ec2 instance in Step 3: Create AWS Linux EC2 Instance.
+
+Once the Nginx configuration is established, we have to run following command to verify the syntax of the configuration files. 
+<pre><code>
+<span>$</span> sudo nginx -t
+</code></pre>
+
+If the configuration file test is successful, we will force Nginx to pick up the changes by running: sudo nginx -s reload.
+<pre><code>
+<span>$</span> sudo nginx -s reload.
+</code></pre>
+
 
 <h3>Step 6: Deploy and run your application</h3>
 
