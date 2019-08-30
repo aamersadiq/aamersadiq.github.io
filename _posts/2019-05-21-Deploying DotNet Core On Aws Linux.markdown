@@ -4,7 +4,7 @@ date:   2019-05-21 15:04:23
 categories: [dotnercore]
 tags: [dotnercore, linux, aws]
 ---
-In this post, I will share in details my experience of how to host Asp.Net Core Web Api on AWS EC2 Instance. Some of the steps are too detailed and it might feel like I am teaching a beginner, please skip those if you already know.
+In this post, I will share in details my experience of hosting Asp.Net Core Web Api on AWS EC2 Linux instance. Some of the steps are too detailed and it might feel like I am teaching a beginner, please skip those if you already know.
 
 <h3>Step 1: Create a DotNet Core Web Api project</h3>
 
@@ -253,5 +253,6 @@ The status command should show the service as running as below:
 <img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/29-service-running.PNG" class="fullsize-image" alt="-----">
 
 So, our web application is running. Kestrel by default listens on port 5000, so our application is available on http://localhost:5000.
+
 Now, if we close the PuTTY session, our web application is still running.
 
