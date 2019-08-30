@@ -98,7 +98,7 @@ You should be connected and logged in to your instance as below.
 <h3>Step 5: Prepare the machine for DotNet Core</h3>
 It's always good idea to update the instance to latest packages with following commands:
 <pre><code>
-sudo apt-get update
+<span>$</span> sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
 </code></pre>
@@ -106,7 +106,7 @@ sudo apt-get dist-upgrade
 First step is to deploy dotnet core. Now, before installing the dependencies, you should first check which .net core version you are using in your application. You can check by running below command in the console of machine where you are building your application.
 
 <pre><code>
-dotnet --version
+<span>$</span> dotnet --version
 </code></pre>
 
 Our version is 2.1.200. I will install this version in the instance. 
