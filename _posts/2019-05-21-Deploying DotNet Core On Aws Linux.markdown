@@ -142,7 +142,7 @@ Since Nginx was installed for the first time, we have to explicitly start it by 
 <span>$</span> sudo service nginx start
 </code></pre>
 
-We can verify whether browser displays the default landing page for Nginx. The landing page is reachable at http://server_IP_address/index.nginx-debian.html (you can use public ip address or public dns ). Tt should look as below:
+We can verify whether browser displays the default landing page for Nginx. The landing page is reachable at http://server_IP_address/index.nginx-debian.html or http://server_IP_address/ (you can use public ip address or public dns ). Tt should look as below:
 <img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/21-nginx-index-page.PNG" class="fullsize-image" alt="-----">
 
 Lets configure Nginx as a reverse proxy to forward requests to our ASP.NET Core app, we need to modify /etc/nginx/sites-available/default. Let’s open it in a text editor, and replace the contents with the following:
@@ -169,13 +169,52 @@ Once the Nginx configuration is established, we have to run following command to
 <span>$</span> sudo nginx -t
 </code></pre>
 
-If the configuration file test is successful, we will force Nginx to pick up the changes by running: sudo nginx -s reload.
+If the configuration file test is successful, we will force Nginx to pick up the changes by running:
 <pre><code>
-<span>$</span> sudo nginx -s reload.
+<span>$</span> sudo nginx -s reload
 </code></pre>
 
+At this point, http://13.239.115.224(or http://13.239.115.224/index.nginx-debian.html) will show 502 Bad Gateway status. This is because our application is not deployed and running.
 
 <h3>Step 6: Deploy and run your application</h3>
+Let create a new directory on EC2 instance to deploy our code into (also change permission to give write access):
+<pre><code>
+<span>$</span> sudo mkdir /var/www/api
+<span>$</span> sudo chmod 777 /var/www/api
+</code></pre>
+
+Now, we have to copy our application over to the Linux. Before that, to copy our application code, we need to install WinSCP (WinSCP is a popular SFTP client and FTP client for Microsoft Windows).
+
+Now, let’s connet our EC2 instance with WinSCP. Fill in the hostname and user name as below:
+<img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/22.winscp-hostname.PNG" class="fullsize-image" alt="-----">
+
+Then click on Advanced and click Advanced from drop down to bring the Advanced Site Setting dialog as below:
+<img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/23-winscp-advanced-site-setting.PNG" class="fullsize-image" alt="-----">
+
+Select SSH -> Authentication and click ... to bring Select private key file dialgon as below:
+<img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/24-winscp-select-private-key.PNG" class="fullsize-image" alt="-----">
+
+Select the private key created at the end of Step 3: Create AWS Linux EC2 Instance. Click Ok to close the dialog and then click Login to connect to EC2 instance. 
+After connecting successfully, we can see below screen:
+<img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/25-winscp-files-view.PNG" class="fullsize-image" alt="-----">
+
+On the left is my local computer files showing the directory where we published the api code in Step 2: Create a deployment package. On the right is /var/www/api/ directory of my remote computer means the files of the EC2 instance (you have to navigate to this folder). 
+
+Select all the files in left and click upload. Once completed, directory of remote computer like below:
+<img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/26-winscp-uploaded.PNG" class="fullsize-image" alt="-----">
+
+Now navigate to /var/www/api/ directory on the remote machine and run the following command:
+<pre><code>
+<span>$</span> dotnet WebApiCore.dll
+</code></pre>
+
+This should produce the log below:
+<img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/27-putty-run-dotnet.PNG" class="fullsize-image" alt="-----">
+
+Now go to chrome and navigate to http://13.239.115.224/api/values and you will see the following view:
+<img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/28-api-running.PNG" class="fullsize-image" alt="-----">
+
+This means our api is running successfull on Linux EC2 instance and is being served by nginx.
 
 <h3>Step 7: Running your application as service</h3>
 
