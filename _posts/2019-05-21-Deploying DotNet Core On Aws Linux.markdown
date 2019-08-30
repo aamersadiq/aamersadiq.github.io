@@ -217,7 +217,8 @@ Now go to chrome and navigate to http://13.239.115.224/api/values and you will s
 This means our api is running successfull on Linux EC2 instance and is being served by nginx.
 
 <h3>Step 7: Running your application as service</h3>
-But, if we close the PuTTY session, our application will stop. But, we don’t want that. We have to use systemd to create a service file to start and monitor the underlying web app.
+But, if we close the PuTTY session, our application will stop. But, we don’t want that. We have to use systemd (systemd is an init system that provides many powerful features for
+starting, stopping, and managing processes) to create a service file to start and monitor the underlying web app.
 
 At first, we will create a service file for our web application.
 <pre><code>
