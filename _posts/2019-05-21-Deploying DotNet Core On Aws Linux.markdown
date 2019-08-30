@@ -120,15 +120,46 @@ sudo dpkg -i packages-microsoft-prod.deb
 
 Now install dotnet core with the following commands. 
 <pre><code>
+sudo add-apt-repository universe
 sudo apt-get install apt-transport-https
 sudo apt-get update
 sudo apt-get install dotnet-sdk-2.1.200
 </code></pre>
 
-To check whether it has been installed properly or not, run below command in the Ubuntu console:
+Let's now install nginx as reverse proxy for our application. It will be equivalent of iis on windows. We will use apt-get to install Nginx. The installer creates a systemd init script that runs Nginx as daemon on system startup. We will run the below command:
 <pre><code>
-dotnet --version
+sudo -s
+nginx=stable # use nginx=development for latest development version
+add-apt-repository ppa:nginx/$nginx
+apt-get update
+apt-get install nginx
 </code></pre>
+
+Since Nginx was installed for the first time, we have to explicitly start it by running:
+<pre><code>
+sudo service nginx start
+</code></pre>
+
+We can verify whether browser displays the default landing page for Nginx. The landing page is reachable at http://<server_IP_address>/index.nginx-debian.html. t should look as below:
+Insert nginx web page
+
+Lets configure Nginx as a reverse proxy to forward requests to our ASP.NET Core app, we need to modify /etc/nginx/sites-available/default. Let’s open it in a text editor, and replace the contents with the following:
+<pre><code>
+server {
+ listen 80;
+ location / {
+ proxy_pass http://localhost:5000;
+ proxy_http_version 1.1;
+ proxy_set_header Upgrade $http_upgrade;
+ proxy_set_header Connection keep-alive;
+ proxy_set_header Host $host;
+ proxy_cache_bypass $http_upgrade;
+ proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+ proxy_set_header X-Forwarded-Proto $scheme;
+ }
+}
+</code></pre>
+
 
 <h3>Step 6: Deploy and run your application</h3>
 
