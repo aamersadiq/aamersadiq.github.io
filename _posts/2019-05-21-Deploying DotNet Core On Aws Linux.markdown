@@ -217,6 +217,37 @@ Now go to chrome and navigate to http://13.239.115.224/api/values and you will s
 This means our api is running successfull on Linux EC2 instance and is being served by nginx.
 
 <h3>Step 7: Running your application as service</h3>
+But, if we close the PuTTY session, our application will stop. But, we don’t want that. We have to use systemd to create a service file to start and monitor the underlying web app.
 
+At first, we will create a service file for our web application.
+<pre><code>
+<span>$</span> sudo nano /etc/systemd/system/web-api-core.service
+</code></pre>
 
+Then, inside that web-api-core.service file, i have included below configurations:
+<pre><code>
+[Unit] 
+Description=DotNet Core application on Ubuntu 
+
+[Service] 
+WorkingDirectory=/var/www/api 
+ExecStart=/usr/bin/dotnet /var/www/api /WebApiCore.dll 
+Restart=always 
+RestartSec=10 # Restart service after 10 seconds if dotnet service crashes 
+SyslogIdentifier=offershare-web-app
+Environment=ASPNETCORE_ENVIRONMENT=Production 
+
+[Install] 
+WantedBy=multi-user.target
+</code></pre>
+
+Then, we need to enable the service and run it.
+<pre><code>
+<span>$</span> sudo systemctl enable web-api-core.service
+<span>$</span> sudo systemctl start web-api-core.service
+<span>$</span> sudo systemctl status web-api-core.service
+</code></pre>
+
+Now, the status command should show the service as running if the configuration is correct. So, our web application is running. Kestrel by default listens on port 5000, so our application is available on http://localhost:5000.
+Now, if we close the PuTTY session, our web application is still running.
 
