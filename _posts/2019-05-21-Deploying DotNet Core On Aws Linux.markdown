@@ -209,7 +209,7 @@ Next click on Advanced and choose Advanced from drop down to bring the Advanced 
 </p>
 
 <p>
-Select SSH -> Authentication and click ... to bring Select private key file dialgon as below:
+Select SSH -> Authentication and click ... to bring Select private key file dialog as below:
 <img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/24-winscp-select-private-key.PNG" class="fullsize-image" alt="-----">
 </p>
 
