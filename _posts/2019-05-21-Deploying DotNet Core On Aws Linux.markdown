@@ -8,13 +8,10 @@ In this post, I will be sharing in detail my experience of hosting Asp.Net Core 
 
 <h3>Step 1: Create a DotNet Core Web Api project</h3>
 
-<p>Start Visual Studio 2017 and click on File -> New -> Project. </p>
+<p>Start Visual Studio 2017 and click on File -> New -> Project and then select Web -> Asp.Net Core Web Application from the templates and click Ok. </p>
  <img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/1-create-dotnet-core-project.PNG" class="fullsize-image" alt="-----">
 
- <p>Then select Web -> Asp.Net Core Web Application from the templates. </p>
-<img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/2-select-project-type.PNG" class="fullsize-image" alt="-----">
-
-<p>Next choose API from the options. </p>
+ <p>Next choose API from the options and click Ok. </p>
 <img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/2-select-project-type.PNG" class="fullsize-image" alt="-----">
 
 <p>Now we will have the project created. I am not making any changes to the code and will leave ValuesController as it is so api/values will return value1 and value2. </p>
