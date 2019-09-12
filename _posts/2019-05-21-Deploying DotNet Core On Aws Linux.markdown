@@ -44,7 +44,7 @@ In this post, I will be sharing in detail my experience of hosting Asp.Net Core 
 <p>Let's create an EC2 instance by logging on to AWS management console at https://console.aws.amazon.com/console/home. </p>
 <img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/8-aws-console.PNG" class="fullsize-image" alt="-----">
 
-<p>Go to EC2 dashboard and click on Launch Template. Search for Ubuntu Server 18.04 and Select Ubuntu Server 18.04 LTS (HVM), SSD Volume Type (you can select other images as well, I just used this one). </p>
+<p>Go to EC2 dashboard and click on Launch Template. Search for Ubuntu Server 18.04 and select Ubuntu Server 18.04 LTS (HVM), SSD Volume Type (you can select other images as well, I just used this one). </p>
 <img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/9-search-ami.PNG" class="fullsize-image" alt="-----">
 
 <p>Next choose instance type eligible for free tier. Click Configure Instance Details</p>
