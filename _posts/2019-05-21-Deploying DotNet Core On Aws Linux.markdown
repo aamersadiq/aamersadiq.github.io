@@ -173,7 +173,9 @@ Once the Nginx configuration is established, we have to run following command to
 <pre><code>
 <span>$</span> sudo nginx -t
 </code></pre>
+</p>
 
+<p>
 If the configuration file test is successful, we will force Nginx to pick up the changes by running:
 <pre><code>
 <span>$</span> sudo nginx -s reload
