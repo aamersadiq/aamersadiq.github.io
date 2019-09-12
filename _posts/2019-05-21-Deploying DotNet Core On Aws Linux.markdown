@@ -96,14 +96,15 @@ In this post, I will be sharing in detail my experience of hosting Asp.Net Core 
 <span>$</span> sudo apt-get upgrade
 <span>$</span> sudo apt-get dist-upgrade
 </code></pre>
-<p>/
+</p>
 <p>First step is to install dotnet core. Now, before installing, you should first check which dotnet core version is used in your application. You can check by running below command in the command line of machine where you are building your application.
 
 <pre><code>
 <span>$</span> dotnet --version
 </code></pre>
 
-My version is 2.1.200. I will install this version in the instance.</p>
+My version is 2.1.200. I will install this version in the instance.
+</p>
 
 <p>First, you’ll need to register the Microsoft key and product repository, and install required dependencies. This only needs to be done once per machine. Run the following commands on your PuTTY terminal.
 
@@ -111,7 +112,7 @@ My version is 2.1.200. I will install this version in the instance.</p>
 <span>$</span> wget -q https://packages.microsoft.com/config/ubuntu/16.04/packages-microsoft-prod.deb
 <span>$</span> sudo dpkg -i packages-microsoft-prod.deb
 </code></pre>
-<p/>
+</p>
 
 <p>Now install dotnet core with the following commands. 
 <pre><code>
