@@ -194,7 +194,7 @@ Let create a new directory on EC2 instance to deploy our code into (also change 
 </code></pre>
 </p>
 
-<p>Now, we will copy our application code to the EC2 instance. To copy our application code, we will install WinSCP (WinSCP is a popular SFTP client and FTP client for Microsoft Windows). Please download and install from <a href="https://winscp.net/eng/download.php" target="_blank">here</a> 
+<p>Now, we will copy our application code to the EC2 instance. To copy our application, we will install WinSCP (WinSCP is a popular SFTP client and FTP client for Microsoft Windows). Please download and install from <a href="https://winscp.net/eng/download.php" target="_blank">here</a> 
 </p>
 
 <p>
