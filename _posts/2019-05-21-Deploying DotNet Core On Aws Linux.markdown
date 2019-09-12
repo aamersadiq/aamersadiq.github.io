@@ -180,12 +180,14 @@ If the configuration file test is successful, we will force Nginx to pick up the
 <pre><code>
 <span>$</span> sudo nginx -s reload
 </code></pre>
-
+</p>
+<p>
 At this point, http://13.239.115.224(or http://13.239.115.224/index.nginx-debian.html) will show 502 Bad Gateway status. This is because our application is not deployed and running.
 </p>
 
 <h3>Step 6: Deploy and run your application</h3>
-<p>Let create a new directory on EC2 instance to deploy our code into (also change permission to give write access):
+<p>
+Let create a new directory on EC2 instance to deploy our code into (also change permission to give write access):
 <pre><code>
 <span>$</span> sudo mkdir /var/www/api
 <span>$</span> sudo chmod 777 /var/www/api
