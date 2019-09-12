@@ -215,7 +215,7 @@ Select SSH -> Authentication and click ... to bring Select private key file dial
 
 <p>
 Select the private key created at the end of Step 3: Create AWS Linux EC2 Instance. Click Ok to close the dialog and then click Login to connect to EC2 instance. 
-After connecting successfully, we can see below screen:
+After connecting successfully, you will see below screen:
 <img src="{{ site.baseurl }}/images/blog/setting-up-dtnet-core-linux/25-winscp-files-view.PNG" class="fullsize-image" alt="-----">
 </p>
 
