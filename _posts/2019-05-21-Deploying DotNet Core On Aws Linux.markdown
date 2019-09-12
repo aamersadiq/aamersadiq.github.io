@@ -148,7 +148,7 @@ We can verify the installation from browser. Nginx landing page should be reacha
 </p>
 
 <p>
-Lets configure Nginx as a reverse proxy to forward web requests to our ASP.NET Core app, we need to modify /etc/nginx/sites-available/default. Let’s open it in a text editor, and replace the contents with the following:
+Lets configure Nginx as a reverse proxy to forward web requests to our ASP.NET Core app (which will be hosted at http://localhost:5000), we need to modify /etc/nginx/sites-available/default. Let’s open it in a text editor, and replace the contents with the following:
 <pre><code>
 server {
  listen 80;
