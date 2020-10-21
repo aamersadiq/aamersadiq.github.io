@@ -6,7 +6,9 @@ tags: [raact, redux, material-ui]
 ---
 
 <p>
-Recently I created a proof of concept using angular utilizing redux.
+I have been asked to do a coding test for recent interviews. Most of them needed some sort of front end. To avoid starting over every time, I created this 
+template to do basic CRUD operations. It can be modified to suit any application which is working with data. 
+
 </p>
 <p>
 The ui snapshot:
