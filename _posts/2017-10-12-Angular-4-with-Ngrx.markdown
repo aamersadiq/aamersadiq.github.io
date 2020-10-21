@@ -10,7 +10,7 @@ Recently I created a proof of concept using angular utilizing redux. The code ca
 
 The ui snapshot.
 
- <img src="{{ site.baseurl }}/images/blog/ag4ngrx-view.PNG" class="fullsize-image" alt="My Profile Photo">
+ <img src="{{ site.baseurl }}/images/blog/ag4ngrx-view.PNG" class="fullsize-image" alt="Screen shot">
 
 
 
