@@ -1,13 +1,12 @@
 ---
-title:  "React Messaging App"
+title:  "React App Template"
 date:   2020-04-12 15:04:23
 categories: [javascript]
 tags: [raact, redux, material-ui]
 ---
 
 <p>
-I have been asked to do a coding test for recent interviews. Most of them needed some sort of front end. To avoid starting over every time, I created this 
-template to do basic CRUD operations. It can be modified to suit any application which is working with data. 
+I have used this template as starting point for few projects. It comprise of purely front end with Mock Api as a back end. It performs the CRUD operations and provides user interface for editing and listing of data. It can be modified to suit any application which is working with data. 
 
 </p>
 <p>
