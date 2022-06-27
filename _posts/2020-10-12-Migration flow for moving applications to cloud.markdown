@@ -5,30 +5,32 @@ categories: [migration]
 tags: [migration]	
 ---
 <p>
-If you are thinking to migrate your existing applications, from on-premises to cloud, or from cloud to another cloud, these are the concrete steps you can take to ensure everything goes down smoothly.
+If you are planning to migrate your existing applications, from on-premises to cloud, or from cloud to another cloud, these are the concrete steps you can take to ensure everything goes down smoothly.
 <img src="{{ site.baseurl }}/images/blog/migration-flow/migration-and-consolidation-flow.PNG" class="fullsize-image" alt="Image">
 </p>
 <p>
 I have divided the whole process into three phases:
 <ul>
-<li>Concept: Or planning phase</li>
-<li>Implementation: Where stuff is done</li>
-<li>Completion: Review and close</li>
+<li>Concept (planning)</li>
+<li>Implementation (rollout)</li>
+<li>Completion (review and close)</li>
 </ul>
 </p>
 
 <h3>1. Concept Phase</h3>
-Concept phase is divided into various activities:
+Concept phase is divided into these activities:
 <h4>Discovery and Analysis</h4>
 <p>
-During discovery and analysis, collect as much information about the applications. I recommend creating a application details document per application to capture the following information:
+During discovery and analysis, collect all the information about the applications. I recommend creating a application details document per application to capture the following information:
 <ul>
 <li>Application name, version, number of active users</li>
 <li>Contact information for vendor, business owner and technical owner along with their contact details</li>
-<li>High level component diagram exhibiting component type and where it is hosted e.g web application components can be web site, caching layer, api, database and each could be hosted on different servers</li>
-<li>Integration diagram outlining the communication or dependency link between the given application and all the other applications</li>
+<li>High level component diagrams exhibiting component type and which server it is hosted e.g web application components can be web site, caching layer, api, database and each could be hosted on different servers</li>
+<li>Integration diagrams outlining the communication or dependency link between the given application and all the other applications</li>
 <li>All the security accounts required for the application e.g. database logins, service accounts</li>
-<li>Key performance metrics (CPU/memory/network utilization)</li>
+<li>Key resource utilization (CPU/memory/network utilization)</li>
+<li>Performance benchmarks</li>
+<li>Known issues</li>
 </ul>
 </p>
 <h4>Current Landscape</h4>
@@ -39,7 +41,7 @@ Current landscape is a one page architectural view of all the applications consi
 <p>
 Migration strategy will outline why, how and when the applications will be migrated and should include:
 <ul>
-<li>Purpose or business case for migrations e.g. what benefits will materialise from migration</li>
+<li>Purpose or business case for migrations e.g. what benefits will materialize from migration</li>
 <li>Decision tree (or list of eligibility criteria) for determining application acceptability for migration. e.g. vendor/development team is available to perform the migration activities, application detail and support documents are available to facilitate and troubleshoot migration, no impact on application licensing, no performance impact, no feature impact </li>
 <li>Group the applications based on the architecture or deployed components. e.g. web application, database, services etc. Then define the generic approach for migrating each type of application. e.g. for databases, backup and restore</li>
 <li>Provide the approach for migrating each group of application. e.g. for databases, do backup and restore</li>
@@ -65,7 +67,7 @@ Future landscape is a one page architectural view of all the applications after 
 </p>
 
 <h3>2. Implementation Phase</h3>
-Implementation phase is divided into various activities:
+Implementation phase is divided into these activities:
 <h4>Pre Migration Checklist</h4>
 <p>
 Checklist per application which include:
@@ -81,7 +83,7 @@ Checklist per application which include:
 </p>
 <h4>Migrate/Test</h4>
 <p>
-This is the day application is migrated. If planning is done effectively then migration will go smoothly. Execute testing according to test plan to ensure application is intact and working as before.
+This is the step when application is migrated to the new environment. In spite of all the planning, problems may arise during the migration and atmosphere can become chaotic. During those times, use the support team and helping documents to bring calm to the chaos. Execute testing according to test plan to ensure application is intact and all features are working.
 </p>
 <h4>Post Migration Checklist</h4>
 <p>
