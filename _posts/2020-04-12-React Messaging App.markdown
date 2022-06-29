@@ -6,7 +6,7 @@ tags: [raact, redux, material-ui]
 ---
 
 <p>
-I have used this template as starting point for few projects. It comprise of purely front end with Mock Api as a back end. It performs the CRUD operations and provides user interface for editing and listing of data. It can be modified to suit any application which is working with data. 
+I have utilized this template as a starting point for several projects. It consists solely of a front-end interface, utilizing a mock API as the back-end. The template allows for the basic CRUD operations and provides a user-friendly interface for editing and displaying data. It can be adapted to fit any application that requires data management.
 
 </p>
 <p>

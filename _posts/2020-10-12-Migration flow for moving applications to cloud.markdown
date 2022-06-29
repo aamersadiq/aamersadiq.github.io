@@ -5,25 +5,31 @@ categories: [migration]
 tags: [migration]	
 ---
 <p>
-If you are planning to migrate your existing applications, from on-premises to cloud, or from cloud to another cloud, these are the concrete steps you can take to ensure everything goes down smoothly.
+If you're looking to transition your current applications from on-premises to the cloud, or from one cloud to another, there are certain steps you can take to ensure a seamless migration. In this blog post, we'll go over these concrete steps to help you plan and execute your migration with minimal disruptions.
 <img src="{{ site.baseurl }}/images/blog/migration-flow/migration-and-consolidation-flow.PNG" class="fullsize-image" alt="Image">
 </p>
+
 <p>
-I have divided the whole process into three phases:
+When it comes to migrating your applications, it's important to have a clear and organized plan in place. One way to do this is by dividing the process into these three distinct phases:
 <ul>
-<li>Concept (planning)</li>
-<li>Implementation (rollout)</li>
-<li>Completion (review and close)</li>
+<li>Concept - Planning and preparation</li>
+<p>This phase is all about gathering the necessary information about your applications, identifying potential roadblocks, and creating a detailed project plan. By taking the time to thoroughly plan and prepare, you'll be setting yourself up for a smoother migration process.</p>
+<li>Implementation - Execution</li>
+<p>This phase is where the actual migration takes place. This could include tasks such as configuring the new infrastructure, deploying the applications, and testing to make sure everything is working as expected.</p>
+<li>Completion - Post migration</li>
+<p>After the migration is complete, it's important to monitor the applications in the new environment to ensure everything is running smoothly. This phase also includes addressing any issues that arise, training users and administrators, and documenting the entire migration process for future reference</p>
 </ul>
 </p>
-
+<p>Lets look at these three phases in detail.</p>
 <h3>1. Concept Phase</h3>
 Concept phase is divided into these activities:
 <h4>Discovery and Analysis</h4>
 <p>
-During discovery and analysis, collect all the information about the applications. I recommend creating a application details document per application to capture the following information:
+When planning a migration, the first step is to gather all the information about the applications that will be moving to the new environment. One way to do this is by creating an application details document for each application. This document should include information such as:
 <ul>
-<li>Application name, version, number of active users</li>
+<li>Application name and version</li>
+<li>Number of users and usage patterns</li>
+<li>Business purpose and function</li>
 <li>Contact information for vendor, business owner and technical owner along with their contact details</li>
 <li>High level component diagrams exhibiting component type and which server it is hosted e.g web application components can be web site, caching layer, api, database and each could be hosted on different servers</li>
 <li>Integration diagrams outlining the communication or dependency link between the given application and all the other applications</li>
