@@ -23,7 +23,8 @@ There are essentially two options:
 </p>
 <p>
 With option 1, any request that doesn’t include the new parameter is rejected as a bad request. This is easy to implement, but it also breaks existing API clients.
-
+</p>
+<p>
 With option 2, new API is implemented and  original API is also updated to provide some reasonable default for the phone number (also check Backwards compatible DB migration if phone is stored in database). This is definitely more work, but it doesn’t break any existing API clients.
 
 There are few options to version API. Following options are considered.
