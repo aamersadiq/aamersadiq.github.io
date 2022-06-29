@@ -31,11 +31,9 @@ There are few options to version API. Following options are considered.
 <h4>URL</h4>
 <p>
 This is most common way and can be achieved using either the path:
-</p>
-<p>
-<div>POST http://www.store.com/v2/customers</div>
-<div>Or by using query parameters:</div>
-<div>POST http://www.store.com/customers?v=2</div>
+POST http://www.store.com/v2/customers<br/>
+Or by using query parameters:<br/>
+POST http://www.store.com/customers?v=2<br/>
 </p>
 <p>
 URLs are convenient because they’re a required part of every request, so consumers have to deal with it. Most frameworks log URLs with every request, so it’s easy to track which consumers are using which versions.
