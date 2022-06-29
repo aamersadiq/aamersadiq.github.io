@@ -4,6 +4,9 @@ date:   2022-07-03 9:15:43
 categories: [services]
 tags: [services]	
 ---
+<p>
+dafd
+</p>
 <h3>Introduction</h3>
 <p>
 This page outlines how to develop REST API services to keep it backward compatible with the older version.  An API is backward compatible between releases if the clients are able to work with a new version of the API seamlessly. It allows clients to continue using the existing REST API and migrate their applications to the newer API version when they are ready.
