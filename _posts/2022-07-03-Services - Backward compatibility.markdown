@@ -20,6 +20,8 @@ There are essentially two options:
 <li>Update the user API to require a phone number with every request.</li>
 <li>Simultaneously support the old and new user APIs.</li>
 </ol>
+</p>
+<p>
 With option 1, any request that doesn’t include the new parameter is rejected as a bad request. This is easy to implement, but it also breaks existing API clients.
 
 With option 2, new API is implemented and  original API is also updated to provide some reasonable default for the phone number (also check Backwards compatible DB migration if phone is stored in database). This is definitely more work, but it doesn’t break any existing API clients.
@@ -30,9 +32,9 @@ There are few options to version API. Following options are considered.
 <p>
 This is most common way and can be achieved using either the path:
 
-POST http://www.store.com/v2/customers
+<div>POST http://www.store.com/v2/customers</div>
 Or by using query parameters:
-POST http://www.store.com/customers?v=2
+<div>POST http://www.store.com/customers?v=2</div>
 
 URLs are convenient because they’re a required part of every request, so consumers have to deal with it. Most frameworks log URLs with every request, so it’s easy to track which consumers are using which versions.
 </p>
