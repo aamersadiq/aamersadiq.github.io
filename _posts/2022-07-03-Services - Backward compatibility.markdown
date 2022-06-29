@@ -49,7 +49,7 @@ Or use the Accept header to include custom extensions:<br/>
 
 Accept: application/vnd.store.v2+json<br/>
 </p>
->p?
+<p>
 Using headers for versioning is more in line with RESTful practices as URL should represent the resource, not some version of it. Additionally, headers are already great at passing what is essentially metadata between clients and servers, so adding in version seems like a good fit.
 
 On the other hand, headers are cumbersome to work with in some frameworks, more difficult to test, and not feasible to log for every request. Some internet proxies may remove unknown headers, meaning we’d lose our custom header before it reaches the service.
