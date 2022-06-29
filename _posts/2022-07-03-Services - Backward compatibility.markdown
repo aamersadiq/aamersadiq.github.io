@@ -11,9 +11,11 @@ This page outlines how to develop REST API services to keep it backward compatib
 <h3>Versioning</h3>
 <p>
 Versioning an API allows us to support different functionality for the same resource. 
-
+</p>
+<p>
 For example, consider a patients API for managing patients (http://www.store.com/customers). The first iteration has an endpoint that creates a customer with first name, last name and date of birth. Six months later, it is decided that every new patience now must include a phone number. What should we do with the existing API?
-
+</p>
+<p>
 There are essentially two options:
 
 <ol>
