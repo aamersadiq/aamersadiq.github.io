@@ -30,7 +30,7 @@ There are few options to version API. Following options are considered.
 </p>
 <h4>URL</h4>
 <p>
-This is most common way and can be achieved using either the path:
+This is most common way and can be achieved using either the path:<br/>
 POST http://www.store.com/v2/customers<br/>
 Or by using query parameters:<br/>
 POST http://www.store.com/customers?v=2<br/>
