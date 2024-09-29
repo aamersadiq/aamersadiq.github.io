@@ -11,6 +11,7 @@ Every two weeks, after the sprint concludes, the team comes together for a one-h
 The meeting is attended by all team members, and a member of the team takes on the role of facilitating the proceedings. The facilitator can be any team member.
 </p>
 
+<br/>
 <h3>Retro Board</h3>
 <p>
 Retro board is divided into three main sections:
@@ -34,6 +35,7 @@ Sample retro board:
 <img src="{{ site.baseurl }}/images/blog/sprint-retro/sample-board.png" class="fullsize-image" alt="Image">
 </p>
 
+<br/>
 <h4>During the meeting</h4>
 <p>
 The first step is to conduct a review of the previous retrospective. The facilitator will guide the team through a discussion of action items and trial items.
@@ -44,7 +46,6 @@ For each action item, we inquire with the team member responsible for the card:
 <li>Should we still proceed with it?</li>
 <li>Is it more complex than initially anticipated?</li>
 </ul>
-<br/>
 For each trial item, we ask the entire team:
 <ul>
 <li>Did we carry out the experiment?</li>
@@ -61,6 +62,7 @@ Following that, the facilitator guides the team through each card on the retrosp
 Before closing the meeting, summarise the key points discussed, including the Action Items and on Trial cards. Ensure that everyone has a shared understanding of the outcomes and responsibilities moving forward.
 </p>
 
+<br/>
 <h4>Variations to the meeting</h4>
 <p>
 The retrospective meeting can be adapted to address different scopes and objectives. Here are some variations:
