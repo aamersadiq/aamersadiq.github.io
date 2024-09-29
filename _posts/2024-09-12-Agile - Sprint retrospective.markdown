@@ -11,32 +11,26 @@ Every two weeks, after the sprint concludes, the team comes together for a one-h
 The meeting is attended by all team members, and a member of the team takes on the role of facilitating the proceedings. The facilitator can be any team member.
 </p>
 
-<br/>
 <h3>Retro Board</h3>
 <p>
 Retro board is divided into three main sections:
-</p>
-<p>
 <ol>
 <li>What went well? - what we liked about the sprint, what went well and what we want to build on, shout out to people who helped did exceptionally well</li>
 <li>What did not go as well? - What didn't go so well, or what was missing. If something was unclear or could have been smoother, let's discuss. These are things we definitely want to resolve in the following sprints</li>
 <li>What can we improve? - What's something you wish we were doing that we're not. Will it help us work better and ensure the project is successful. Keep those ideas burning</li>
 </ol>
-</p>
-<p>
 There is additional two sections dedicated to continuous improvements:
 <br/>
-Actions: They are intended to be completed before the next retro . Each action item requires at least one assignee.
+<b>Actions:</b> They are intended to be completed before the next retro . Each action item requires at least one assignee.
 <br/>
-Trials (Experiments): Trials are dedicated to experiments that the team is currently conducting. The team tries out different approaches or changes. If, after implementing the change for an entire period, the team finds it beneficial, they incorporate it into their regular workflow.
+<b>Trials (Experiments):</b> Trials are dedicated to experiments that the team is currently conducting. The team tries out different approaches or changes. If, after implementing the change for an entire period, the team finds it beneficial, they incorporate it into their regular workflow.
 <br/>
-Sample retro board:
+<b>TSample retro board:</b> 
 <br/>
 <img src="{{ site.baseurl }}/images/blog/sprint-retro/sample-board.png" class="fullsize-image" alt="Image">
 </p>
 
-<br/>
-<h4>During the meeting</h4>
+<h3>During the meeting</h3>
 <p>
 The first step is to conduct a review of the previous retrospective. The facilitator will guide the team through a discussion of action items and trial items.
 <br/>
@@ -54,7 +48,6 @@ For each trial item, we ask the entire team:
 <li>Should we carry on with experiment for further evaluation before making a decision?</li>
 </ul>
 <br/>
-
 Next, we allocate 10 minutes for everyone to add cards to the retrospective board. Participants are limited to adding cards only to the main sections, namely What went well? What did not go as well?, and What can we improve? The sections for Action Items and Trial are locked during this time.
 <br/>
 Following that, the facilitator guides the team through each card on the retrospective board. Ask the team member who added the card to explain their perspective. Encourage open and honest communication and ensure that everyone has an opportunity to speak. If a card highlights an area for improvement, this is moment when specific cards are created for the Action Items and on Trial items. These represent the most important outcomes of the meeting and are essential elements of continuous improvement. Encourage the team to be creative and consider even seemingly unconventional ideas.
@@ -63,7 +56,7 @@ Before closing the meeting, summarise the key points discussed, including the Ac
 </p>
 
 <br/>
-<h4>Variations to the meeting</h4>
+<h3>Variations to the meeting</h3>
 <p>
 The retrospective meeting can be adapted to address different scopes and objectives. Here are some variations:
 <br/>
