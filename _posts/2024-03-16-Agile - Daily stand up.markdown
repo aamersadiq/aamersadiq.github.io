@@ -7,11 +7,9 @@ tags: [agile]
 <h3>Introduction</h3>
 <p>
 The Daily Stand-up plays a vital role as one of the key ceremonies in the agile process. The daily stand-up is a time-boxed meeting and lasts between 15 to 30 minutes. Its purpose is to discuss the progress made by team members and identify any blockers or obstacles.
-</p>
-<p>
+<br/>
 The meeting is attended by all team members, and a member of the team takes on the role of facilitating the proceedings. The facilitator can be any team member.
-</p>
-<p>
+<br/>
 It is essential that the facilitator conducting the stand-up and the team members sharing updates adhere to the following guidelines:
 </p>
 
@@ -52,6 +50,7 @@ It is essential that the facilitator conducting the stand-up and the team member
 <li>Address Blockers: The facilitator actively helps identify and address any blockers or obstacles mentioned by team members during their update. The facilitator's goal is to bring the right individuals together to communicate and collaborate in order to overcome the impediments.</li>
 </ul>
 </p>
+
 <br/>
 <h3>After the Stand-up</h3>
 <p>
