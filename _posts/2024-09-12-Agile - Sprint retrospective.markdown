@@ -45,23 +45,19 @@ The first step is to conduct a review of the previous retrospective. The facilit
 <li>Should it be part of our ongoing practices?</li>
 <li>Should we carry on with experiment for further evaluation before making a decision?</li>
 </ul>
-<br/>
 Next, we allocate 10 minutes for everyone to add cards to the retrospective board. Participants are limited to adding cards only to the main sections, namely What went well? What did not go as well?, and What can we improve? The sections for Action Items and Trial are locked during this time.
 <br/>
 Following that, the facilitator guides the team through each card on the retrospective board. Ask the team member who added the card to explain their perspective. Encourage open and honest communication and ensure that everyone has an opportunity to speak. If a card highlights an area for improvement, this is moment when specific cards are created for the Action Items and on Trial items. These represent the most important outcomes of the meeting and are essential elements of continuous improvement. Encourage the team to be creative and consider even seemingly unconventional ideas.
 <br/>
 Before closing the meeting, summarise the key points discussed, including the Action Items and on Trial cards. Ensure that everyone has a shared understanding of the outcomes and responsibilities moving forward.
 
-
-<br/>
 <h3>Variations to the meeting</h3>
-<h4>The retrospective meeting can be adapted to address different scopes and objectives. Here are some variations:<h4>
+<h4>The retrospective meeting can be adapted to address different scopes and objectives. Here are some variations:</h4>
 <ol>
 <li>Reflect on a longer timeframe: Instead of focusing on the last sprint, the team can use the retrospective to reflect on the last month or quarter. This allows for a broader perspective and a deeper analysis of patterns and trends over a longer period.</li>
 <li>Project-level discussion: The team can conduct a retrospective that covers an entire project. This form of retrospective allows for a comprehensive review of the project, encompassing a review of various aspects such as the quality of requirements and user stories, identifying reasons for delays, addressing risk management, and handling dependencies, among others.</li>
 <li>Single-topic discussion: Occasionally, the team may find it beneficial to dedicate a retrospective meeting to a specific topic or area of concern. This could be anything from team dynamics and communication to a particular process or tool. By focusing on a single topic, the team can dive deep into the issue and generate targeted actions for improvement.</li>
 </ol>
-<br/>
 Remember, the flexibility of the retrospective allows teams to adapt the format to suit their specific needs and circumstances. It's important to regularly assess and discuss the most relevant areas for reflection and improvement.
 <br/>
 Retros are meant to be fun. It's important to avoid falling into a monotonous routine where we simply go through the motions. For creating variations of activities for retrospective meetings, refer to the website <a href="https://www.funretrospectives.com/" target="_blank">Fun retrospectives</a>.
