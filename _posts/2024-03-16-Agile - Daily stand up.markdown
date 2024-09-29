@@ -43,7 +43,7 @@ It is essential that the facilitator conducting the stand-up and the team member
 </ul>
 
 <h3>After the Stand-up</h3>
-Immediately after the stand-up is the best time to catch-up with individuals to:
+<h4>Immediately after the stand-up is the best time to catch-up with individuals to:</h4>
 <ul>
 <li>Clarify any assumptions or uncertainties.</li>
 <li>Resolve any blockers or obstacles.</li> 
