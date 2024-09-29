@@ -12,7 +12,7 @@ The meeting is attended by all team members, and a member of the team takes on t
 <br/>
 It is essential that the facilitator conducting the stand-up and the team members sharing updates adhere to the following guidelines:
 </p>
-
+<br/>
 <h3>Before the Stand-up</h3>
 <h4>It is important for everyone to review their tickets to:</h4>
 <p>
@@ -30,7 +30,7 @@ It is essential that the facilitator conducting the stand-up and the team member
 <li>Identify any changing priorities that may have emerged since the last stand-up. This enables the facilitator to address any shifts in focus or urgent tasks that need immediate attention.</li>
 </ul>
 </p>
-
+<br/>
 <h3>During the Stand-up</h3>
 <h4>During the Stand-up, it is important for everyone to include following in their update:</h4>
 <p>
@@ -49,7 +49,7 @@ It is essential that the facilitator conducting the stand-up and the team member
 <li>Address Blockers: The facilitator actively helps identify and address any blockers or obstacles mentioned by team members during their update. The facilitator's goal is to bring the right individuals together to communicate and collaborate in order to overcome the impediments.</li>
 </ul>
 </p>
-
+<br/>
 <h3>After the Stand-up</h3>
 <p>
 Immediately after the stand-up is the best time to catch-up with individuals to:
