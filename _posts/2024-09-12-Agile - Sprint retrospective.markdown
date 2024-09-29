@@ -12,7 +12,7 @@ The meeting is attended by all team members, and a member of the team takes on t
 </p>
 
 <h3>Retro Board</h3>
-Retro board is divided into three main sections:
+<h4>Retro board is divided into three main sections:</h4>
 <ol>
 <li>What went well? - what we liked about the sprint, what went well and what we want to build on, shout out to people who helped did exceptionally well</li>
 <li>What did not go as well? - What didn't go so well, or what was missing. If something was unclear or could have been smoother, let's discuss. These are things we definitely want to resolve in the following sprints</li>
