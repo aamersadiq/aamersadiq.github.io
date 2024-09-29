@@ -26,7 +26,7 @@ It is essential that the facilitator conducting the stand-up and the team member
 <li>Identify any tickets that require further discussion or resolution. This ensures that the facilitator can allocate time during the stand-up to address these specific issues.</li>
 <li>Identify any changing priorities that may have emerged since the last stand-up. This enables the facilitator to address any shifts in focus or urgent tasks that need immediate attention.</li>
 </ul>
-<br/>
+
 <h3>During the Stand-up</h3>
 <h4>During the Stand-up, it is important for everyone to include following in their update:</h4>
 <ul>
@@ -34,7 +34,6 @@ It is essential that the facilitator conducting the stand-up and the team member
 <li>What they'll be working on: Team members should outline the tasks they will be working on next. This helps to align the team's understanding of future priorities and ensure coordination among members.</li>
 <li>What blockers they have: It is crucial for each team member to communicate any blockers or obstacles they are currently facing. This could include dependencies on other team members, technical challenges, or external factors hindering progress. By identifying and addressing these blockers, the team can work collaboratively to find solutions and keep the workflow on track.</li>
 </ul>
-
 <h4>For facilitator conducting the stand-up:</h4>
 <ul>
 <li>Walk the board: The facilitator should go around the team, filtering the board to display each team member's tickets. This allows for a focused discussion on individual progress.</li>
@@ -43,8 +42,6 @@ It is essential that the facilitator conducting the stand-up and the team member
 <li>Address Blockers: The facilitator actively helps identify and address any blockers or obstacles mentioned by team members during their update. The facilitator's goal is to bring the right individuals together to communicate and collaborate in order to overcome the impediments.</li>
 </ul>
 
-
-<br/>
 <h3>After the Stand-up</h3>
 <p>
 Immediately after the stand-up is the best time to catch-up with individuals to:
