@@ -18,13 +18,14 @@ The meeting is attended by all team members, and a member of the team takes on t
 <li>What did not go as well? - What didn't go so well, or what was missing. If something was unclear or could have been smoother, let's discuss. These are things we definitely want to resolve in the following sprints</li>
 <li>What can we improve? - What's something you wish we were doing that we're not. Will it help us work better and ensure the project is successful. Keep those ideas burning</li>
 </ol>
-There is additional two sections dedicated to continuous improvements:
+<h4>There is additional two sections dedicated to continuous improvements:</h4>
 <br/>
-<b>Actions:</b> They are intended to be completed before the next retro . Each action item requires at least one assignee.
+<h5>Actions:</h5> 
+They are intended to be completed before the next retro . Each action item requires at least one assignee.
+<h5>Trials (Experiments):</h5> 
+Trials are dedicated to experiments that the team is currently conducting. The team tries out different approaches or changes. If, after implementing the change for an entire period, the team finds it beneficial, they incorporate it into their regular workflow.
 <br/>
-<b>Trials (Experiments):</b> Trials are dedicated to experiments that the team is currently conducting. The team tries out different approaches or changes. If, after implementing the change for an entire period, the team finds it beneficial, they incorporate it into their regular workflow.
-<br/>
-<b>TSample retro board:</b> 
+<h4>Sample retro board:</h4>
 <br/>
 <img src="{{ site.baseurl }}/images/blog/sprint-retro/sample-board.png" class="fullsize-image" alt="Image">
 
@@ -32,14 +33,14 @@ There is additional two sections dedicated to continuous improvements:
 <h3>During the meeting</h3>
 <p>
 The first step is to conduct a review of the previous retrospective. The facilitator will guide the team through a discussion of action items and trial items.
-<br/>
-For each action item, we inquire with the team member responsible for the card:
+
+<h4>For each action item, we inquire with the team member responsible for the card:</h4>
 <ul>
 <li>Has it been completed?</li>
 <li>Should we still proceed with it?</li>
 <li>Is it more complex than initially anticipated?</li>
 </ul>
-For each trial item, we ask the entire team:
+<h4>For each trial item, we ask the entire team:</h4>
 <ul>
 <li>Did we carry out the experiment?</li>
 <li>Did we find it effective?</li>
@@ -56,9 +57,7 @@ Before closing the meeting, summarise the key points discussed, including the Ac
 
 <br/>
 <h3>Variations to the meeting</h3>
-<p>
-The retrospective meeting can be adapted to address different scopes and objectives. Here are some variations:
-<br/>
+<h4>The retrospective meeting can be adapted to address different scopes and objectives. Here are some variations:<h4>
 <ol>
 <li>Reflect on a longer timeframe: Instead of focusing on the last sprint, the team can use the retrospective to reflect on the last month or quarter. This allows for a broader perspective and a deeper analysis of patterns and trends over a longer period.</li>
 <li>Project-level discussion: The team can conduct a retrospective that covers an entire project. This form of retrospective allows for a comprehensive review of the project, encompassing a review of various aspects such as the quality of requirements and user stories, identifying reasons for delays, addressing risk management, and handling dependencies, among others.</li>
@@ -68,6 +67,5 @@ The retrospective meeting can be adapted to address different scopes and objecti
 Remember, the flexibility of the retrospective allows teams to adapt the format to suit their specific needs and circumstances. It's important to regularly assess and discuss the most relevant areas for reflection and improvement.
 <br/>
 Retros are meant to be fun. It's important to avoid falling into a monotonous routine where we simply go through the motions. For creating variations of activities for retrospective meetings, refer to the website <a href="https://www.funretrospectives.com/" target="_blank">Fun retrospectives</a>.
-</p>
 
 
