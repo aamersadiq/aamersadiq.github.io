@@ -19,7 +19,6 @@ The meeting is attended by all team members, and a member of the team takes on t
 <li>What can we improve? - What's something you wish we were doing that we're not. Will it help us work better and ensure the project is successful. Keep those ideas burning</li>
 </ol>
 <h4>There is additional two sections dedicated to continuous improvements:</h4>
-<br/>
 <h5>Actions:</h5> 
 They are intended to be completed before the next retro . Each action item requires at least one assignee.
 <h5>Trials (Experiments):</h5> 
@@ -31,9 +30,8 @@ Trials are dedicated to experiments that the team is currently conducting. The t
 
 
 <h3>During the meeting</h3>
-<p>
 The first step is to conduct a review of the previous retrospective. The facilitator will guide the team through a discussion of action items and trial items.
-
+</br>
 <h4>For each action item, we inquire with the team member responsible for the card:</h4>
 <ul>
 <li>Has it been completed?</li>
@@ -53,7 +51,7 @@ Next, we allocate 10 minutes for everyone to add cards to the retrospective boar
 Following that, the facilitator guides the team through each card on the retrospective board. Ask the team member who added the card to explain their perspective. Encourage open and honest communication and ensure that everyone has an opportunity to speak. If a card highlights an area for improvement, this is moment when specific cards are created for the Action Items and on Trial items. These represent the most important outcomes of the meeting and are essential elements of continuous improvement. Encourage the team to be creative and consider even seemingly unconventional ideas.
 <br/>
 Before closing the meeting, summarise the key points discussed, including the Action Items and on Trial cards. Ensure that everyone has a shared understanding of the outcomes and responsibilities moving forward.
-</p>
+
 
 <br/>
 <h3>Variations to the meeting</h3>
