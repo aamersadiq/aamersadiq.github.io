@@ -13,7 +13,6 @@ The meeting is attended by all team members, and a member of the team takes on t
 It is essential that the facilitator conducting the stand-up and the team members sharing updates adhere to the following guidelines:
 </p>
 
-<br/>
 <h3>Before the Stand-up</h3>
 <h4>It is important for everyone to review their tickets to:</h4>
 <p>
