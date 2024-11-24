@@ -1,6 +1,6 @@
 ---
 title:  "Agile - Daily stand up"
-date:   2024-03-16 9:15:43
+date:   2022-11-21 9:15:43
 categories: [agile]
 tags: [agile]	
 ---

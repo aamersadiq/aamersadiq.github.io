@@ -1,6 +1,6 @@
 ---
 title:  "Agile - Sprint retrospective"
-date:   2024-09-12 9:15:43
+date:   2022-10-19 9:15:43
 categories: [agile]
 tags: [agile]	
 ---
