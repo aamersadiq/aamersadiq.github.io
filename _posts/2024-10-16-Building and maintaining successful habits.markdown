@@ -1,6 +1,6 @@
 ---
 title: "Understanding Habits: How to build and maintain them"
-date: 2024-01-16 9:15:43
+date: 2024-10-16 9:15:43
 categories: [mind and body]
 tags: [mind and body]	
 ---

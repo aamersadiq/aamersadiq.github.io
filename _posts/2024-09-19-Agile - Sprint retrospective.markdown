@@ -1,6 +1,6 @@
 ---
 title:  "Agile - Sprint retrospective"
-date:   2022-10-19 9:15:43
+date:   2024-09-19 9:15:43
 categories: [agile]
 tags: [agile]	
 ---
@@ -31,7 +31,7 @@ Trials are dedicated to experiments that the team is currently conducting. The t
 
 <h3>During the meeting</h3>
 The first step is to conduct a review of the previous retrospective. The facilitator will guide the team through a discussion of action items and trial items.
-</br>
+
 <h4>For each action item, we inquire with the team member responsible for the card:</h4>
 <ul>
 <li>Has it been completed?</li>
