@@ -31,7 +31,7 @@ To address this, I decided to condense these standards into one-liners so develo
 <span>Graceful handling of errors.</span>
 
 <h4>6. Testing Coverage and Quality of Tests </h4>
-<span>Testing Coverage and Quality of Tests:</b> Adequate unit, integration, and end-to-end tests.</span>
+<span>Adequate unit, integration, and end-to-end tests.</span>
 
 <h4>7. Documentation </h4>
 <span>Explain complex code, summarize architecture and interactions.</span>
