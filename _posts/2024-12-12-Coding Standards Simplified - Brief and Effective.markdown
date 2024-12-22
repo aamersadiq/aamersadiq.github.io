@@ -15,6 +15,12 @@ To address this, I decided to condense these standards into one-liners so develo
 </p>
 
 <p>
+<h4>1. Functionality </h4>
+<span>Code meets all requirements.</span>
+
+<h4>2. Performance </h4>
+<span>Identify and address slow sections, code performs under increased load.</span>
+
 <ol>
     <li><b>Functionality:</b> Code meets all requirements.</li>
     <li><b>Performance:</b> Identify and address slow sections, code performs under increased load.</li>
