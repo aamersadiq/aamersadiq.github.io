@@ -25,7 +25,7 @@ This document provides a detailed overview of coding spanest practices, intended
     <li><span style="font-weight: bold;">Scalability: </span>Consider how the code will perform as the data grows or under increased load. Look for opportunities for caching, parallelization, or asynchronous operations. </li>
     <li><span style="font-weight: bold;">Profiling Tools: </span>Use profiling tools to identify performance bottlenecks in your code. These tools can help you see where your program spends most of its time or memory. </li>
     <li><span style="font-weight: bold;">Optimizing Hotspots: </span>Focus on optimizing the most time-consuming parts of your code. Sometimes, small parts of the code are responsible for the majority of execution time. </li>
-    <li><span style="font-weight: bold;">Cache Frequently Used Results: </span>If certain operations are repeated with the same inputs, cache their results. </li>
+    <!-- <li><span style="font-weight: bold;">Cache Frequently Used Results: </span>If certain operations are repeated with the same inputs, cache their results. </li> -->
 </ul>
 
 <h4>3. Reliability </h4>
