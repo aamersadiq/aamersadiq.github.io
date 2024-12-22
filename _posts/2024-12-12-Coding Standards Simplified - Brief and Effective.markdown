@@ -13,10 +13,9 @@ I often noticed that developers seldom read these standards, or they would revie
 </p>
 <p>
 To address this, I decided to condense these standards into one-liners so developers can easily remember them and refer to them during code reviews. If they need more detailed information, they can always dive into the comprehensive versions.
-<br/>
 </p>
 
-<p>
+<p style="margin-top:20px;">
 <h4>1. Functionality </h4>
 <span>Code meets all requirements.</span>
 
