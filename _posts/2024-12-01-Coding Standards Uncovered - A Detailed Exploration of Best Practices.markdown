@@ -1,8 +1,8 @@
 ---
-title: "Coding Standards Uncovered - A Detailed Exploration of Best Practices"
+title: "Coding Best Practices Uncovered - A Detailed Exploration"
 date: 2024-12-01 10:14:43
-categories: [mind and body]
-tags: [mind and body]
+categories: [development]
+tags: [development]
 ---
 
 <p>
