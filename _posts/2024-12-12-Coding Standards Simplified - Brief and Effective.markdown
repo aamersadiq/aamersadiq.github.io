@@ -40,6 +40,6 @@ To address this, I decided to condense these standards into one-liners so develo
 <span>Ensure modular, readable, and DRY code; avoid complexity, hardcoding, and clutter.</span>
 
 <h4>9. Coding Standards </h4>
-<span>Follow language conventions.</span>
+<span>Follow language conventions, use existing code as guide if it is well written.</span>
 
 </p>
