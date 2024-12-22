@@ -1,6 +1,6 @@
 ---
 title: "Coding Best Practices Simplified - Brief and Effective"
-date: 2024-12-12 12:14:43
+date: 2024-12-12 12:47:43
 categories: [development]
 tags: [development]
 ---

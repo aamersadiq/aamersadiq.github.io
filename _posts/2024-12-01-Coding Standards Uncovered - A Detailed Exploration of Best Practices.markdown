@@ -1,8 +1,8 @@
 ---
-title:  "Coding Best Practices Uncovered - A Detailed Exploration"
-date:  2024-12-01 10: 14: 43
-categories:  [development]
-tags:  [development]
+title: "Coding Best Practices Uncovered - A Detailed Exploration"
+date: 2024-12-01 10:14:50
+categories: [development]
+tags: [development]
 ---
 
 <p>
