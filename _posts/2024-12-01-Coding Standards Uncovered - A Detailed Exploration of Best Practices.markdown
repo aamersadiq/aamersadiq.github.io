@@ -27,7 +27,7 @@ This document provides a detailed overview of coding spanest practices, intended
     <li><span style="font-weight: bold;">Cache Frequently Used Results: </span>If certain operations are repeated with the same inputs, cache their results. </li>
 </ul> -->
 
-<h4>3. Reliability </h4>
+<h4>3. Reliability</h4>
 <ul>
     <li><span style="font-weight: bold;">Robustness: </span>Ensure the code can handle unexpected situations and inputs without crashing. Consider scenarios like empty inputs, extreme values, and invalid data.</li>
     <li><span style="font-weight: bold;">Consistency: </span>Verify that the code consistently produces the correct results under the same conditions. </li>
