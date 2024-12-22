@@ -7,11 +7,12 @@ tags: [development]
 
 <p>
 Over the years, I have reviewed various coding best practices documents written by different development teams, as well as standards scattered across the web. Major tech companies have also published their own coding standards and best practices. Additionally, I have compiled and published my own <a href="https://aamersadiq.github.io/2024/Coding-Standards-Uncovered-A-Detailed-Exploration-of-Best-Practices/" target="_blank">'coding and best practices'</a> using the content fron these diverse sources.
-<br/>
+</p>
+<p>
 I often noticed that developers seldom read these standards, or they would review them when joining a company and then forget about them due to their length and verbosity.
-<br/>
+</p>
+<p>
 To address this, I decided to condense these standards into one-liners so developers can easily remember them and refer to them during code reviews. If they need more detailed information, they can always dive into the comprehensive versions.
-
 </p>
 
 <p>
