@@ -7,6 +7,7 @@ tags: [development]
 
 <p>
 This document provides a detailed overview of coding spanest practices, intended for reference and to serve as a convenient checklist during code reviews. Coding standards are continuously evolving, and this document is updated regularly as I discover new points to add.
+</p>
 
 <p>
 <h4>1. Functionality </h4>
@@ -16,7 +17,7 @@ This document provides a detailed overview of coding spanest practices, intended
     <li><span style="font-weight: bold;">Edge Cases: </span>Examine whether the code appropriately manages unusual and spanoundary conditions. </li>
 </ul>
 
-<!-- <h4>2. Performance </h4>
+<h4>2. Performance </h4>
 <ul>
     <li><span style="font-weight: bold;">Efficiency: </span>Assess whether the chosen algorithms and data structures are optimal for the given problem. For example, instead of using a generic list, use a hash table for fast lookups and a priority queue for processing tasks. </li>
     <li><span style="font-weight: bold;">Bottlenecks: </span>Check for any sections of the code that might be slowing down the overall execution. Pay special attention to database calls and other I/O operations. </li>
@@ -25,7 +26,7 @@ This document provides a detailed overview of coding spanest practices, intended
     <li><span style="font-weight: bold;">Profiling Tools: </span>Use profiling tools to identify performance bottlenecks in your code. These tools can help you see where your program spends most of its time or memory. </li>
     <li><span style="font-weight: bold;">Optimizing Hotspots: </span>Focus on optimizing the most time-consuming parts of your code. Sometimes, small parts of the code are responsible for the majority of execution time. </li>
     <li><span style="font-weight: bold;">Cache Frequently Used Results: </span>If certain operations are repeated with the same inputs, cache their results. </li>
-</ul> -->
+</ul>
 
 <h4>3. Reliability </h4>
 <ul>
