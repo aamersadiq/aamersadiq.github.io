@@ -19,19 +19,9 @@ This document provides a detailed overview of coding spanest practices, intended
 
 <h4>2. Performance </h4>
 <ul>
-    <li><span style="font-weight: bold;">Efficiency: </span>Ensure the code can handle unexpected situations and inputs without crashing. Consider scenarios like empty inputs, extreme values, and invalid data.</li>
-    <li><span style="font-weight: bold;">Bottlenecks: </span>Verify that the code consistently produces the correct results under the same conditions. </li>
-    <li><span style="font-weight: bold;">Unnecessary Repetitions: </span>Ensure that the code includes redundancy where needed, such as retries for critical operations. </li>
-    <li><span style="font-weight: bold;">Scalability: </span>Ensure that the code includes redundancy where needed, such as retries for critical operations. </li>
-    <li><span style="font-weight: bold;">Profiling Tools: </span>Ensure that the code includes redundancy where needed, such as retries for critical operations. </li>
-    <li><span style="font-weight: bold;">Optimizing Hotspots: </span>Ensure that the code includes redundancy where needed, such as retries for critical operations. </li>
-    <li><span style="font-weight: bold;">Cache Frequently Used Results: </span>Ensure that the code includes redundancy where needed, such as retries for critical operations. </li>
-</ul>
-<h4>2. Performance </h4>
-<ul>
     <li><span style="font-weight: bold;">Efficiency: </span>Assess whether the chosen algorithms and data structures are optimal for the given problem. For example, instead of using a generic list, use a hash table for fast lookups and a priority queue for processing tasks. </li>
     <li><span style="font-weight: bold;">Bottlenecks: </span>Check for any sections of the code that might be slowing down the overall execution. Pay special attention to database calls and other I/O operations. </li>
-    <li><span style="font-weight: bold;">Unnecessary Repetitions: </san>Look for loops or recurring processes that could be streamlined or optimized. </li>
+    <li><span style="font-weight: bold;">Unnecessary Repetitions: </span>Look for loops or recurring processes that could be streamlined or optimized. </li>
     <li><span style="font-weight: bold;">Scalability: </span>Consider how the code will perform as the data grows or under increased load. Look for opportunities for caching, parallelization, or asynchronous operations. </li>
     <li><span style="font-weight: bold;">Profiling Tools: </span>Use profiling tools to identify performance bottlenecks in your code. These tools can help you see where your program spends most of its time or memory. </li>
     <li><span style="font-weight: bold;">Optimizing Hotspots: </span>Focus on optimizing the most time-consuming parts of your code. Sometimes, small parts of the code are responsible for the majority of execution time. </li>
