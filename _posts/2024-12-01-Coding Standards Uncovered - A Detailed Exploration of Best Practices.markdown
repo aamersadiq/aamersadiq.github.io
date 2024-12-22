@@ -6,7 +6,7 @@ tags: [mind and body]
 ---
 
 <p>
-This document offers a detailed version of coding best practices, provided for reference and to serve as a handy checklist during code reviews.
+This document provides a detailed overview of coding best practices, intended for reference and to serve as a convenient checklist during code reviews. Coding standards are continuously evolving, and this document is updated regularly as I discover new points to add.
 
 <p>
 <h3>Functionality </h3>
