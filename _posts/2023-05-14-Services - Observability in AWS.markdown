@@ -1,10 +1,11 @@
 ---
-title:  "Services - Observability/Logging in AWS"
-date:   2020-01-17 05:55:43
+title: "Services - Observability/Logging in AWS"
+date: 2020-01-17 05:55:43
 categories: [operations]
-tags: [operations]	
+tags: [operations]
 ---
-Within the AWS environment, observability is supported through various integrated services provided by AWS. AWS Lambda and Amazon API Gateway enable seamless integration with these services. 
+
+Within the AWS environment, observability is supported through various integrated services provided by AWS. AWS Lambda and Amazon API Gateway enable seamless integration with these services.
 
 <h4>Amazon CloudWatch Logs</h4>
 CloudWatch Logs enables you to centralize the logs from all of your systems, applications, and AWS services that you use, in a single, highly scalable service. You can then easily view them, search them for specific error codes or patterns, filter them based on specific fields, or archive 
@@ -22,7 +23,10 @@ Amazon CloudWatch dashboards are customizable home pages in the CloudWatch conso
 Using CloudWatch alarms, you watch a single metric over a time period that you specify. If the metric exceeds a given threshold, a notification is sent to an Amazon Simple Notification Service topic or AWS Auto Scaling policy. CloudWatch alarms do not invoke actions when a metric is in a particular state. Rather the state must have changed and been maintained for a specified number of periods.
 
 <h4>AWS CloudTrail</h4>
-Using CloudWatch alarms, you watch a single metric over a time period that you specify. If the metric exceeds a given threshold, a notification is sent to an Amazon Simple Notification Service topic or AWS Auto Scaling policy. CloudWatch alarms do not invoke actions when a metric is in a particular state. Rather the state must have changed and been maintained for a specified number of periods.
+AWS CloudTrail is a web service that enables you to monitor the calls made to the CloudWatch Logs API for your account, including calls made 
+by the AWS Management Console, AWS Command Line Interface (AWS CLI), and other services. When CloudTrail logging is turned on, 
+CloudTrail captures API calls in your account and delivers the log files to the Amazon S3 bucket that you specify. Each log file can contain one or 
+more records, depending on how many actions must be performed to satisfy a request.
 
 <h4>AWS X-Ray</h4>
 AWS X-Ray helps developers analyze and debug production, distributed applications, such as those built using a microservices architecture. With X-Ray, you can understand how your application and its underlying services are performing to identify and troubleshoot the root cause of performance issues and errors. X-Ray provides an end-to-end view of requests as they travel through your application, and shows a map of your application’s underlying components. You can use X-Ray to analyze both applications in development and in production, from simple three-tier applications to complex microservices applications consisting of thousands of services.
