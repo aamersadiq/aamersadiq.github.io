@@ -66,7 +66,7 @@ Azure Monitor is a comprehensive and scalable platform designed to maximize the 
     </li>
 </ol>
 
-<h3>Azure Network Watcher: Your Go-To Network Performance Monitoring Tool</h3>
+<h3>Azure Network Watcher: Your Network Performance Monitoring Tool</h3>
 Azure Network Watcher is a powerful suite of tools designed to monitor, diagnose, and gain insights into your Azure network resources. It plays a important role in ensuring the health, performance, and security of your network infrastructure, helping you to maintain optimal network operations.
 
 <h4>Key Features:</h4>
@@ -88,6 +88,7 @@ Azure Network Watcher is a powerful suite of tools designed to monitor, diagnose
             <li><span style="font-weight: bold;">Next Hop: </span>Diagnoses the next hop a packet takes from a virtual machine, helping you identify any misconfigured routes or network security groups.
             </li>
             <li><span style="font-weight: bold;">VPN Troubleshoot: </span>Provides diagnostics for VPN Gateway connections, allowing you to troubleshoot and resolve issues related to your VPN connections.
+            </li>
         </ul>
     </li>
     <li><span style="font-weight: bold;">Network Insights: </span>
@@ -95,6 +96,7 @@ Azure Network Watcher is a powerful suite of tools designed to monitor, diagnose
             <li><span style="font-weight: bold;">Topology: </span>Visualizes your network resources and their relationships, providing a graphical view of your network topology. This helps you understand your network's structure and identify potential issues.
             </li>
             <li><span style="font-weight: bold;">Packet Capture: </span>Enables you to capture and analyze network traffic to and from your Azure virtual machines. This is useful for diagnosing complex network issues and understanding application behavior.
+            </li>
         </ul>
     </li>
      <li><span style="font-weight: bold;">Security and Compliance: </span>
