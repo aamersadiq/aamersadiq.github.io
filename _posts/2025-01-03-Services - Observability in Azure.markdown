@@ -142,6 +142,7 @@ Azure Security Center is a comprehensive security management system that helps y
             <li><span style="font-weight: bold;">Automated Response: </span>Allows you to automate security responses to potential threats, such as isolating compromised resources, blocking malicious IP addresses, and applying security patches.
             </li>
             <li><span style="font-weight: bold;">Playbooks: </span>Leverages Azure Logic Apps to create automated workflows for responding to security incidents, helping you streamline and standardize your response processes.
+            </li>
         </ul>
     </li>
      <li><span style="font-weight: bold;">Integration and Extensibility: </span>
@@ -149,6 +150,7 @@ Azure Security Center is a comprehensive security management system that helps y
             <li><span style="font-weight: bold;">Third-Party Integrations: </span>Supports integration with third-party security solutions, allowing you to extend the capabilities of Azure Security Center and create a comprehensive security strategy.
             </li>
             <li><span style="font-weight: bold;">APIs and SDKs:: </span>Provides APIs and SDKs for integrating Azure Security Center with your existing security tools and processes, enabling a seamless and extensible security management experience.
+            </li>
         </ul>
     </li>
 </ol>
