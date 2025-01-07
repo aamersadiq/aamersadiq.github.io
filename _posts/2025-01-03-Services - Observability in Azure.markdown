@@ -127,6 +127,7 @@ Azure Security Center is a comprehensive security management system that helps y
             <li><span style="font-weight: bold;">Advanced Threat Detection: </span>Uses built-in intelligence to detect threats across your workloads, including VMs, containers, and databases. This includes detecting unusual or malicious activities and alerting you to potential threats.
             </li>
             <li><span style="font-weight: bold;">Integration with Microsoft Defender: </span>Provides additional layers of protection by integrating with Microsoft Defender for Cloud to offer advanced threat protection and insights.
+            </li>
         </ul>
     </li>
     <li><span style="font-weight: bold;">Compliance and Governance: </span>
