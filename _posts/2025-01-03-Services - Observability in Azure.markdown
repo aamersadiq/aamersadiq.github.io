@@ -5,7 +5,7 @@ categories: [operations]
 tags: [operations]
 ---
 
-A while back, I published a guide on <a href="https://aamersadiq.github.io/2022/Services-Observability-in-AWS/" target="_blank">observability and logging for AWS</a>. Today, it's time to balance the scales and dive into the world of Azure. In this post, we'll explore the suite of tools and services that Azure offers for logging and observability, so that you have the insights and capabilities needed to monitor and manage your Azure environment effectively.
+A while back, I published a guide on <a href="https://aamersadiq.github.io/2023/Services-Observability-in-AWS/" target="_blank">observability and logging for AWS</a>. Today, it's time to balance the scales and dive into the world of Azure. In this post, we'll explore the suite of tools and services that Azure offers for logging and observability, so that you have the insights and capabilities needed to monitor and manage your Azure environment effectively.
 
 Within the Azure environment, observability is supported through various integrated services provided by Aaure. Here are some of the most popular observability services available within Azure that have proven invaluable in my experience. Let's dive in and explore!
 
