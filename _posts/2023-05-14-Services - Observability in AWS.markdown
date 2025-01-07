@@ -1,11 +1,11 @@
 ---
 title: "Services - Observability/Logging in AWS"
-date: 2020-01-17 05:55:43
+date: 2023-05-14 09:55:43
 categories: [operations]
 tags: [operations]
 ---
 
-Within the AWS environment, observability is supported through various integrated services provided by AWS. AWS Lambda and Amazon API Gateway enable seamless integration with these services.
+Within the AWS environment, observability is supported through various integrated services provided by AWS. Here are some of the most popular observability services available within AWS that have proven invaluable in my experience. Let's dive in and explore!
 
 <h4>Amazon CloudWatch Logs</h4>
 CloudWatch Logs enables you to centralize the logs from all of your systems, applications, and AWS services that you use, in a single, highly scalable service. You can then easily view them, search them for specific error codes or patterns, filter them based on specific fields, or archive 
@@ -31,4 +31,5 @@ more records, depending on how many actions must be performed to satisfy a reque
 <h4>AWS X-Ray</h4>
 AWS X-Ray helps developers analyze and debug production, distributed applications, such as those built using a microservices architecture. With X-Ray, you can understand how your application and its underlying services are performing to identify and troubleshoot the root cause of performance issues and errors. X-Ray provides an end-to-end view of requests as they travel through your application, and shows a map of your application’s underlying components. You can use X-Ray to analyze both applications in development and in production, from simple three-tier applications to complex microservices applications consisting of thousands of services.
 
-<h4>AWS Config</h4>\AWS Config is a fully managed service that provides you with an AWS resource inventory, configuration history, and configuration change notifications to enable security and governance. With AWS Config you can discover existing AWS resources, export a complete inventory of your AWS resources with all configuration details, and determine how a resource was configured at any point in time. These capabilities enable compliance auditing, security analysis, resource change tracking, and troubleshooting.
+<h4>AWS Config</h4>
+AWS Config is a fully managed service that provides you with an AWS resource inventory, configuration history, and configuration change notifications to enable security and governance. With AWS Config you can discover existing AWS resources, export a complete inventory of your AWS resources with all configuration details, and determine how a resource was configured at any point in time. These capabilities enable compliance auditing, security analysis, resource change tracking, and troubleshooting.
