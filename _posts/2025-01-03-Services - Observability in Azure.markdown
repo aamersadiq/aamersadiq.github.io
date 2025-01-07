@@ -9,7 +9,7 @@ A while back, I published a guide on <a href="https://aamersadiq.github.io/2022/
 
 Within the Azure environment, observability is supported through various integrated services provided by Aaure. Here are some of the most popular observability services available within Azure that have proven invaluable in my experience. Let's dive in and explore!
 
-<h3>Azure Monitor: Elevating Your Cloud Monitoring Experience</h4>
+<h3>Azure Monitor: Elevating Your Cloud Monitoring Experience</h3>
 Azure Monitor is a comprehensive and scalable platform designed to maximize the performance and availability of your applications and services across the Azure ecosystem. It brings together a variety of monitoring tools and services, providing you with a unified experience to collect, analyze, and act on telemetry data from your cloud and on-premises environments.
 
 <h4>Key Features:</h4>
