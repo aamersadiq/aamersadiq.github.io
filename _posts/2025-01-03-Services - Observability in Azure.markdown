@@ -71,7 +71,7 @@ Azure Network Watcher is a powerful suite of tools designed to monitor, diagnose
 
 <h4>Key Features:</h4>
 <ol>
-    <li><span style="font-weight: bold;">Network Performance Monitoring:: </span>
+    <li><span style="font-weight: bold;">Network Performance Monitoring: </span>
         <ul>
             <li><span style="font-weight: bold;">Connection Monitor: </span>Continuously monitors and tracks the connectivity between your Azure resources and external destinations. It provides insights into network latency, packet loss, and connection availability, helping you identify and troubleshoot connectivity issues.
             </li>
@@ -105,6 +105,50 @@ Azure Network Watcher is a powerful suite of tools designed to monitor, diagnose
             </li>
             <li><span style="font-weight: bold;">NSG Diagnostic: </span>Analyzes your NSG rules to identify any potential security misconfigurations or vulnerabilities.
             </li>
+        </ul>
+    </li>
+</ol>
+
+<h3>Azure Security Center: Safeguarding Your Cloud Infrastructure</h3>
+Azure Security Center is a comprehensive security management system that helps you protect your Azure resources. It provides advanced threat protection and security management across your cloud and on-premises environments, helping you ensure your resources are secure and compliant.
+
+<h4>Key Features:</h4>
+<ol>
+    <li><span style="font-weight: bold;">Unified Security Management: </span>
+        <ul>
+            <li><span style="font-weight: bold;">Centralized Visibility: </span>Provides a single pane of glass for monitoring the security status of your Azure resources, enabling you to easily identify and mitigate potential vulnerabilities.
+            </li>
+            <li><span style="font-weight: bold;">Security Recommendations: </span>Offers actionable recommendations to enhance the security of your resources based on best practices and industry standards.
+            </li>
+        </ul>
+    </li>
+    <li><span style="font-weight: bold;">Threat Protection: </span>
+        <ul>
+            <li><span style="font-weight: bold;">Advanced Threat Detection: </span>Uses built-in intelligence to detect threats across your workloads, including VMs, containers, and databases. This includes detecting unusual or malicious activities and alerting you to potential threats.
+            </li>
+            <li><span style="font-weight: bold;">Integration with Microsoft Defender: </span>Provides additional layers of protection by integrating with Microsoft Defender for Cloud to offer advanced threat protection and insights.
+        </ul>
+    </li>
+    <li><span style="font-weight: bold;">Compliance and Governance: </span>
+        <ul>
+            <li><span style="font-weight: bold;">Compliance Monitoring: </span>Helps you assess your compliance status with industry standards and regulations, providing continuous monitoring and reporting to ensure you meet compliance requirements.
+            </li>
+            <li><span style="font-weight: bold;">Policy Management: </span>Enables you to define and enforce security policies across your organization to maintain consistent security practices and compliance.
+            </li>
+        </ul>
+    </li>
+     <li><span style="font-weight: bold;">Security Automation: </span>
+        <ul>
+            <li><span style="font-weight: bold;">Automated Response: </span>Allows you to automate security responses to potential threats, such as isolating compromised resources, blocking malicious IP addresses, and applying security patches.
+            </li>
+            <li><span style="font-weight: bold;">Playbooks: </span>Leverages Azure Logic Apps to create automated workflows for responding to security incidents, helping you streamline and standardize your response processes.
+        </ul>
+    </li>
+     <li><span style="font-weight: bold;">Integration and Extensibility: </span>
+        <ul>
+            <li><span style="font-weight: bold;">Third-Party Integrations: </span>Supports integration with third-party security solutions, allowing you to extend the capabilities of Azure Security Center and create a comprehensive security strategy.
+            </li>
+            <li><span style="font-weight: bold;">APIs and SDKs:: </span>Provides APIs and SDKs for integrating Azure Security Center with your existing security tools and processes, enabling a seamless and extensible security management experience.
         </ul>
     </li>
 </ol>
