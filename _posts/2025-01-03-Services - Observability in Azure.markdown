@@ -18,7 +18,50 @@ Azure Monitor is a comprehensive and scalable platform designed to maximize the 
         <ul>
             <li><span style="font-weight: bold;">Metrics: </span>Real-time data that measures the performance and health of your resources.
             </li>
+            <li><span style="font-weight: bold;">Logs: </span>Detailed records of events that occur within your environment, including diagnostics, activity logs, and custom logs.
+            </li>
         </ul>
     </li>
-
+</ol>
+<ol>
+    <li><span style="font-weight: bold;">Insights: </span>
+        <ul>
+            <li><span style="font-weight: bold;">Application Insights: </span>Monitors the performance and usage of your applications, providing detailed telemetry and analytics to detect issues and understand user behavior.
+            </li>
+            <li><span style="font-weight: bold;">Container Insights: </span>Offers performance monitoring and insights for containerized workloads, integrating seamlessly with Kubernetes.
+            </li>
+            <li><span style="font-weight: bold;">VM Insights: </span>Provides in-depth monitoring for virtual machines, helping you track performance and detect anomalies.
+            </li>
+        </ul>
+    </li>
+</ol>
+<ol>
+    <li><span style="font-weight: bold;">Alerting and Automation: </span>
+        <ul>
+            <li><span style="font-weight: bold;">Alerts: </span>Proactively notify you of potential issues based on predefined thresholds or custom rules. You can configure alerts to trigger automated responses or send notifications via email, SMS, or third-party tools.
+            </li>
+            <li><span style="font-weight: bold;">Autoscale: </span>Automatically adjusts the resources allocated to your applications based on real-time demand, ensuring optimal performance and cost efficiency.
+            </li>
+        </ul>
+    </li>
+</ol>
+<ol>
+    <li><span style="font-weight: bold;">Visualization and Analysis: </span>
+        <ul>
+            <li><span style="font-weight: bold;">Dashboards: </span>Customizable visualizations that aggregate and display your monitoring data in an intuitive, at-a-glance format.
+            </li>
+            <li><span style="font-weight: bold;">Log Analytics: </span>Powerful querying capabilities that allow you to analyze log data and gain deep insights into your environment.
+            </li>
+        </ul>
+    </li>
+</ol>
+<ol>
+    <li><span style="font-weight: bold;">Integration: </span>
+        <ul>
+            <li>Azure Monitor integrates seamlessly with other Azure services, such as Azure Security Center, Azure Advisor, and Azure Sentinel, to provide a holistic view of your environment.
+            </li>
+            <li>It also supports integration with third-party monitoring tools and services, enabling a flexible and extensible monitoring strategy.
+            </li>
+        </ul>
+    </li>
 </ol>
