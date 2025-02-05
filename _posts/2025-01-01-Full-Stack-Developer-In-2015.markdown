@@ -15,7 +15,7 @@ Here are the five areas of mastery for Full Stack Developer:
 
 <ol>
     <li><span style="font-weight: bold;">Front End Development: </span>
-    Knowledge of modern front-end technologies such as Angular, React, Vue, Svelte, Bootstrap, and Material Design is essential. These frameworks and libraries enable developers to create responsive, dynamic, and user-friendly interfaces.
+    Knowledge of modern front-end technologies such as Angular, React, Vue, Svelte, Bootstrap, Material Design, and Tailwind CSS is essential. These frameworks and libraries enable developers to create responsive, dynamic, and user-friendly interfaces. Additionally, if front-end development is your expertise, adding mobile app development for Android and iOS is highly beneficial. Familiarity with mobile app creation frameworks such as Flutter, React Native, and Xamarin can greatly enhance your versatility.
     </li>
     <li><span style="font-weight: bold;">Back End Development: </span>
     Mastering back-end development involves creating robust and scalable solutions using languages like Java, C#, GoLang, and NodeJs. Additionally, familiarity with middleware services such as Kafka and Elasticache is crucial for building efficient and reliable systems that can handle large volumes of data and complex transactions.
