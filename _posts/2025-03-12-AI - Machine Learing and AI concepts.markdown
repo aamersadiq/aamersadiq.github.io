@@ -11,4 +11,4 @@ In this blog, I want to share the knowledge I've gained, starting with the funda
 Let's get started.
 
 <h3>Types of Machine Learnings</h3>
-<img src="{{ site.baseurl }}/images/blog/ai-basics/types-of-ml.png" class="fullsize-image" alt="Image">
+<img src="{{ site.baseurl }}/images/blog/ai-basics/types-of-machine-learnings.png" class="fullsize-image" alt="Image">
