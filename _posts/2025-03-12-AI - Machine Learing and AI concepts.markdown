@@ -77,5 +77,16 @@ Decision making to maximize rewards. Examples:
 </ul>
 
 <h3>Common Machine Learning Models</h3>
+Machine learning models are designed to solve specific types of problems, and understanding their applications is key to selecting the right model for a task. Here are some popular models, along with examples of how they’re used:
+<ul>
+    <li>Linear Regression: Ideal for predicting continuous values. Example: Forecasting house prices based on factors like square footage, location, and amenities.</li>
+    <li>Logistic Regression: A go-to model for binary classification tasks. Example: Predicting whether a customer will make a purchase or not based on their online behavior.</li>
+    <li>Decision Trees: Useful for interpretable and straightforward decisions. Example: Diagnosing medical conditions based on symptoms, lab tests, and patient history.</li>
+    <li>Random Forests: Excellent for handling complex datasets. Example: Predicting credit risk by analyzing multiple factors like income, debt, and payment history.</li>
+    <li>Support Vector Machines (SVMs): Effective for classification problems with clear boundaries. Example: Detecting fraudulent transactions in financial data.</li>
+    <li>K-Means Clustering: Commonly used for segmentation. Example: Grouping customers into clusters based on purchase patterns to target marketing campaigns.</li>
+    <li>Neural Networks: Powerful models for unstructured data like images, audio, and text. Example: Recognizing handwritten digits in postal codes or detecting objects in photos.</li>
+    <li>Gradient Boosting Machines (e.g., XGBoost): Widely used for structured data applications. Example: Predicting loan approval by considering factors such as credit score, income, and existing debt.</li>
+</ul>
 
 <h3>Where does generative ai fits into this?</h3>
