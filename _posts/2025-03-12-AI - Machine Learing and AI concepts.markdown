@@ -14,7 +14,7 @@ Let's get started.
 
 <h3>AI Concepts</h3>
 
-<h3>Types of Machine Learnings</h3>
+<h3>Types of Machine Learnings </h3>
 
 <img src="{{ site.baseurl }}/images/blog/ai-basics/types-of-machine-learnings.png" class="fullsize-image" alt="Image">
 
@@ -24,10 +24,13 @@ Machine learning can be broadly categorized into three types, each serving uniqu
 Supervised learning involves training a model on labeled data, where the output is already known. The algorithm learns by comparing its predictions to the actual outcomes and adjusts accordingly. Supervised learning can be separated into two types:
 
 <h5>Regression</h5>
-Regression is  used for predicting continuous numerical values based on input features. It analyzes the relationships between variables and estimates outcomes. The goal is to model the underlying patterns in the data to make accurate predictions. Examples
+Regression is  used for predicting continuous numerical values based on input features. It analyzes the relationships between variables and estimates outcomes. The goal is to model the underlying patterns in the data to make accurate predictions. Examples:
 <ul>
-    <li>Real-time data that measures the performance and health of your resources.</li>
-    <li>Real-time data that measures the performance and health of your resources.</li>
+    <li>Weather forecasting: predicting temperature or rainfall.</li>
+    <li>Stock price prediction: estimating future prices based on market trends.</li>
+    <li>Sales forecasting: predicting monthly revenue for a retail store.</li>
+    <li>Healthcare: predicting patient recovery time based on treatment plans.</li>
+    <li>Real estate: estimating housing prices based on property features.</li>
 </ul>
 
 <h5>Classification</h5>
