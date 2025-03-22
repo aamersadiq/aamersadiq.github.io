@@ -10,5 +10,5 @@ giving me a solid foundation in understanding AI concepts and tools, which I am 
 In this blog, I want to share the knowledge I've gained, starting with the fundamental concepts of machine learning.
 Let's get started.
 
-From exploring different types of machine learning, like supervised and unsupervised learning,
-to understanding models such as neural networks and clustering algorithms, I'll break down these topics and provide insights to help others on their learning paths
+<h3>Types of Machine Learnings</h3>
+<img src="{{ site.baseurl }}/images/blog/ai-basics/types-of-ml.png" class="fullsize-image" alt="Image">
