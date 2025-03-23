@@ -1,5 +1,5 @@
 ---
-title: "Machine Learing and AI concepts"
+title: "AI Machine Learning"
 date: 2025-03-12 09:33:43
 categories: [ai]
 tags: [ai]
@@ -10,9 +10,24 @@ giving me a solid foundation in understanding AI concepts and tools, which I am 
 In this blog, I want to share the knowledge I've gained, starting with the fundamental concepts of machine learning.
 Let's get started.
 
-<h3>Introduction</h3>
+<h3>Machine Learning</h3>
+Artificial Intelligence (AI) refers to the broader concept of machines or software systems designed to replicate human intelligence, enabling them to carry out tasks, make decisions, and solve complex problems.
+<br/>
+Machine learning is an area of artificial intelligence (AI) that enables systems to learn from data, identify patterns, and make decisions or predictions without being explicitly programmed. Instead of following fixed instructions, machine learning models improve their performance over time as they are exposed to more data.
 
-<h3>AI Concepts</h3>
+Machine learning is based on statistics and mathematical data modeling, where the main idea is to use historical data to predict future outcomes or unknown values.
+
+A machine learning model is essentially acts as a function to compute an output value (<b>label</b>) based on given input values (<b>features</b>). Developing this function is known as the <b>training</b> process, which involves analyzing historical data to identify patterns and relationships. Once trained, the model can be used to make predictions on new data in a process called <b>inferencing</b>.
+
+The training dataset typically contains past observations that include features (the attributes or characteristics of the data) and their corresponding labels (the known value to be predicted). Mathematically:
+
+<ul>
+    <li>Features are often represented as <b>x</b> (sometimes as a vector of multiple values, like [x₁, x₂, x₃, ...]).</li>
+    <li>The label, or target value, is denoted as <b>y</b>.</li>
+    <li>An algorithm is applied to the data to establish a relationship between the features (x) and the label (y). This relationship is then generalized as a function that predicts y based on x. For example, if the algorithm outputs a function f, we can express the prediction as: <b>y = f(x)</b></li>
+</ul>
+
+Once trained, the model becomes capable of predicting new labels for unseen data. Since these predictions are derived from the function rather than actual observations, the predicted value is often represented as <b>ŷ</b> (pronounced “y-hat”).
 
 <h3>Types of Machine Learnings </h3>
 
@@ -88,5 +103,3 @@ Machine learning models are designed to solve specific types of problems, and un
     <li>Neural Networks: Powerful models for unstructured data like images, audio, and text. Example: Recognizing handwritten digits in postal codes or detecting objects in photos.</li>
     <li>Gradient Boosting Machines (e.g., XGBoost): Widely used for structured data applications. Example: Predicting loan approval by considering factors such as credit score, income, and existing debt.</li>
 </ul>
-
-<h3>Where does generative ai fits into this?</h3>
