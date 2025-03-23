@@ -36,13 +36,13 @@ Azure Monitor is a comprehensive and scalable platform designed to maximize the 
         <ul>
             <li><span style="font-weight: bold;">Alerts: </span>Proactively notify you of potential issues based on predefined thresholds or custom rules. You can configure alerts to trigger automated responses or send notifications via email, SMS, or third-party tools.
             </li>
-            <li><span style="font-weight: bold;">Autoscale: </span>Automatically adjusts the resources allocated to your applications based on real-time demand, ensuring optimal performance and cost efficiency.
+            <li><span style="font-weight: bold;">Autoscale: </span>Automatically adjusts the resources allocated to your applications based on real time demand, ensuring optimal performance and cost efficiency.
             </li>
         </ul>
     </li>
      <li><span style="font-weight: bold;">Visualization and Analysis: </span>
         <ul>
-            <li><span style="font-weight: bold;">Dashboards: </span>Customizable visualizations that aggregate and display your monitoring data in an intuitive, at-a-glance format.
+            <li><span style="font-weight: bold;">Dashboards: </span>Customizable visualizations that aggregate and display your monitoring data in an intuitive, at a glance format.
             </li>
             <li><span style="font-weight: bold;">Log Analytics: </span>Powerful querying capabilities that allow you to analyze log data and gain deep insights into your environment.
             </li>
@@ -60,7 +60,7 @@ Azure Monitor is a comprehensive and scalable platform designed to maximize the 
         <ul>
             <li>Azure Monitor integrates seamlessly with other Azure services, such as Azure Security Center, Azure Advisor, and Azure Sentinel, to provide a holistic view of your environment.
             </li>
-            <li>It also supports integration with third-party monitoring tools and services, enabling a flexible and extensible monitoring strategy.
+            <li>It also supports integration with third party monitoring tools and services, enabling a flexible and extensible monitoring strategy.
             </li>
         </ul>
     </li>
@@ -75,7 +75,7 @@ Azure Network Watcher is a powerful suite of tools designed to monitor, diagnose
         <ul>
             <li><span style="font-weight: bold;">Connection Monitor: </span>Continuously monitors and tracks the connectivity between your Azure resources and external destinations. It provides insights into network latency, packet loss, and connection availability, helping you identify and troubleshoot connectivity issues.
             </li>
-            <li><span style="font-weight: bold;">Network Performance Monitor (NPM): </span>Extends the capabilities of Connection Monitor by providing end-to-end visibility into the performance of your entire network, including hybrid and multi-cloud environments.
+            <li><span style="font-weight: bold;">Network Performance Monitor (NPM): </span>Extends the capabilities of Connection Monitor by providing end to end visibility into the performance of your entire network, including hybrid and multi cloud environments.
             </li>
         </ul>
     </li>
@@ -110,7 +110,7 @@ Azure Network Watcher is a powerful suite of tools designed to monitor, diagnose
 </ol>
 
 <h3>Azure Security Center: Safeguarding Your Cloud Infrastructure</h3>
-Azure Security Center is a comprehensive security management system that helps you protect your Azure resources. It provides advanced threat protection and security management across your cloud and on-premises environments, helping you ensure your resources are secure and compliant.
+Azure Security Center is a comprehensive security management system that helps you protect your Azure resources. It provides advanced threat protection and security management across your cloud and on premises environments, helping you ensure your resources are secure and compliant.
 
 <h4>Key Features:</h4>
 <ol>
