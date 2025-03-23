@@ -12,22 +12,19 @@ Let's get started.
 
 <h3>Machine Learning</h3>
 Artificial Intelligence (AI) refers to the broader concept of machines or software systems designed to replicate human intelligence, enabling them to carry out tasks, make decisions, and solve complex problems.
-<br/>
 Machine learning is an area of artificial intelligence (AI) that enables systems to learn from data, identify patterns, and make decisions or predictions without being explicitly programmed. Instead of following fixed instructions, machine learning models improve their performance over time as they are exposed to more data.
-
 Machine learning is based on statistics and mathematical data modeling, where the main idea is to use historical data to predict future outcomes or unknown values.
-
-A machine learning model is essentially acts as a function to compute an output value (<b>label</b>) based on given input values (<b>features</b>). Developing this function is known as the <b>training</b> process, which involves analyzing historical data to identify patterns and relationships. Once trained, the model can be used to make predictions on new data in a process called <b>inferencing</b>.
+A machine learning model is essentially acts as a function to compute an output value (<span style="font-weight: bold;">label</span>) based on given input values (<span style="font-weight: bold;">features</span>). Developing this function is known as the <span style="font-weight: bold;">training</span> process, which involves analyzing historical data to identify patterns and relationships. Once trained, the model can be used to make predictions on new data in a process called <span style="font-weight: bold;">inferencing</span>.
 
 The training dataset typically contains past observations that include features (the attributes or characteristics of the data) and their corresponding labels (the known value to be predicted). Mathematically:
 
 <ul>
-    <li>Features are often represented as <b>x</b> (sometimes as a vector of multiple values, like [x₁, x₂, x₃, ...]).</li>
-    <li>The label, or target value, is denoted as <b>y</b>.</li>
-    <li>An algorithm is applied to the data to establish a relationship between the features (x) and the label (y). This relationship is then generalized as a function that predicts y based on x. For example, if the algorithm outputs a function f, we can express the prediction as: <b>y = f(x)</b></li>
+    <li>Features are often represented as <span style="font-weight: bold;">x</span> (sometimes as a vector of multiple values, like [x₁, x₂, x₃, ...]).</li>
+    <li>The label, or target value, is denoted as <span style="font-weight: bold;">y</span>.</li>
+    <li>An algorithm is applied to the data to establish a relationship between the features (x) and the label (y). This relationship is then generalized as a function that predicts y based on x. For example, if the algorithm outputs a function f, we can express the prediction as: <span style="font-weight: bold;">y = f(x)</span></li>
 </ul>
 
-Once trained, the model becomes capable of predicting new labels for unseen data. Since these predictions are derived from the function rather than actual observations, the predicted value is often represented as <b>ŷ</b> (pronounced “y-hat”).
+Once trained, the model becomes capable of predicting new labels for unseen data. Since these predictions are derived from the function rather than actual observations, the predicted value is often represented as <span style="font-weight: bold;">ŷ</span> (pronounced “y-hat”).
 
 <h3>Types of Machine Learnings </h3>
 
@@ -38,8 +35,9 @@ Machine learning can be broadly categorized into three types, each serving uniqu
 <h4>Supervised Learning:</h4>
 Supervised learning involves training a model on labeled data, where the output is already known. The algorithm learns by comparing its predictions to the actual outcomes and adjusts accordingly. Supervised learning can be separated into two types:
 
-<h5>Regression:</h5>
+<span style="font-weight: bold;">Regression:</span>
 Predicting continuous numerical values. Examples:
+
 <ul>
     <li>Weather forecasting: predicting temperature or rainfall.</li>
     <li>Stock price prediction: estimating future prices based on market trends.</li>
@@ -48,8 +46,9 @@ Predicting continuous numerical values. Examples:
     <li>Real estate: estimating housing prices based on property features.</li>
 </ul>
 
-<h5>Classification:</h5>
-Categorizing data into discrete groups. It can be subdivided into binary and multi classification.  Examples:
+<span style="font-weight: bold;">Classification:</span>
+Categorizing data into discrete groups. It can be subdivided into binary and multi classification. Examples:
+
 <ul>
     <li>Email filtering: categorizing emails as spam or not spam.</li>
     <li>Fraud detection: identifying fraudulent credit card transactions.</li>
@@ -59,10 +58,11 @@ Categorizing data into discrete groups. It can be subdivided into binary and mul
 </ul>
 
 <h4>Unsupervised Learning:</h4>
-Supervised learning involves training a model on labeled data, where the output is already known. The algorithm learns by comparing its predictions to the actual outcomes and adjusts accordingly. Supervised learning can be separated into two types:
+Unsupervised learning deals with unlabeled data, where the algorithm identifies patterns without pre-defined outputs. Unsupervised learning can be separated into two types:
 
-<h5>Clustering:</h5>
+<span style="font-weight: bold;">Clustering:</span>
 Groups data points into clusters based on similarity. Examples:
+
 <ul>
     <li>Customer segmentation: grouping customers based on purchasing behavior.</li>
     <li>Social network analysis: identifying communities within a network.</li>
@@ -71,8 +71,9 @@ Groups data points into clusters based on similarity. Examples:
     <li>Market research: identifying trends among survey responses.</li>
 </ul>
 
-<h5>Dimensionality Reduction:</h5>
-Simplifies datasets by removing redundant features.  Examples:
+<span style="font-weight: bold;">Dimensionality Reduction:</span>
+Simplifies datasets by removing redundant features. Examples:
+
 <ul>
     <li>Image compression: reducing the number of pixels while retaining essential information.</li>
     <li>Data visualization: projecting high-dimensional data into 2D/3D for better understanding.</li>
@@ -94,12 +95,12 @@ Decision making to maximize rewards. Examples:
 <h3>Common Machine Learning Models</h3>
 Machine learning models are designed to solve specific types of problems, and understanding their applications is key to selecting the right model for a task. Here are some popular models, along with examples of how they’re used:
 <ul>
-    <li>Linear Regression: Ideal for predicting continuous values. Example: Forecasting house prices based on factors like square footage, location, and amenities.</li>
-    <li>Logistic Regression: A go-to model for binary classification tasks. Example: Predicting whether a customer will make a purchase or not based on their online behavior.</li>
-    <li>Decision Trees: Useful for interpretable and straightforward decisions. Example: Diagnosing medical conditions based on symptoms, lab tests, and patient history.</li>
-    <li>Random Forests: Excellent for handling complex datasets. Example: Predicting credit risk by analyzing multiple factors like income, debt, and payment history.</li>
-    <li>Support Vector Machines (SVMs): Effective for classification problems with clear boundaries. Example: Detecting fraudulent transactions in financial data.</li>
-    <li>K-Means Clustering: Commonly used for segmentation. Example: Grouping customers into clusters based on purchase patterns to target marketing campaigns.</li>
-    <li>Neural Networks: Powerful models for unstructured data like images, audio, and text. Example: Recognizing handwritten digits in postal codes or detecting objects in photos.</li>
-    <li>Gradient Boosting Machines (e.g., XGBoost): Widely used for structured data applications. Example: Predicting loan approval by considering factors such as credit score, income, and existing debt.</li>
+    <li><span style="font-weight: bold;">Linear Regression: </span>Ideal for predicting continuous values. Example: Forecasting house prices based on factors like square footage, location, and amenities.</li>
+    <li<span style="font-weight: bold;">>Logistic Regression: </span>A go-to model for binary classification tasks. Example: Predicting whether a customer will make a purchase or not based on their online behavior.</li>
+    <li><span style="font-weight: bold;">Decision Trees: </span>Useful for interpretable and straightforward decisions. Example: Diagnosing medical conditions based on symptoms, lab tests, and patient history.</li>
+    <li><span style="font-weight: bold;">Random Forests: </span>Excellent for handling complex datasets. Example: Predicting credit risk by analyzing multiple factors like income, debt, and payment history.</li>
+    <li><span style="font-weight: bold;">Support Vector Machines (SVMs): </span>Effective for classification problems with clear boundaries. Example: Detecting fraudulent transactions in financial data.</li>
+    <li><span style="font-weight: bold;">K-Means Clustering: </span>Commonly used for segmentation. Example: Grouping customers into clusters based on purchase patterns to target marketing campaigns.</li>
+    <li><span style="font-weight: bold;">Neural Networks: </span>Powerful models for unstructured data like images, audio, and text. Example: Recognizing handwritten digits in postal codes or detecting objects in photos.</li>
+    <li><span style="font-weight: bold;">Gradient Boosting Machines (e.g., XGBoost): </span>Widely used for structured data applications. Example: Predicting loan approval by considering factors such as credit score, income, and existing debt.</li>
 </ul>
