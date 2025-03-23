@@ -96,7 +96,7 @@ Decision making to maximize rewards. Examples:
 Machine learning models are designed to solve specific types of problems, and understanding their applications is key to selecting the right model for a task. Here are some popular models, along with examples of how they’re used:
 <ul>
     <li><span style="font-weight: bold;">Linear Regression: </span>Ideal for predicting continuous values. Example: Forecasting house prices based on factors like square footage, location, and amenities.</li>
-    <li<span style="font-weight: bold;">>Logistic Regression: </span>A go-to model for binary classification tasks. Example: Predicting whether a customer will make a purchase or not based on their online behavior.</li>
+    <li><span style="font-weight: bold;">>Logistic Regression: </span>A go-to model for binary classification tasks. Example: Predicting whether a customer will make a purchase or not based on their online behavior.</li>
     <li><span style="font-weight: bold;">Decision Trees: </span>Useful for interpretable and straightforward decisions. Example: Diagnosing medical conditions based on symptoms, lab tests, and patient history.</li>
     <li><span style="font-weight: bold;">Random Forests: </span>Excellent for handling complex datasets. Example: Predicting credit risk by analyzing multiple factors like income, debt, and payment history.</li>
     <li><span style="font-weight: bold;">Support Vector Machines (SVMs): </span>Effective for classification problems with clear boundaries. Example: Detecting fraudulent transactions in financial data.</li>
