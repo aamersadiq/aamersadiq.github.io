@@ -148,7 +148,7 @@ Azure Security Center is a comprehensive security management system that helps y
     </li>
      <li><span style="font-weight: bold;">Integration and Extensibility: </span>
         <ul>
-            <li><span style="font-weight: bold;">Third-Party Integrations: </span>Supports integration with third-party security solutions, allowing you to extend the capabilities of Azure Security Center and create a comprehensive security strategy.
+            <li><span style="font-weight: bold;">Third Party Integrations: </span>Supports integration with third-party security solutions, allowing you to extend the capabilities of Azure Security Center and create a comprehensive security strategy.
             </li>
             <li><span style="font-weight: bold;">APIs and SDKs:: </span>Provides APIs and SDKs for integrating Azure Security Center with your existing security tools and processes, enabling a seamless and extensible security management experience.
             </li>
