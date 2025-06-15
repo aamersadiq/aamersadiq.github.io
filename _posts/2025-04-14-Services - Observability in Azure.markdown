@@ -1,6 +1,6 @@
 ---
 title: "Services - Observability/Logging in Azure"
-date: 2025-01-03 09:55:43
+date: 2025-04-14 09:55:43
 categories: [operations]
 tags: [operations]
 ---
