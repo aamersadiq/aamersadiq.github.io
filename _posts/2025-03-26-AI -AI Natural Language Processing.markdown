@@ -79,5 +79,5 @@ Semantic analysis enables more advanced NLP applications:
     <li>Advanced sentiment analysis that can discern subtle emotions through the analysis of word embeddings.</li>
     <li>Organizations employ text analysis to monitor brand mentions and identify trends on social media.</li>
     <li>Question answering systems that utilize semantic analysis and embeddings to understand questions and locate relevant answers.</li>
-    <li>Medical diagnosis assistance that can analyze medical text by leveraging embeddings of medical concepts and symptoms./li>
+    <li>Medical diagnosis assistance that can analyze medical text by leveraging embeddings of medical concepts and symptoms.</li>
 </ul>
