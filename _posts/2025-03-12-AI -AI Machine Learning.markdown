@@ -1,5 +1,5 @@
 ---
-title: "AI Machine Learning"
+title: "AI - Machine Learning"
 date: 2025-03-12 09:33:43
 categories: [ai]
 tags: [ai]
