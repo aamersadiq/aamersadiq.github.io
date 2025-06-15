@@ -5,7 +5,7 @@ categories: [ai]
 tags: [ai]
 ---
 
-The digital world generates a vast amount of text, from social media to customer reviews and articles. This linguistic data holds significant potential for understanding opinions, trends, and needs. Natural Language Processing (NLP) is the field within Artificial Intelligence that focuses on enabling computers to understand, interpret, and generate human language. 1 One practical application of NLP is text analysis, which involves extracting meaningful information from text data.
+The digital world generates a vast amount of text, from social media to customer reviews and articles. This linguistic data holds significant potential for understanding opinions, trends, and needs. Natural Language Processing (NLP) is the field within Artificial Intelligence that focuses on enabling computers to understand, interpret, and generate human language. One practical application of NLP is text analysis, which involves extracting meaningful information from text data.
 
 <h3>Natural Language Processing (Text Analysis)</h3>
 Natural Language Processing (NLP) is a branch of Artificial Intelligence dedicated to making computers understand, interpret, and generate human language. Text analysis is a key application, utilizing various techniques to derive valuable information from textual content.
@@ -44,7 +44,7 @@ Neural networks learn by adjusting connection weights during training on large d
 <h4>Key Types of Neural Networks Used in NLP:</h4>
 <ol>
     <li><span style="font-weight: bold;">Recurrent Neural Networks (RNNs): </span>Designed for sequential data, they maintain a "memory" of previous inputs.</li>
-    <li><span style="font-weight: bold;">Long Short-Term Memory (LSTM) and Gated Recurrent Units (GRUs):  </span>Advanced RNNs that can retain information over longer sequences, beneficial for tasks like machine translation.</li>
+    <li><span style="font-weight: bold;">Long Short Term Memory (LSTM) and Gated Recurrent Units (GRUs):  </span>Advanced RNNs that can retain information over longer sequences, beneficial for tasks like machine translation.</li>
     <li><span style="font-weight: bold;">Transformers:  </span>Utilize an "attention mechanism" to understand relationships between words regardless of their position, forming the basis of models like BERT and GPT.</li>
 </ol>
 
@@ -53,10 +53,10 @@ Neural networks power many advanced NLP applications:
 <ul>
     <li>Sophisticated chatbots capable of natural and engaging conversations.</li>
     <li>Neural machine translation systems that offer improved translation fluency and accuracy.</li>
-    <li>Text generation models that can produce human-like text for various purposes.</li>
+    <li>Text generation models that can produce human like text for various purposes.</li>
     <li>Advanced sentiment analysis capable of identifying nuanced emotions.</li>
     <li>Powerful question answering systems that understand complex queries and locate precise answers.</li>
-</ul
+</ul>
 
 <h3>Semantic Analysis</h3>
 Semantic analysis is a deeper level of understanding within NLP, focusing on the meaning of words and their relationships within a context. It aims to comprehend the actual message conveyed by the text.
