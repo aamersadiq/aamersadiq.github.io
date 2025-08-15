@@ -16,11 +16,11 @@ The turning point came in 2012, when AlexNet, a deep Convolutional Neural Networ
 <h3>Convolutional Neural Networks (CNNs)</h3>
 One of the most common machine learning model architectures for computer vision is the Convolutional Neural Network (CNN), a deep learning architecture designed to process visual data. CNNs are particularly effective at tasks like image classification, object detection, and segmentation because they learn to extract meaningful patterns from pixel data.
 
-<h2>How CNNs Works</h2>
+<h3>How CNNs Works</h>
 CNNs use filters (also known as kernels) to scan across an image and extract numeric feature maps. These maps represent visual patterns such as edges, textures, and shapes. The extracted features are then passed through deeper layers of the network to generate a label prediction essentially answering the question, “What is this an image of?”
 For example, in an image classification scenario, you might train a CNN model with images of different kinds of fruit such as apples, bananas, and oranges. The model learns to associate certain visual features with each fruit type. When presented with a new image, the CNN predicts the label: “This is a banana.”
 
-<h2>Training a CNN</h2>
+<h4>Training a CNN</h4>
 During the training process:
 <ul>
     <li>Filter kernels are initially defined using randomly generated weight values.</li>
@@ -30,6 +30,95 @@ During the training process:
 </ul>
 Eventually, the trained fruit image classification model uses the filter weights that best extract features that help identify different kinds of fruit. This process allows CNNs to learn which visual characteristics like shape, color, and texture are most useful for distinguishing between classes.
 
+<h4>Core Concepts & Techniques</h4>
+CNNs are built on several key principles that make them effective:
+<ul>
+    <li><span style="font-weight: bold;">Local connectivity: </span>Neurons connect to small regions of the input, preserving spatial relationships.</li>
+    <li><span style="font-weight: bold;">Weight sharing: </span>Filters are reused across the image, reducing the number of parameters.</li>
+    <li><span style="font-weight: bold;">Activation functions: </span>Non-linear functions like ReLU introduce complexity.</li>
+    <li><span style="font-weight: bold;">Pooling: </span>Downsampling reduces dimensionality and improves efficiency.</li>
+    <li><span style="font-weight: bold;">Backpropagation: </span>Errors are propagated backward to update weights.</li>
+    <li><span style="font-weight: bold;">Regularization: </span>Techniques like dropout and batch normalization prevent overfitting.</li>
+</ul>
+These concepts enable CNNs to learn complex patterns while remaining computationally efficient
+
+<h4>Key Architectures</h4>
+Over time, CNNs have evolved into deeper and more sophisticated architectures:
+<table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif; margin:20px 0;">
+  <caption style="caption-side:top; font-size:1.4em; font-weight:bold; margin-bottom:10px; color:#34495e;">
+    Key Vision Model Architectures
+  </caption>
+  <thead>
+    <tr>
+      <th style="background-color:#2c3e50; color:#ffffff; font-weight:bold; border:1px solid #ddd; padding:12px 16px; text-align:left;">Model Name</th>
+      <th style="background-color:#2c3e50; color:#ffffff; font-weight:bold; border:1px solid #ddd; padding:12px 16px; text-align:left;">Type</th>
+      <th style="background-color:#2c3e50; color:#ffffff; font-weight:bold; border:1px solid #ddd; padding:12px 16px; text-align:left;">Task Focus</th>
+      <th style="background-color:#2c3e50; color:#ffffff; font-weight:bold; border:1px solid #ddd; padding:12px 16px; text-align:left;">Key Innovation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color:#ffffff;">
+      <td style="border:1px solid #ddd; padding:12px 16px;">AlexNet</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">CNN</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Image Classification</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">First deep CNN to win ImageNet</td>
+    </tr>
+    <tr style="background-color:#f2f2f2;">
+      <td style="border:1px solid #ddd; padding:12px 16px;">VGGNet</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">CNN</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Classification & Transfer Learning</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Uniform architecture with small filters</td>
+    </tr>
+    <tr style="background-color:#ffffff;">
+      <td style="border:1px solid #ddd; padding:12px 16px;">ResNet</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">CNN</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Deep Classification</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Residual connections for very deep networks</td>
+    </tr>
+    <tr style="background-color:#f2f2f2;">
+      <td style="border:1px solid #ddd; padding:12px 16px;">YOLO</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">CNN</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Real-Time Object Detection</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Single-pass detection with high speed</td>
+    </tr>
+    <tr style="background-color:#ffffff;">
+      <td style="border:1px solid #ddd; padding:12px 16px;">U-Net</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">CNN</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Image Segmentation</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Encoder-decoder with skip connections</td>
+    </tr>
+    <tr style="background-color:#f2f2f2;">
+      <td style="border:1px solid #ddd; padding:12px 16px;">Vision Transformer (ViT)</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Transformer</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">General Vision Tasks</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Self-attention replaces convolutions</td>
+    </tr>
+    <tr style="background-color:#ffffff;">
+      <td style="border:1px solid #ddd; padding:12px 16px;">Graph Neural Network (GNN)</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Graph-based</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Relational Vision Tasks</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Models data as nodes and edges</td>
+    </tr>
+    <tr style="background-color:#f2f2f2;">
+      <td style="border:1px solid #ddd; padding:12px 16px;">Capsule Network</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Capsule-based</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Spatial Reasoning</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Preserves part-whole relationships</td>
+    </tr>
+    <tr style="background-color:#ffffff;">
+      <td style="border:1px solid #ddd; padding:12px 16px;">Support Vector Machine (SVM)</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Classical ML</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Classification</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Hyperplane-based decision boundaries</td>
+    </tr>
+    <tr style="background-color:#f2f2f2;">
+      <td style="border:1px solid #ddd; padding:12px 16px;">Random Forest</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Classical ML</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Classification & Regression</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Ensemble of decision trees</td>
+    </tr>
+  </tbody>
+</table>
 
 <h3>Datasets & Benchmark</h3>
 
@@ -39,78 +128,3 @@ Eventually, the trained fruit image classification model uses the filter weights
 
 <h3>Future Directions</h3>
 
-<h3>XXXXXXXXXXX</h3>
-
-<h3>XXXXXXXXXXX</h3>
-
-<h2>XXXXXXXXXXX</h2>
-
-
-
-<h4>How Text Analysis Works:</h4>
-Text analysis typically involves several steps to process and comprehend text:
-<ol>
-    <li><span style="font-weight: bold;">Tokenization: </span>Text is initially divided into smaller units, such as individual words or punctuation marks.</li>
-    <li><span style="font-weight: bold;">Preprocessing: </span>The text is often standardized for easier processing. This can include converting text to lowercase, removing common, less informative words (stop words), and reducing words to their root form (stemming/lemmatization).</li>
-    <li><span style="font-weight: bold;">Syntactic Analysis: </span>This stage involves analyzing the grammatical structure of sentences, identifying parts of speech and their relationships (parsing).</li>
-    <li><span style="font-weight: bold;">Semantic Analysis: </span>This focuses on understanding the meaning of words and sentences within their context, which will be discussed further.</li>
-    <li><span style="font-weight: bold;">Information Extraction: </span>The final stage involves identifying and extracting specific pieces of information, determining topics, or assessing the overall sentiment expressed in the text.</li>
-</ol>
-
-<h4>Examples of Text Analysis in Action:</h4>
-Text analysis is employed in various applications:
-<ul>
-    <li>xxxxxx</li>
-</ul>
-
-<h3>Neural Networks</h3>
-In recent years, neural networks have become powerful tools driving advancements in NLP and text analysis. Inspired by the structure of the human brain, these networks consist of interconnected nodes (neurons) organized in layers 1  that learn complex patterns from data.
-
-<h4>How Neural Networks Work:</h4>
-<ol>
-    <li><span style="font-weight: bold;">Input Layer: </span>Processed text data is fed into the initial layer of the network.</li>
-    <li><span style="font-weight: bold;">Hidden Layers:  </span>Intermediate layers process the input through weighted connections and activation functions, learning increasingly complex features.</li>
-    <li><span style="font-weight: bold;">Output Layer:  </span>The final layer produces the desired outcome, such as a classification, prediction, or generated text.</li>
-</ol>
-Neural networks learn by adjusting connection weights during training on large datasets, enabling them to make accurate predictions or classifications on new text.
-
-<h4>Key Types of Neural Networks Used in NLP:</h4>
-<ol>
-    <li><span style="font-weight: bold;">Recurrent Neural Networks (RNNs): </span>Designed for sequential data, they maintain a "memory" of previous inputs.</li>
-    <li><span style="font-weight: bold;">Long Short Term Memory (LSTM) and Gated Recurrent Units (GRUs):  </span>Advanced RNNs that can retain information over longer sequences, beneficial for tasks like machine translation.</li>
-    <li><span style="font-weight: bold;">Transformers:  </span>Utilize an "attention mechanism" to understand relationships between words regardless of their position, forming the basis of models like BERT and GPT.</li>
-</ol>
-
-<h4>Examples of Neural Networks in NLP:</h4>
-Neural networks power many advanced NLP applications:
-<ul>
-    <li>Sophisticated chatbots capable of natural and engaging conversations.</li>
-    <li>Neural machine translation systems that offer improved translation fluency and accuracy.</li>
-    <li>Text generation models that can produce human like text for various purposes.</li>
-    <li>Advanced sentiment analysis capable of identifying nuanced emotions.</li>
-    <li>Powerful question answering systems that understand complex queries and locate precise answers.</li>
-</ul>
-
-<h3>Semantic Analysis</h3>
-Semantic analysis is a deeper level of understanding within NLP, focusing on the meaning of words and their relationships within a context. It aims to comprehend the actual message conveyed by the text.
-
-<h4>How Semantic Analysis Works:</h4>
-Semantic analysis often involves:
-<ol>
-    <li><span style="font-weight: bold;">Word Sense Disambiguation:  </span>Determining the correct meaning of a word with multiple senses based on its context.</li>
-    <li><span style="font-weight: bold;">Named Entity Recognition (NER): </span>Identifying and categorizing important entities like names, organizations, and locations.</li>
-    <li><span style="font-weight: bold;">Relationship Extraction:  </span>Identifying the connections between different entities and concepts in the text.</li>
-    <li><span style="font-weight: bold;">Sentiment Analysis:  </span>Assessing the emotional tone or attitude expressed in the text.</li>
-    <li><span style="font-weight: bold;">Leveraging Embeddings:</span>Embeddings, which are dense vector representations of linguistic items, play a crucial role. Words or texts with similar meanings are positioned closely in this vector space. Techniques like Word2Vec, GloVe, and contextual embeddings from neural networks enable computers to quantify semantic similarity and relationships, serving as valuable input for various semantic analysis tasks.</li>
-</ol>
-
-<h4>Examples of Semantic Analysis in Action:</h4>
-Semantic analysis enables more advanced NLP applications:
-<ul>
-    <li>Intelligent chatbots that understand user intent more accurately using embeddings.</li>
-    <li>Improved information retrieval in search engines, finding semantically similar content through embedding analysis.</li>
-    <li>Advanced sentiment analysis that can discern subtle emotions through the analysis of word embeddings.</li>
-    <li>Organizations employ text analysis to monitor brand mentions and identify trends on social media.</li>
-    <li>Question answering systems that utilize semantic analysis and embeddings to understand questions and locate relevant answers.</li>
-    <li>Medical diagnosis assistance that can analyze medical text by leveraging embeddings of medical concepts and symptoms.</li>
-</ul>
