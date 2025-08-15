@@ -14,14 +14,14 @@ The core syntax in most languages often looks familiar, generating meaningful co
 <h4>Bridging Knowledge Gaps to Take on Ambitious Projects</h4>
 AI allows engineers to be more ambitious by compensating for areas where expertise is lacking. Previously, a lack of deep expertise in a specific techology or domain might have stopped me from pursuing certain ideas or working with certain technology. Now, AI can effectively close that knowledge gap. I can be far more ambitious, leveraging AI to assist in areas where I am not a subject matter expert, whether it's generating boilerplate code for an unfamiliar framework or providing insights into a complex algorithm. It empowers me to explore new territories and develop more innovative solutions.
 
-<h4>Simplifying Unit Test Generation</h4>
-Writing unit tests has never been easier thanks to AI assistants. I can point an AI agent to a specific code file and ask it to generate unit tests, and it does so with great accuracy. This isn't just about saving time, also it's about building more robust and reliable software. What's more, when I use AI to generate new code, I can immediately ask it to generate corresponding tests. This not only helps me understand the AI generated code better but also provides an instant verification that it functions as expected.
-
 <h4>Streamlining Code Refactoring</h4>
 Maintaining a clean and modular codebase through refactoring is essential. AI tools significantly simplify this. If duplicate code needs to be extracted into a separate function, AI can create the new function and intelligently update all relevant call sites. Similarly, the creation of base classes to abstract common functionalities from existing classes becomes a straightforward request, leading to cleaner, more maintainable code with minimal manual effort.
 
 <h4>Generating Code from Text Inputs</h4>
 Imagine having a table in a requirement document detailing properties, example values, and whether they are optional or mandatory. I can simply copy that table and ask AI to create a class with the appropriate properties and attributes, reflecting the optionality or mandatory nature of each field. This accelerates the initial coding phase, reducing the potential for human error and ensuring that the code accurately reflects the requirements from the outset.
+
+<h4>Simplifying Unit Test Generation</h4>
+Writing unit tests has never been easier thanks to AI assistants. I can point an AI agent to a specific code file and ask it to generate unit tests, and it does so with great accuracy. This isn't just about saving time, also it's about building more robust and reliable software. What's more, when I use AI to generate new code, I can immediately ask it to generate corresponding tests. This not only helps me understand the AI generated code better but also provides an instant verification that it functions as expected.
 
 <h4>Enhancing Debugging Efficiency</h4>
 The dreaded "compile error" or runtime bug can derail an entire day. AI has become an invaluable debugging assistant. In tools like Visual Studio, if I encounter a compile error, I can ask Copilot to suggest a fix. It not only provides the recommended solution but also offers a clear explanation for the error, enhancing my understanding and allowing me to resolve issues much more quickly.
