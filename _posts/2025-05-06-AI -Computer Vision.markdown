@@ -16,7 +16,7 @@ The turning point came in 2012, when AlexNet, a deep Convolutional Neural Networ
 <h3>Convolutional Neural Networks (CNNs)</h3>
 One of the most common machine learning model architectures for computer vision is the Convolutional Neural Network (CNN), a deep learning architecture designed to process visual data. CNNs are particularly effective at tasks like image classification, object detection, and segmentation because they learn to extract meaningful patterns from pixel data.
 
-<h3>How CNNs Works</h>
+<h3>How CNNs Works</h3>
 CNNs use filters (also known as kernels) to scan across an image and extract numeric feature maps. These maps represent visual patterns such as edges, textures, and shapes. The extracted features are then passed through deeper layers of the network to generate a label prediction essentially answering the question, “What is this an image of?”
 For example, in an image classification scenario, you might train a CNN model with images of different kinds of fruit such as apples, bananas, and oranges. The model learns to associate certain visual features with each fruit type. When presented with a new image, the CNN predicts the label: “This is a banana.”
 
@@ -44,78 +44,39 @@ These concepts enable CNNs to learn complex patterns while remaining computation
 
 <h4>Key Architectures</h4>
 Over time, CNNs have evolved into deeper and more sophisticated architectures:
-<table style="width:100%; border-collapse:collapse; font-family:Arial, sans-serif; margin:20px 0;">
-  <caption style="caption-side:top; font-size:1.4em; font-weight:bold; margin-bottom:10px; color:#34495e;">
-    Key Vision Model Architectures
-  </caption>
+<table style="width:70%; border-collapse:collapse; font-family:Arial, sans-serif; margin:20px 0;">
   <thead>
     <tr>
-      <th style="background-color:#2c3e50; color:#ffffff; font-weight:bold; border:1px solid #ddd; padding:12px 16px; text-align:left;">Model Name</th>
-      <th style="background-color:#2c3e50; color:#ffffff; font-weight:bold; border:1px solid #ddd; padding:12px 16px; text-align:left;">Type</th>
-      <th style="background-color:#2c3e50; color:#ffffff; font-weight:bold; border:1px solid #ddd; padding:12px 16px; text-align:left;">Task Focus</th>
-      <th style="background-color:#2c3e50; color:#ffffff; font-weight:bold; border:1px solid #ddd; padding:12px 16px; text-align:left;">Key Innovation</th>
+      <th style="background-color:#2c3e50; color:#ffffff; font-weight:bold; border:1px solid #ddd; padding:12px 16px; text-align:left;">Architecture</th>
+      <th style="background-color:#2c3e50; color:#ffffff; font-weight:bold; border:1px solid #ddd; padding:12px 16px; text-align:left;">Key Features</th>
+      <th style="background-color:#2c3e50; color:#ffffff; font-weight:bold; border:1px solid #ddd; padding:12px 16px; text-align:left;">Use Case</th>
     </tr>
   </thead>
   <tbody>
     <tr style="background-color:#ffffff;">
       <td style="border:1px solid #ddd; padding:12px 16px;">AlexNet</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">CNN</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Image Classification</td>
       <td style="border:1px solid #ddd; padding:12px 16px;">First deep CNN to win ImageNet</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Image classification</td>
     </tr>
-    <tr style="background-color:#f2f2f2;">
+	<tr style="background-color:#ffffff;">
       <td style="border:1px solid #ddd; padding:12px 16px;">VGGNet</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">CNN</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Classification & Transfer Learning</td>
       <td style="border:1px solid #ddd; padding:12px 16px;">Uniform architecture with small filters</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Transfer learning</td>
     </tr>
-    <tr style="background-color:#ffffff;">
+	<tr style="background-color:#ffffff;">
       <td style="border:1px solid #ddd; padding:12px 16px;">ResNet</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">CNN</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Deep Classification</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Residual connections for very deep networks</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Introduced residual connections</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Very deep networks</td>
     </tr>
-    <tr style="background-color:#f2f2f2;">
-      <td style="border:1px solid #ddd; padding:12px 16px;">YOLO</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">CNN</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Real-Time Object Detection</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Single-pass detection with high speed</td>
+	<tr style="background-color:#ffffff;">
+      <td style="border:1px solid #ddd; padding:12px 16px;">Inception</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Multi-scale feature extraction</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Efficient computation</td>
     </tr>
-    <tr style="background-color:#ffffff;">
-      <td style="border:1px solid #ddd; padding:12px 16px;">U-Net</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">CNN</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Image Segmentation</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Encoder-decoder with skip connections</td>
-    </tr>
-    <tr style="background-color:#f2f2f2;">
-      <td style="border:1px solid #ddd; padding:12px 16px;">Vision Transformer (ViT)</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Transformer</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">General Vision Tasks</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Self-attention replaces convolutions</td>
-    </tr>
-    <tr style="background-color:#ffffff;">
-      <td style="border:1px solid #ddd; padding:12px 16px;">Graph Neural Network (GNN)</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Graph-based</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Relational Vision Tasks</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Models data as nodes and edges</td>
-    </tr>
-    <tr style="background-color:#f2f2f2;">
-      <td style="border:1px solid #ddd; padding:12px 16px;">Capsule Network</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Capsule-based</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Spatial Reasoning</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Preserves part-whole relationships</td>
-    </tr>
-    <tr style="background-color:#ffffff;">
-      <td style="border:1px solid #ddd; padding:12px 16px;">Support Vector Machine (SVM)</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Classical ML</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Classification</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Hyperplane-based decision boundaries</td>
-    </tr>
-    <tr style="background-color:#f2f2f2;">
-      <td style="border:1px solid #ddd; padding:12px 16px;">Random Forest</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Classical ML</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Classification & Regression</td>
-      <td style="border:1px solid #ddd; padding:12px 16px;">Ensemble of decision trees</td>
+	<tr style="background-color:#ffffff;">
+      <td style="border:1px solid #ddd; padding:12px 16px;">DenseNet</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Dense connections between layers</td>
+      <td style="border:1px solid #ddd; padding:12px 16px;">Feature reuse</td>
     </tr>
   </tbody>
 </table>
