@@ -176,9 +176,9 @@ Benchmarks are standardized tests that evaluate and compare model performance.
 	<li>Researchers submit models to benchmark challenges to see how well they perform.</li>
 	<li>Benchmarks identify state of the art models and track progress across the field.</li>
 </ul>
-Benchmarks are like the final exam, veryone takes the same test, and the scores reveal who’s best.
+Benchmarks are like the final exam, everyone takes the same test, and the scores reveal who’s best.
 
-Popular Datasets & Benchmark:
+Popular Datasets & Benchmarks:
 <table style="width:70%; border-collapse:collapse; font-family:Arial, sans-serif; margin:20px 0;">
   <thead>
     <tr>
@@ -230,14 +230,56 @@ Popular Datasets & Benchmark:
 These datasets and benchmarks are the backbone of modern computer vision research. They ensure fair comparisons, drive innovation, and help developers choose the right models for their applications.
 
 <h3>Common Vision Tasks</h3>
+<p>Computer vision covers a range of core tasks that allow machines to understand and interpret visual information. Below are four of the most widely used tasks, each with distinct goals, workflows, and model choices.</p>
+
 <h4>Image Classification</h4>
+<p>
+Assigns a single label to an entire image, answering the question: <em>"What is this image of?"</em> 
+<br><strong>Typical Use Cases:</strong> Product categorisation, species identification, defect detection in manufacturing.<br>
+<strong>Approaches:</strong> 
+<ul>
+  <li><strong>Small dataset:</strong> Transfer learning from pretrained CNNs like ResNet‑50 or MobileNet, with strong augmentation.</li>
+  <li><strong>Large dataset:</strong> Train deep architectures (EfficientNet, Vision Transformers) from scratch for maximum accuracy.</li>
+</ul>
+</p>
+
 <h4>Object Detection</h4>
+<p>
+Identifies and localises multiple objects in an image by returning bounding boxes with class labels.
+<br><strong>Typical Use Cases:</strong> Autonomous driving, security surveillance, retail analytics.<br>
+<strong>Approaches:</strong> 
+<ul>
+  <li><strong>Small dataset:</strong> Fine‑tune pretrained detectors such as YOLOv5 or Faster R‑CNN, combined with data augmentation.</li>
+  <li><strong>Large dataset:</strong> Custom‑train models like EfficientDet or Cascade R‑CNN with multi‑scale training.</li>
+</ul>
+</p>
+
 <h4>Image Segmentation</h4>
+<p>
+Classifies each pixel in the image, producing a segmentation map that outlines objects or regions.
+<br><strong>Typical Use Cases:</strong> Medical imaging (tumour segmentation), autonomous navigation (lane marking detection), satellite imagery analysis.<br>
+<strong>Approaches:</strong> 
+<ul>
+  <li><strong>Real‑time constraint:</strong> Lightweight networks like BiSeNet or Fast‑SCNN for speed‑critical applications.</li>
+  <li><strong>No real‑time constraint:</strong> Accuracy‑first architectures like DeepLabv3+ or Mask R‑CNN.</li>
+</ul>
+</p>
+
 <h4>Optical Character Recognition (OCR)</h4>
+<p>
+Extracts text from images or video frames, converting it into machine‑readable form. Modern OCR often uses CNNs for feature extraction, coupled with RNNs or Transformers for sequence decoding.
+<br><strong>Typical Use Cases:</strong> Document digitisation, real‑time translation of street signs, automated invoice processing.<br>
+<strong>Pipeline:</strong> 
+<ol>
+  <li><strong>Text Detection:</strong> Locate text regions with models like EAST, CRAFT, or DBNet.</li>
+  <li><strong>Text Recognition:</strong> Convert detected regions into text using CRNN, Rosetta, or TrOCR.</li>
+</ol>
+<strong>Performance Considerations:</strong> 
+<ul>
+  <li>Printed text: Classical OCR (e.g., Tesseract) with CNN‑based detection for robustness.</li>
+  <li>Handwritten text: Transformer or hybrid RNN/CNN recognizers fine‑tuned on handwriting datasets.</li>
+  <li>Real‑time OCR: MobileNet‑backed lightweight models.</li>
+</ul>
+</p>
 
-<h3>Applications Across Domains</h3>
-
-<h3>Challenges & Limitations</h3>
-
-<h3>Future Directions</h3>
 
