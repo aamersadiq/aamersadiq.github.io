@@ -14,10 +14,10 @@ Computer vision has evolved dramatically over the past few decades. Early system
 The turning point came in 2012, when AlexNet, a deep Convolutional Neural Network (CNN), won the ImageNet challenge by a wide margin. This victory demonstrated that neural networks could outperform traditional methods in image classification, sparking a revolution in computer vision. Since then, CNNs have become the foundation of nearly every modern vision system.
 
 <h3>Convolutional Neural Networks (CNNs)</h3>
-One of the most common machine learning model architectures for computer vision is the Convolutional Neural Network (CNN), a deep learning architecture designed to process visual data. CNNs are particularly effective at tasks like image classification, object detection, and segmentation because they learn to extract meaningful patterns from pixel data.
+One of the most common machine learning model architectures for computer vision is the Convolutional Neural Network (CNN), a deep learning architecture designed to process visual data. CNNs are particularly effective at tasks like <stong>image classification, object detection, and segmentation</strong> because they learn to extract meaningful patterns from pixel data.
 
 <h4>How CNNs Works</h4>
-CNNs use filters (also known as kernels) to scan across an image and extract numeric feature maps. These maps represent visual patterns such as edges, textures, and shapes. The extracted features are then passed through deeper layers of the network to generate a label prediction essentially answering the question, “What is this an image of?”
+CNNs use <strong>filters (also known as kernels)</strong> to scan across an image and extract numeric feature maps. These maps represent visual patterns such as edges, textures, and shapes. The extracted features are then passed through deeper layers of the network to generate a label prediction essentially answering the question, “What is this an image of?”
 For example, in an image classification scenario, you might train a CNN model with images of different kinds of fruit such as apples, bananas, and oranges. The model learns to associate certain visual features with each fruit type. When presented with a new image, the CNN predicts the label: “This is a banana.”
 
 <h4>Training a CNN</h4>
@@ -33,12 +33,12 @@ Eventually, the trained fruit image classification model uses the filter weights
 <h4>Core Concepts & Techniques</h4>
 CNNs are built on several key principles that make them effective:
 <ul>
-    <li><span style="font-weight: bold;">Local connectivity: </span>Neurons connect to small regions of the input, preserving spatial relationships.</li>
-    <li><span style="font-weight: bold;">Weight sharing: </span>Filters are reused across the image, reducing the number of parameters.</li>
-    <li><span style="font-weight: bold;">Activation functions: </span>Non-linear functions like ReLU introduce complexity.</li>
-    <li><span style="font-weight: bold;">Pooling: </span>Downsampling reduces dimensionality and improves efficiency.</li>
-    <li><span style="font-weight: bold;">Backpropagation: </span>Errors are propagated backward to update weights.</li>
-    <li><span style="font-weight: bold;">Regularization: </span>Techniques like dropout and batch normalization prevent overfitting.</li>
+    <li><strong>Local connectivity: </strong>Neurons connect to small regions of the input, preserving spatial relationships.</li>
+    <li><strong>Weight sharing: </strong>Filters are reused across the image, reducing the number of parameters.</li>
+    <li><strong>Activation functions: </strong>Non-linear functions like ReLU introduce complexity.</li>
+    <li><strong>Pooling: </strong>Downsampling reduces dimensionality and improves efficiency.</li>
+    <li><strong>Backpropagation: </strong>Errors are propagated backward to update weights.</li>
+    <li><strong>Regularization: </strong>Techniques like dropout and batch normalization prevent overfitting.</li>
 </ul>
 These concepts enable CNNs to learn complex patterns while remaining computationally efficient.
 
