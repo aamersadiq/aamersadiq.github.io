@@ -269,17 +269,11 @@ Classifies each pixel in the image, producing a segmentation map that outlines o
 <p>
 Extracts text from images or video frames, converting it into machine‑readable form. Modern OCR often uses CNNs for feature extraction, coupled with RNNs or Transformers for sequence decoding.
 <br><strong>Typical Use Cases:</strong> Document digitisation, real‑time translation of street signs, automated invoice processing.<br>
-<strong>Pipeline:</strong> 
+<strong>Approaches:</strong> 
 <ol>
   <li><strong>Text Detection:</strong> Locate text regions with models like EAST, CRAFT, or DBNet.</li>
   <li><strong>Text Recognition:</strong> Convert detected regions into text using CRNN, Rosetta, or TrOCR.</li>
 </ol>
-<strong>Performance Considerations:</strong> 
-<ul>
-  <li>Printed text: Classical OCR (e.g., Tesseract) with CNN‑based detection for robustness.</li>
-  <li>Handwritten text: Transformer or hybrid RNN/CNN recognizers fine‑tuned on handwriting datasets.</li>
-  <li>Real‑time OCR: MobileNet‑backed lightweight models.</li>
-</ul>
 </p>
 
 
