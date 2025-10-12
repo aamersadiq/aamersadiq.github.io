@@ -27,7 +27,7 @@ What surprised me most was how much Copilot improved my flow. Instead of breakin
 This was a game changer for me. Instead of wrestling with obscure error messages, I had an AI that not only spotted the issue but also explained it in plain language and offered a solution.
 <h5>Cline & Roo: My Architects</h5>
 <ul>
-    <li><strong>Cline:</strong> Felt more informal — I could throw requirements at it, and it would just start working.</li>
+    <li><strong>Cline:</strong> Felt more informal where I could throw requirements at it, and it would just start working.</li>
     <li><strong>Roo:</strong> More structured. Its “plan mode” (or architecture mode) generated detailed documents: implementation overviews, checklists, and summaries. Sometimes this felt like overkill for small tasks, but for larger ones, it was invaluable.</li>
 </ul>
 I especially liked using Roo for requirement briefings and brainstorming. It forced me to think through architecture and design decisions before diving into code. Cline was better when I just wanted to get moving quickly.
@@ -36,7 +36,7 @@ I especially liked using Roo for requirement briefings and brainstorming. It for
 <ol>
   <li>
     <h5>Provide context up front</h5>
-    I now begin every project with a system prompt that sets the stage. It explains what the project is, the best practices I want followed, the languages and frameworks I’m using, and any constraints or non‑negotiables. Being explicit here prevents the AI from filling in gaps with its own assumptions.
+    I now begin every project with a system prompt that sets the stage. It explains what the project is, the best practices I want followed, the languages and frameworks I’m using, and any constraints or non negotiables. Being explicit here prevents the AI from filling in gaps with its own assumptions.
   </li>
   <li>
     <h5>Decompose tasks</h5>
@@ -44,11 +44,11 @@ I especially liked using Roo for requirement briefings and brainstorming. It for
   </li>
   <li>
     <h5>Start with the skeleton</h5>
-    The first step is always to create the basic application structure: frontend pages, backend APIs, and a simple data flow with static or mock data. This gives me an end‑to‑end path early, so I can see the shape of the project and catch missing pieces quickly.
+    The first step is always to create the basic application structure: frontend pages, backend APIs, and a simple data flow with static or mock data. This gives me an end to end path early, so I can see the shape of the project and catch missing pieces quickly.
   </li>
   <li>
     <h5>Build module by module</h5>
-    When I move into functional areas, I provide requirements for both backend and frontend together. For example, in a dashboard module I’ll specify the database schema, the queries to aggregate results and calculate metrics, the paging requirements for APIs, and the exact frontend layout I want — including panels, grids, buttons, and even subtle UI hints like a “go to top” button. With this level of detail, I’ve been able to create surprisingly complex UIs, such as grids with color‑changing cells and collapsible rows.
+    When I move into functional areas, I provide requirements for both backend and frontend together. For example, in a dashboard module I’ll specify the database schema, the queries to aggregate results and calculate metrics, the paging requirements for APIs, and the exact frontend layout I want to including panels, grids, buttons, and even subtle UI hints like a “go to top” button. With this level of detail, I’ve been able to create surprisingly complex UIs, such as grids with color changing cells and collapsible rows.
   </li>
   <li>
     <h5>Keep it modular</h5>
@@ -56,7 +56,7 @@ I especially liked using Roo for requirement briefings and brainstorming. It for
   </li>
   <li>
     <h5>Define relationships explicitly</h5>
-    If a dashboard button should link to a product list page, I spell that out as a cross‑module requirement. Without this, the AI tends to invent its own connections, which can cause confusion later.
+    If a dashboard button should link to a product list page, I spell that out as a cross module requirement. Without this, the AI tends to invent its own connections, which can cause confusion later.
   </li>
   <li>
     <h5>Keep context small</h5>
@@ -64,17 +64,45 @@ I especially liked using Roo for requirement briefings and brainstorming. It for
   </li>
   <li>
     <h5>Review carefully</h5>
-    AI sometimes takes shortcuts, like writing multiple queries instead of a single join. When that happens, I correct one instance and then ask it to apply the fix everywhere. Careful review is non‑negotiable if I want quality results.
+    AI sometimes takes shortcuts, like writing multiple database queries instead of a single join. When that happens, I correct one instance and then ask it to apply the fix everywhere. Careful review is non negotiable if I want quality results.
   </li>
   <li>
     <h5>Test and verify</h5>
-    I write unit tests, spot‑check code, and make sure best practices are followed. Testing isn’t just about quality — it also helps me understand what the AI produced and why.
+    I write unit tests, spot check code, and make sure best practices are followed. Testing isn’t just about quality  it also helps me understand what the AI produced and why.
   </li>
   <li>
     <h5>Refine and iterate</h5>
-    Over time, I’ve learned how to get the best out of each agent. I keep notes on what works, what doesn’t, and the prompts that get the best results. Each project teaches me something new. What started as frustration has turned into a workflow that feels like a partnership. The agents don’t just save me time — they push me to think more clearly, design more carefully, and build with more confidence.
+    Over time, I’ve learned how to get the best out of each agent. I keep notes on what works, what doesn’t, and the prompts that get the best results. Each project teaches me something new. What started as frustration has turned into a workflow that feels like a partnership. The agents don’t just save me time  they push me to think more clearly, design more carefully, and build with more confidence.
   </li>
 </ol>
+
+<h4>How It Felt</h4>
+Honestly, it felt great.
+<ul>
+  <li><strong>Speed:</strong> I could build faster without wasting time on boilerplate.</li>
+  <li><strong>Ambition:</strong> I became more ambitious of what I can build. I built polished, responsive UIs I would have avoided before.</li>
+  <li><strong>Independence:</strong> I completed projects solo that I once thought required a team.</li>
+  <li><strong>Joy:</strong> And most importantly, I had fun.</li>
+</ul>
+There were nights I stayed up coding until 5am, not because I had to, but because I was excited by the results. That sense of flow and momentum is something I hadn’t felt in years.
+
+<h4>Time saved (and why that’s not the point)</h4>
+Yes, AI saved me 50–80% of the time. But the real win wasn’t the hours saved, it was getting things done.
+<br>
+In the past, I’d start personal projects aiming for 8–10 hours a week, finishing in a month. Life would get in the way, I’d skip a week, lose motivation, and the project would die.
+<br>
+With AI, I could finish the same project in 4–6 hours, meaning in just one or two sittings. That sense of completion and actually shipping something was the real breakthrough.
+
+<h4>Weaknesses and dangers</h4>
+AI isn’t perfect. Some of the challenges I faced:
+<ul>
+  <li><strong>Modularity risks:</strong> Code can become non‑modular and hard to maintain if you’re not careful.</li>
+  <li><strong>Context limits:</strong> AI struggles with large, monolithic codebases.</li>
+  <li><strong>False finishes:</strong> Agents sometimes “lie,” claiming tasks are done when they’re not.</li>
+  <li><strong>Shortcuts:</strong> They can cheat by following happy paths and skipping edge cases.</li>
+  <li><strong>Hallucinations:</strong> They sometimes invent code unrelated to the actual problem.</li>
+</ul>
+The lesson: AI requires good architecture and discipline. It amplifies your practices, both good or bad.
 
 <h4>The Future of AI in Software Development</h4>
 AI agents are reshaping how we build software, and I see several key shifts ahead:
