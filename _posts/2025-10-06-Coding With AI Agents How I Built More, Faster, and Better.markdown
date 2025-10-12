@@ -76,15 +76,14 @@ I especially liked using Roo for requirement briefings and brainstorming. It for
   </li>
 </ol>
 
-<h4>How It Felt</h4>
-Honestly, it felt great.
-<ul>
-  <li><strong>Speed:</strong> I could build faster without wasting time on boilerplate.</li>
-  <li><strong>Ambition:</strong> I became more ambitious of what I can build. I built polished, responsive UIs I would have avoided before.</li>
-  <li><strong>Independence:</strong> I completed projects solo that I once thought required a team.</li>
-  <li><strong>Joy:</strong> And most importantly, I had fun.</li>
-</ul>
-There were nights I stayed up coding until 5am, not because I had to, but because I was excited by the results. That sense of flow and momentum is something I hadn’t felt in years.
+<h4>How I Felt</h4>
+Being able to build faster was a huge shift for me. I didn’t have to spend hours setting up the basics, instead the AI agent handled most of that, which freed me to focus on the interesting parts.
+<br>
+I also became more ambitious about what I could build. In the past, whenever I worked on full stack applications, my user interfaces were usually very plain. I never enjoyed spending time polishing layouts or making them responsive, so I’d settle for something functional. But with Cline and Roo, I ended up creating an interface that looked genuinely impressive and streamlined, responsive across devices, and far more polished than anything I would have attempted before.
+<br>
+Another big change was the sense of independence. I felt like I could complete projects on my own that I once assumed required a team. For example, in one Python project, the agent not only generated optimized, modular code but also gave me detailed instructions on setting up the local environment, deploying, and running it on SageMaker. That kind of support made me feel capable of handling the entire workflow solo.
+<br>
+And maybe the most important part: I had fun. After a long time, I found myself working late into the night and sometimes until 5am, not because I had to, but because I was genuinely excited by the results I was seeing. That sense of flow and momentum reminded me why I love building things in the first place.
 
 <h4>Time saved (and why that’s not the point)</h4>
 Yes, AI saved me 50–80% of the time. But the real win wasn’t the hours saved, it was getting things done.
@@ -93,16 +92,27 @@ In the past, I’d start personal projects aiming for 8–10 hours a week, finis
 <br>
 With AI, I could finish the same project in 4–6 hours, meaning in just one or two sittings. That sense of completion and actually shipping something was the real breakthrough.
 
-<h4>Weaknesses and dangers</h4>
-AI isn’t perfect. Some of the challenges I faced:
-<ul>
-  <li><strong>Modularity risks:</strong> Code can become non‑modular and hard to maintain if you’re not careful.</li>
-  <li><strong>Context limits:</strong> AI struggles with large, monolithic codebases.</li>
-  <li><strong>False finishes:</strong> Agents sometimes “lie,” claiming tasks are done when they’re not.</li>
-  <li><strong>Shortcuts:</strong> They can cheat by following happy paths and skipping edge cases.</li>
-  <li><strong>Hallucinations:</strong> They sometimes invent code unrelated to the actual problem.</li>
-</ul>
-The lesson: AI requires good architecture and discipline. It amplifies your practices, both good or bad.
+<h4>Weaknesses and Dangers</h4>
+<h5>Code can become non modular and hard to maintain</h5>
+AI can generate code quickly, but without guidance it often mixes responsibilities and creates tightly coupled components. 
+How to avoid it: Define a clear folder and module structure up front (for example, a <code>/dashboard</code> folder in both frontend and backend). 
+Always ask the AI to place new code inside the correct module, and periodically refactor to enforce boundaries so modules don’t bleed into each other.
+<h5>AI struggles with large, monolithic codebases due to context limits</h5>
+When the codebase grows too large, the AI loses track of details and dependencies. 
+How to avoid it: Keep prompts scoped to a single module or feature instead of asking for sweeping changes across the entire app. 
+Use short summaries or architecture notes to reestablish context when needed.
+<h5>Agents sometimes “lie”,  claiming tasks are done when they’re not</h5>
+There were times when the AI confidently stated that a feature was implemented, but on inspection, parts were missing or incomplete. 
+How to avoid it: Never take the output at face value. Review the code carefully, run it, and write tests to confirm functionality. 
+If something looks suspiciously simple, dig deeper and ask the AI to explain its approach.
+<h5>They can cheat by taking shortcuts or following happy paths</h5>
+AI often prefers the simplest solution, which means it may skip over edge cases or error handling. 
+How to avoid it: Explicitly ask for edge cases, error handling, and performance considerations. 
+For example, specify “handle null values,” “add retry logic,” or “optimize for large datasets.” Push the AI beyond the happy path.
+<h5>They sometimes invent code unrelated to the actual problem</h5>
+Occasionally, the AI generates functions or structures that don’t belong, which can be confusing if unnoticed. 
+How to avoid it: Make your requirements precise and stop the AI immediately if it drifts. 
+Restating the scope and keeping the context small helps keep it on track.
 
 <h4>The Future of AI in Software Development</h4>
 AI agents are reshaping how we build software, and I see several key shifts ahead:
