@@ -7,7 +7,8 @@ tags: [ai]
 
 I have been using AI agents <strong>Cline/Roo</strong>, <strong>Claude Code</strong>, and <strong>GitHub Copilot</strong>, and want to share what that experience has been like for me.
 With their help, I’ve been able to migrate a service domain data access layer from <strong>Entity Framework</strong> to <strong>Dapper</strong>, build an operational tool in <strong>Next.js</strong> that queries multiple databases and provides consolidated dashboards with search and drill down functionality, and experiment with a personal project using <strong>Python</strong>, <strong>SageMaker</strong>, and <strong>Postgres</strong> to process and transform large datasets.
-Each project had its own challenges, but what tied them together was how AI agents fundamentally changed the way I approached development. They didn’t just save me time, they also made me more ambitious, more experimental, and more confident in tackling things I might have avoided in the past.
+<br>
+Each of these projects had its own challenges, but the common thread was how AI changed the way I approached development. It wasn’t just about saving time — though that was part of it. The bigger shift was that I felt more willing to try things I might have avoided before. I became more experimental, more ambitious, and more confident in tackling work that once felt out of reach
 
 <h4>How I Used the Tools</h4>
 <h5>GitHub Copilot: My Inline Coding Partner</h5>
