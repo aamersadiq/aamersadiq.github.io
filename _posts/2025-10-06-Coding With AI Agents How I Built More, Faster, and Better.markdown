@@ -5,33 +5,21 @@ categories: [ai]
 tags: [ai]
 ---
 
-I have been using AI agents <strong>Cline/Roo</strong>, <strong>Claude Code</strong>, and <strong>GitHub Copilot</strong>, and want to share what that experience has been like for me.
+I have been using AI agents <strong>Cline/Roo</strong>, <strong>Claude Code</strong>, and <strong>GitHub Copilot</strong> for some time and want to share what that experience has been like for me.
 With their help, I’ve been able to migrate a service domain data access layer from <strong>Entity Framework</strong> to <strong>Dapper</strong>, build an operational tool in <strong>Next.js</strong> that queries multiple databases and provides consolidated dashboards with search and drill down functionality, and experiment with a personal project using <strong>Python</strong>, <strong>SageMaker</strong>, and <strong>Postgres</strong> to process and transform large datasets.
 <br>
-Each of these projects had its own challenges, but the common thread was how AI changed the way I approached development. It wasn’t just about saving time — though that was part of it. The bigger shift was that I felt more willing to try things I might have avoided before. I became more experimental, more ambitious, and more confident in tackling work that once felt out of reach
+Each of these projects had its own challenges, but what stood out to me was how AI changed the way I approached development. It is not just about saving time, though that was part of it. In the past, I would often start side projects but abandon them as spare time disappeared and other priorities took over. With AI, I am able to actually finish projects simply because I can now complete them in a much shorter time.
 
 <h4>How I Used the Tools</h4>
-<h5>GitHub Copilot: My Inline Coding Partner</h5>
-<ul>
-    <li><strong>Refactoring code:</strong> Making it more concise and elegant.</li>
-    <li><strong>Adding comments:</strong> Extracting common logic into reusable methods.</li>
-    <li><strong>Unit testing:</strong> Writing tests and fixing compilation errors.</li>
-    <li><strong>Explaining code:</strong> Providing method-level explanations with runnable examples that deepened my understanding.</li>
-</ul>
-What surprised me most was how much Copilot improved my flow. Instead of breaking concentration to look up syntax or boilerplate, I could stay in the zone and let Copilot handle the repetitive parts.
-<h5>Claude Code: My Terminal Companion</h5>
-<ul>
-    <li><strong>Wrote scripts:</strong> Quickly and cleanly.</li>
-    <li><strong>Executed commands:</strong> Ran them directly in the terminal.</li>
-    <li><strong>Error handling:</strong> Managed common errors gracefully, often suggesting fixes before I even thought of them.</li>
-</ul>
-This was a game changer for me. Instead of wrestling with obscure error messages, I had an AI that not only spotted the issue but also explained it in plain language and offered a solution.
-<h5>Cline & Roo: My Architects</h5>
-<ul>
-    <li><strong>Cline:</strong> Felt more informal where I could throw requirements at it, and it would just start working.</li>
-    <li><strong>Roo:</strong> More structured. Its “plan mode” (or architecture mode) generated detailed documents: implementation overviews, checklists, and summaries. Sometimes this felt like overkill for small tasks, but for larger ones, it was invaluable.</li>
-</ul>
-I especially liked using Roo for requirement briefings and brainstorming. It forced me to think through architecture and design decisions before diving into code. Cline was better when I just wanted to get moving quickly.
+<h3>GitHub Copilot: My Inline Coding Partner</h3>
+I leaned on Copilot when I was deep in the editor. It helped me refactor code to make it more concise and elegant, and it often suggested ways to extract common logic into reusable methods. It also supported me with unit testing, writing tests and fixing compilation errors that I might have otherwise spent too much time. Another area where it stood out was explaining code by providing method level explanations with runnable examples that actually deepened my understanding.
+What I appreciated most was how Copilot kept me in flow. Instead of breaking concentration to look up syntax or boilerplate, I could stay focused and let it handle the repetitive parts.
+<h3>Claude Code: My Terminal Companion</h3>
+Claude Code became my go to in the terminal. It wrote scripts quickly and cleanly, executed commands directly, and managed common errors gracefully. Often it would point out issues and suggest fixes before I had even started troubleshooting.
+This made working in the terminal much smoother. Instead of wrestling with obscure error messages, I had an AI that explained the problem in plain language and offered a practical solution I could apply straight away.
+<h3>Cline & Roo: My Architects</h3>
+Cline and Roo felt like two different personalities. With Cline, I could throw requirements at it and it would just start working — informal, fast, and good for momentum. Roo was more structured. Its “architecture mode” generated detailed documents like implementation overviews, checklists, and summaries. Sometimes this felt like overkill for small tasks, but for larger ones it was invaluable.
+I especially liked using Roo for requirement briefings and brainstorming. It pushed me to think through architecture and design decisions before diving into code. Cline, on the other hand, was better when I just wanted to get moving quickly.
 
 <h4>My Coding Workflow with AI</h4>
 <ol>
@@ -94,15 +82,18 @@ In the past, I’d start personal projects aiming for 8–10 hours a week, finis
 With AI, I could finish the same project in 4–6 hours, meaning in just one or two sittings. That sense of completion and actually shipping something was the real breakthrough.
 
 <h4>Weaknesses and Dangers</h4>
+<h5>Style and syntax can drift over time</h5>
+As projects grow, AI agents may use different styles or syntax in different areas of the codebase. This can lead to a loss of uniformity, making the code harder to read and maintain.  
+How to avoid it: Establish coding standards early, and periodically review or reformat code to ensure consistency across files and modules.
 <h5>Code can become non modular and hard to maintain</h5>
 AI can generate code quickly, but without guidance it often mixes responsibilities and creates tightly coupled components. 
 How to avoid it: Define a clear folder and module structure up front (for example, a <code>/dashboard</code> folder in both frontend and backend). 
-Always ask the AI to place new code inside the correct module, and periodically refactor to enforce boundaries so modules don’t bleed into each other.
+Always ask the AI to place new code inside the correct module, and periodically refactor to enforce boundaries so modules do not bleed into each other.
 <h5>AI struggles with large, monolithic codebases due to context limits</h5>
 When the codebase grows too large, the AI loses track of details and dependencies. 
 How to avoid it: Keep prompts scoped to a single module or feature instead of asking for sweeping changes across the entire app. 
 Use short summaries or architecture notes to reestablish context when needed.
-<h5>Agents sometimes “lie”,  claiming tasks are done when they’re not</h5>
+<h5>Agents sometimes “lie”,  claiming tasks are done when they are not</h5>
 There were times when the AI confidently stated that a feature was implemented, but on inspection, parts were missing or incomplete. 
 How to avoid it: Never take the output at face value. Review the code carefully, run it, and write tests to confirm functionality. 
 If something looks suspiciously simple, dig deeper and ask the AI to explain its approach.
@@ -128,5 +119,6 @@ AI agents are reshaping how we build software, and I see several key shifts ahea
     <li><strong>Ethics and governance: </strong>Trust, transparency, and governance will be critical to ensure AI generated code is secure, maintainable, and aligned with business goals.</li>
 </ul>
 
-With AI agents, I can now build complete applications in days that would have taken months in the traditional workflow.
-I could never, ever go back to the old way of developing software.
+With AI agents, I can now build complete applications in days that would have taken months in the traditional workflow. The difference is not just in speed — it is in how much more approachable complex projects feel. Tasks that once seemed too big to take on in my spare time are now within reach, because I can break them down and actually finish them.
+It is not that the old way of developing software was wrong, but it demanded a level of time and focus that is hard to sustain alongside everything else in life especially for side projects. AI has shifted that balance. I can experiment more, learn faster, and still deliver something polished without burning out.
+I could never go back to the old way of developing software, because this new way has made building not only faster, but also more enjoyable.
