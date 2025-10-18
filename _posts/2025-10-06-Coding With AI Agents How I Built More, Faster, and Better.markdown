@@ -119,6 +119,6 @@ AI agents are reshaping how we build software, and I see several key shifts ahea
     <li><strong>Ethics and governance: </strong>Trust, transparency, and governance will be critical to ensure AI generated code is secure, maintainable, and aligned with business goals.</li>
 </ul>
 
-With AI agents, I can now build complete applications in days that would have taken months in the traditional workflow. The difference is not just in speed — it is in how much more approachable complex projects feel. Tasks that once seemed too big to take on in my spare time are now within reach, because I can break them down and actually finish them.
+With AI agents, I can now build complete applications in days that would have taken months in the traditional workflow. The difference is not just in speed but it is in how much more approachable complex projects feel. Tasks that once seemed too big to take on in my spare time are now within reach, because I can break them down and actually finish them.
 It is not that the old way of developing software was wrong, but it demanded a level of time and focus that is hard to sustain alongside everything else in life especially for side projects. AI has shifted that balance. I can experiment more, learn faster, and still deliver something polished without burning out.
 I could never go back to the old way of developing software, because this new way has made building not only faster, but also more enjoyable.
