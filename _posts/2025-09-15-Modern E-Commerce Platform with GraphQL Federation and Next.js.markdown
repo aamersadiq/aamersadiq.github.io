@@ -1,6 +1,6 @@
 ---
-title: "Modern E Commerce Platform with GraphQL Federation and Next.js"
-date: 2025 09 15 16:23:33
+title: "Modern E-Commerce Platform with GraphQL Federation and Next.js"
+date: 2025-09-15 16:23:33
 categories: [development]
 tags: [development]
 ---
@@ -9,7 +9,7 @@ In this post, I will outline an e‑commerce platform using GraphQL Federation a
 
 <h4>Introduction</h4>
 
-E commerce platforms require robust, scalable architectures that can handle complex business logic while providing excellent user experiences. This project implements a comprehensive solution using GraphQL Federation for the backend and Next.js for the frontend, following domain driven design principles and a clear separation of concerns.
+E-commerce platforms require robust, scalable architectures that can handle complex business logic while providing excellent user experiences. This project implements a comprehensive solution using GraphQL Federation for the backend and Next.js for the frontend, following domain driven design principles and a clear separation of concerns.
 
 The architecture is designed to be modular and scalable, with separate subgraphs for different domains of the application. This approach allows teams to work independently on different parts of the system while maintaining a cohesive API for the frontend.
 
@@ -109,4 +109,4 @@ You can find the complete source code for this project on GitHub:
 
 <h4>Conclusion</h4>
 
-This e commerce platform demonstrates how modern web technologies can be combined to create a scalable, maintainable application. By leveraging GraphQL Federation, Next.js, and domain driven design principles, we've built a system that can grow with business needs while maintaining developer productivity and code quality.
+This e-commerce platform demonstrates how modern web technologies can be combined to create a scalable, maintainable application. By leveraging GraphQL Federation, Next.js, and domain driven design principles, we've built a system that can grow with business needs while maintaining developer productivity and code quality.
