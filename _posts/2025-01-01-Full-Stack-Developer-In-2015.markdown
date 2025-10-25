@@ -2,7 +2,7 @@
 title: "The Evolving Role of Full Stack Developers in 2025"
 date: 2025-01-01 09:04:43
 categories: [development, full-stack]
-categories: [development, full-stack]
+tags: [development, full-stack]
 ---
 
 Over the years, the role of developers and engineers has changed dramatically. In the past decade alone, we have witnessed the rise of specialized roles such as front end developers, back end developers, data engineers, DevOps engineers, AI engineers, and more. And yet standing tall among these experts is the Full Stack Developer, the one role to rule them all.

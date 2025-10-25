@@ -2,7 +2,7 @@
 title: "Coding Best Practices Uncovered - A Detailed Exploration"
 date: 2024-11-21 10:14:50
 categories: [development, coding-standards]
-categories: [development, coding-standards]
+tags: [development, coding-standards]
 ---
 
 <p>

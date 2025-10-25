@@ -2,7 +2,7 @@
 title: "Services - Design"
 date: 2024-11-29 9:15:43
 categories: [services, design, domain-driven]
-categories: [services, design, domain-driven]
+tags: [services, design, domain-driven]
 ---
 
 When designing services, it is recommended to use a Domain Driven Design (DDD) approach, which is a software engineering method used to solve complex domain models.

@@ -1,8 +1,8 @@
 ---
 title: "Services - Observability/Logging in AWS"
 date: 2023-05-14 09:55:43
-categories: [operations]
-tags: [operations]
+categories: [operations, observability, logging, aws]
+tags: [operations, observability, logging, aws]
 ---
 
 Within the AWS environment, observability is supported through various integrated services provided by AWS. Here are some of the most popular observability services available within AWS that have proven invaluable in my experience. Let's dive in and explore!

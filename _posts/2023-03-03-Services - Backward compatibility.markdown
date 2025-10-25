@@ -1,9 +1,10 @@
 ---
-title:  "Services - Backward compatibility"
-date:   2023-03-03 9:15:43
+title: "Services - Backward compatibility"
+date: 2023-03-03 9:15:43
 categories: [services]
-tags: [services]	
+tags: [services]
 ---
+
 <h3>Introduction</h3>
 <p>
 This article explains how to design REST API services that maintain backward compatibility.  An API is backward compatible between releases if the clients are able to work with a new version of the API seamlessly. It allows clients to continue using the existing REST API and migrate their applications to the newer API version when they are ready.
@@ -31,6 +32,7 @@ With option 1, any request that doesn’t include the new parameter is rejected 
 With option 2, new API is implemented and  original API is also updated to provide some reasonable default for the phone number (also check Backwards compatible DB migration if phone is stored in database). This is definitely more work, but it doesn’t break any existing API clients.
 
 There are few options to version API. Following options are considered.
+
 </p>
 <h4>URL</h4>
 <p>
@@ -51,6 +53,7 @@ API-Version: 2<br/>
 Or use the Accept header to include custom extensions:<br/>
 
 Accept: application/vnd.store.v2+json<br/>
+
 </p>
 <p>
 Using headers for versioning is more in line with RESTful practices as URL should represent the resource, not some version of it. Additionally, headers are already great at passing what is essentially metadata between clients and servers, so adding in version seems like a good fit.
@@ -62,4 +65,3 @@ On the other hand, headers are cumbersome to work with in some frameworks, more 
 <p>
 When new version of API is created, old version should be market as obsolete. Once all the clients are migrated to use new version, support for the old version can be dropped. It is good practice to check the logs for no activity on old version of API before deleting it.
 </p>
-
