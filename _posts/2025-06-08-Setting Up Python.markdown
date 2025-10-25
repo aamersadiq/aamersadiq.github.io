@@ -1,7 +1,7 @@
 ---
 title: "Setting Up Python in VS Code with WSL (Windows Subsystem for Linux)"
 date: 2025-06-08 16:37:42
-tags: [python, vscode, wsl, ubuntu, development-environment]
+categories: [python, vscode, wsl, ubuntu, development-environment]
 tags: [python, vscode, wsl, ubuntu, development-environment]
 ---
 
@@ -135,5 +135,3 @@ This setup provides:
 This configuration combines VS Code's interface with Ubuntu's Python environment. The setup scripts make the process straightforward and reproducible.
 
 For more details and all files mentioned in this guide, visit: [https://github.com/aamersadiq/python-setup](https://github.com/aamersadiq/python-setup)
-
-

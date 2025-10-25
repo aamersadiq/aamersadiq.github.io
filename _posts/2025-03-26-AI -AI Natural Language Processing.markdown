@@ -2,7 +2,7 @@
 title: "AI - Natural Language Processing"
 date: 2025-03-26 02:32:42
 categories: [ai, nlp, text-analysis, neural-networks, semantic-analysis]
-categories: [ai, nlp, text-analysis, neural-networks, semantic-analysis]
+tags: [ai, nlp, text-analysis, neural-networks, semantic-analysis]
 ---
 
 The digital world generates a vast amount of text, from social media to customer reviews and articles. This linguistic data holds significant potential for understanding opinions, trends, and needs. Natural Language Processing (NLP) is the field within Artificial Intelligence that focuses on enabling computers to understand, interpret, and generate human language. One practical application of NLP is text analysis, which involves extracting meaningful information from text data.

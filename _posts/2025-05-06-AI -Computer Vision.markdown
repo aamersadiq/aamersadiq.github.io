@@ -2,12 +2,11 @@
 title: "AI - Computer Vision"
 date: 2025-05-06 16:37:42
 categories: [ai, computer-vision, cnns, image-models, ocr]
-categories: [ai, computer-vision, cnns, image-models, ocr]
+tags: [ai, computer-vision, cnns, image-models, ocr]
 ---
 
 Computer Vision, a subfield of Artificial Intelligence, focuses on enabling machines to extract, analyze, and interpret meaningful information from visual data. With the growth of computational power, data availability, and deep learning techniques, Computer Vision has evolved from basic image processing to complex visual understanding tasks.
-Lets explore the technical foundations of AI in Computer Vision, including <strong>key algorithms, architectures, datasets, evaluation metrics and common vision tasks</strong>. 
-
+Lets explore the technical foundations of AI in Computer Vision, including <strong>key algorithms, architectures, datasets, evaluation metrics and common vision tasks</strong>.
 
 <h3>Historical Context</h3>
 Computer vision has evolved dramatically over the past few decades. Early systems relied on handcrafted features such as edges and corners getting extracted using algorithms such as SIFT and HOG. These approaches worked well for simple tasks but struggled with real world complexity.
@@ -163,6 +162,7 @@ Here is a overview of both CNN based and non CNN based models, organized by task
 To train and evaluate computer vision models effectively, researchers rely on datasets and benchmarks, two foundational tools that shape the development of intelligent visual systems.
 
 Datasets are curated collections of labeled images (or other visual data) used to teach models how to recognize patterns.
+
 <ul>
     <li>They serve as the training material for machine learning algorithms.</li>
 	<li>Labels indicate what each image contains, such as objects, categories, or pixel-level annotations.</li>
@@ -171,6 +171,7 @@ Datasets are curated collections of labeled images (or other visual data) used t
 Think of a dataset as the curriculum for a vision model, it is how the model learns.
 
 Benchmarks are standardized tests that evaluate and compare model performance.
+
 <ul>
     <li>They use fixed datasets and scoring metrics (e.g. accuracy, precision, recall).</li>
 	<li>Researchers submit models to benchmark challenges to see how well they perform.</li>
@@ -179,6 +180,7 @@ Benchmarks are standardized tests that evaluate and compare model performance.
 Benchmarks are like the final exam, everyone takes the same test, and the scores reveal who’s best.
 
 Popular Datasets & Benchmarks:
+
 <table style="width:70%; border-collapse:collapse; font-family:Arial, sans-serif; margin:20px 0;">
   <thead>
     <tr>
@@ -275,5 +277,3 @@ Extracts text from images or video frames, converting it into machine‑readable
   <li><strong>Text Recognition:</strong> Convert detected regions into text using CRNN, Rosetta, or TrOCR.</li>
 </ol>
 </p>
-
-

@@ -1,9 +1,10 @@
 ---
-title:  "Services - NodeJS Microservice with AWS Lambda"
-date:   2023-08-22 17:34:43
+title: "Services - NodeJS Microservice with AWS Lambda"
+date: 2023-08-22 17:34:43
 categories: [services, nodejs, lambda, microservices]
-categories: [services, nodejs, lambda, microservices]
+tags: [services, nodejs, lambda, microservices]
 ---
+
 <h3>Introduction</h3>
 <p>
 In this article, I want to walk you through my experience of going "serverless" and building an API "microservice" using AWS Lambda and API Gateway. Think of it as a practical guide to help you navigate creating your own microservices with these tools.
@@ -110,20 +111,20 @@ service: nodejs-serverless
 frameworkVersion: '3'
 
 provider:
-  name: aws
-  runtime: nodejs16.x
+name: aws
+runtime: nodejs16.x
 
 functions:
-  hello:
-    handler: handler.hello
-    events:
-      - httpApi:
-          path: /
-          method: get
+hello:
+handler: handler.hello
+events: - httpApi:
+path: /
+method: get
 
 plugins:
-  - serverless-plugin-typescript
-  - serverless-offline
+
+- serverless-plugin-typescript
+- serverless-offline
 </code></pre>
 <p>
 The 'functions' property lists all the functions in the service. You can see 'hello' is the only function currently in the 'handler.js' file. The 'handler' property points to the file and module containing the code you want to run in your function. By default this handler file is named 'handler.js'. It also define the event which will invoke the function. 
