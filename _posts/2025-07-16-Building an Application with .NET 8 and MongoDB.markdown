@@ -1,6 +1,6 @@
 ---
 title: "Building an Application with .NET 8 and MongoDB
-date: 2025-07-16
+date: 2025-07-16 16:37:42
 tags: [nodejs, typescript, mongodb, ddd, express, swagger, docker]
 tags: [nodejs, typescript, mongodb, ddd, express, swagger, docker]
 ---
