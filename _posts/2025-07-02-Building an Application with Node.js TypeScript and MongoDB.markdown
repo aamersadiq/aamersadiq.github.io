@@ -7,9 +7,9 @@ tags: [nodejs, typescript, mongodb, ddd, express, swagger, docker]
 
 In this blog post, I'll walk through the development of a robust banking application built with Node.js, TypeScript, and MongoDB. This application follows domain-driven design principles and implements a clean, layered architecture to manage bank accounts and transactions.
 
-<h3>Technologies Used</h3>
+<h4>Technologies Used</h4>
 
-<h4>Core Technologies</h4>
+<h5>Core Technologies</h5>
 <ul>
   <li><strong>Node.js</strong>: Server-side JavaScript runtime</li>
   <li><strong>TypeScript</strong>: Adds static typing to JavaScript, enhancing code quality and developer experience</li>
@@ -19,7 +19,7 @@ In this blog post, I'll walk through the development of a robust banking applica
   <li><strong>Swagger/OpenAPI</strong>: API documentation and testing interface</li>
 </ul>
 
-<h4>Development Tools</h4>
+<h5>Development Tools</h5>
 <ul>
   <li><strong>Docker & Docker Compose</strong>: Containerization for consistent development and deployment</li>
   <li><strong>Jest</strong>: Testing framework for unit and integration tests</li>
@@ -27,7 +27,7 @@ In this blog post, I'll walk through the development of a robust banking applica
   <li><strong>Git</strong>: Version control system</li>
 </ul>
 
-<h3>Architecture Overview</h3>
+<h4>Architecture Overview</h4>
 
 <p>The application follows a clean, layered architecture inspired by Domain-Driven Design (DDD) principles:</p>
 
@@ -38,58 +38,59 @@ In this blog post, I'll walk through the development of a robust banking applica
 └── infrastructure/       # Infrastructure Layer (Database, External Services)
 </code></pre>
 
-<h4>Architecture Diagram</h4>
+<h5>Architecture Diagram</h5>
 
-<pre><code>┌─────────────────────────────────────────────────────────────────┐
-│                        Client Applications                       │
-└───────────────────────────────┬─────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                           API Layer                              │
-│                                                                 │
-│  ┌─────────────┐    ┌──────────────┐    ┌────────────────────┐  │
-│  │  Controllers │    │    Routes    │    │     Middleware     │  │
-│  └─────────────┘    └──────────────┘    └────────────────────┘  │
-└───────────────────────────────┬─────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                      Application Layer                           │
-│                                                                 │
-│  ┌─────────────────────────┐    ┌───────────────────────────┐   │
-│  │   Application Services  │    │           DTOs            │   │
-│  └─────────────────────────┘    └───────────────────────────┘   │
-└───────────────────────────────┬─────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                         Domain Layer                             │
-│                                                                 │
-│  ┌─────────────┐  ┌─────────────────┐  ┌────────────────────┐   │
-│  │  Entities   │  │  Value Objects  │  │  Domain Services   │   │
-│  │             │  │                 │  │                    │   │
-│  │ - Account   │  │ - Money        │  │ - AccountService   │   │
-│  │ - Transaction│  │                │  │                    │   │
-│  └─────────────┘  └─────────────────┘  └────────────────────┘   │
-└───────────────────────────────┬─────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                     Infrastructure Layer                         │
-│                                                                 │
-│  ┌─────────────┐  ┌─────────────────┐  ┌────────────────────┐   │
-│  │ Repositories│  │ Database Models │  │  External Services │   │
-│  └─────────────┘  └─────────────────┘  └────────────────────┘   │
-└───────────────────────────────┬─────────────────────────────────┘
-                                │
-                                ▼
-┌─────────────────────────────────────────────────────────────────┐
-│                          MongoDB Database                        │
-└─────────────────────────────────────────────────────────────────┘
+<pre><code>
+        ┌─────────────────────────────────────────────────────────────────┐
+        │                        Client Applications                      │
+        └───────────────────────────────┬─────────────────────────────────┘
+                                        │
+                                        ▼
+        ┌─────────────────────────────────────────────────────────────────┐
+        │                           API Layer                             │
+        │                                                                 │
+        │  ┌─────────────┐    ┌──────────────┐    ┌────────────────────┐  │
+        │  │  Controllers│    │    Routes    │    │     Middleware     │  │
+        │  └─────────────┘    └──────────────┘    └────────────────────┘  │
+        └───────────────────────────────┬─────────────────────────────────┘
+                                        │
+                                        ▼
+        ┌─────────────────────────────────────────────────────────────────┐
+        │                      Application Layer                          │
+        │                                                                 │
+        │  ┌─────────────────────────┐    ┌───────────────────────────┐   │
+        │  │   Application Services  │    │           DTOs            │   │
+        │  └─────────────────────────┘    └───────────────────────────┘   │
+        └───────────────────────────────┬─────────────────────────────────┘
+                                        │
+                                        ▼
+        ┌─────────────────────────────────────────────────────────────────┐
+        │                         Domain Layer                            │
+        │                                                                 │
+        │  ┌─────────────┐  ┌─────────────────┐  ┌────────────────────┐   │
+        │  │  Entities   │  │  Value Objects  │  │  Domain Services   │   │
+        │  │             │  │                 │  │                    │   │
+        │  │ -Account    │  │ - Money         │  │ - AccountService   │   │
+        │  │ -Transaction│  │                 │  │                    │   │
+        │  └─────────────┘  └─────────────────┘  └────────────────────┘   │
+        └───────────────────────────────┬─────────────────────────────────┘
+                                        │
+                                        ▼
+        ┌─────────────────────────────────────────────────────────────────┐
+        │                     Infrastructure Layer                        │
+        │                                                                 │
+        │  ┌─────────────┐  ┌─────────────────┐  ┌────────────────────┐   │
+        │  │ Repositories│  │ Database Models │  │  External Services │   │
+        │  └─────────────┘  └─────────────────┘  └────────────────────┘   │
+        └───────────────────────────────┬─────────────────────────────────┘
+                                        │
+                                        ▼
+        ┌─────────────────────────────────────────────────────────────────┐
+        │                          MongoDB Database                       │
+        └─────────────────────────────────────────────────────────────────┘
 </code></pre>
 
-<h4>Domain Layer</h4>
+<h5>Domain Layer</h5>
 
 <p>The domain layer contains the core business logic and entities:</p>
 
@@ -99,7 +100,7 @@ In this blog post, I'll walk through the development of a robust banking applica
   <li><strong>Domain Services</strong>: AccountService for business operations like transfers</li>
 </ul>
 
-<h4>Application Layer</h4>
+<h5>Application Layer</h5>
 
 <p>The application layer orchestrates the use cases:</p>
 
@@ -108,7 +109,7 @@ In this blog post, I'll walk through the development of a robust banking applica
   <li><strong>DTOs</strong>: Data Transfer Objects for input/output transformation</li>
 </ul>
 
-<h4>Infrastructure Layer</h4>
+<h5>Infrastructure Layer</h5>
 
 <p>The infrastructure layer handles external concerns:</p>
 
@@ -117,7 +118,7 @@ In this blog post, I'll walk through the development of a robust banking applica
   <li><strong>Repositories</strong>: Data access patterns for domain entities</li>
 </ul>
 
-<h4>API Layer</h4>
+<h5>API Layer</h5>
 
 <p>The API layer exposes the functionality to clients:</p>
 
@@ -128,68 +129,16 @@ In this blog post, I'll walk through the development of a robust banking applica
   <li><strong>Swagger</strong>: API documentation and testing</li>
 </ul>
 
-<h3>Data Flow Diagram</h3>
+<h4>Key Features</h4>
 
-<p>The following diagram illustrates how data flows through the application during key operations:</p>
-
-<pre><code>
-┌──────────────┐     HTTP Request     ┌──────────────┐
-│   Client     │──────────────────────▶   API Layer  │
-└──────────────┘                      └──────┬───────┘
-                                             │
-                                             │ Calls
-                                             ▼
-┌───────────────────────────────────────────────────────────┐
-│                  Application Services                     │
-│                                                           │
-│  ┌─────────────────────┐      ┌─────────────────────────┐ │
-│  │ 1. Validate Input   │      │ 5. Transform to DTO     │ │
-│  │ 2. Call Repository  │      │ 6. Return Response      │ │
-│  │ 3. Apply Domain     │      │                         │ │
-│  │    Logic            │      │                         │ │
-│  └─────────────────────┘      └─────────────────────────┘ │
-└───────────┬───────────────────────────────┬───────────────┘
-            │                               │
-            │ Uses                          │ Returns
-            ▼                               │
-┌───────────────────────┐                   │
-│    Domain Layer       │                   │
-│                       │                   │
-│  ┌─────────────────┐  │                   │
-│  │ Business Logic  │  │                   │
-│  │ Validation      │  │                   │
-│  └─────────────────┘  │                   │
-└───────────┬───────────┘                   │
-            │                               │
-            │ Persists via                  │
-            ▼                               │
-┌───────────────────────┐                   │
-│ Repository Layer      │                   │
-└───────────┬───────────┘                   │
-            │                               │
-            │ Uses                          │
-            ▼                               │
-┌───────────────────────┐                   │
-│ Database Models       │                   │
-└───────────┬───────────┘                   │
-            │                               │
-            │ Stores in                     │
-            ▼                               │
-┌───────────────────────┐                   │
-│ MongoDB Database      │───────────────────┘
-└───────────────────────┘
-</code></pre>
-
-<h3>Key Features</h3>
-
-<h4>Account Management</h4>
+<h5>Account Management</h5>
 <ul>
   <li>Create new bank accounts</li>
   <li>Retrieve account details and balance</li>
   <li>List all accounts</li>
 </ul>
 
-<h4>Transaction Processing</h4>
+<h5>Transaction Processing</h5>
 <ul>
   <li>Deposit funds to accounts</li>
   <li>Withdraw funds from accounts</li>
@@ -197,160 +146,162 @@ In this blog post, I'll walk through the development of a robust banking applica
   <li>View transaction history</li>
 </ul>
 
-<h4>Data Validation</h4>
+<h5>Data Validation</h5>
 <ul>
   <li>Input validation using middleware</li>
   <li>Business rule validation in domain layer</li>
 </ul>
 
-<h4>Error Handling</h4>
+<h5>Error Handling</h5>
 <ul>
   <li>Centralized error handling</li>
   <li>Meaningful error messages</li>
 </ul>
 
-<h3>Implementation Highlights</h3>
+<h4>Implementation Highlights</h4>
 
-<h4>Domain Entities</h4>
+<h5>Domain Entities</h5>
 
 <p>The Account entity encapsulates the core business logic for accounts:</p>
 
 {% highlight typescript %}
 export class Account {
-  private _id: string;
-  private _name: string;
-  private _balance: Money;
+private \_id: string;
+private \_name: string;
+private \_balance: Money;
 
-  constructor(id: string, name: string, balance: Money) {
-    this._id = id;
-    this._name = name;
-    this._balance = balance;
-  }
+constructor(id: string, name: string, balance: Money) {
+this.\_id = id;
+this.\_name = name;
+this.\_balance = balance;
+}
 
-  // Business methods
-  deposit(amount: Money): void {
-    if (amount.value <= 0) {
-      throw new Error('Deposit amount must be positive');
-    }
-    this._balance = this._balance.add(amount);
-  }
+// Business methods
+deposit(amount: Money): void {
+if (amount.value <= 0) {
+throw new Error('Deposit amount must be positive');
+}
+this.\_balance = this.\_balance.add(amount);
+}
 
-  withdraw(amount: Money): void {
-    if (amount.value <= 0) {
-      throw new Error('Withdrawal amount must be positive');
-    }
-    if (this._balance.value < amount.value) {
-      throw new Error('Insufficient funds');
-    }
-    this._balance = this._balance.subtract(amount);
-  }
+withdraw(amount: Money): void {
+if (amount.value <= 0) {
+throw new Error('Withdrawal amount must be positive');
+}
+if (this.\_balance.value < amount.value) {
+throw new Error('Insufficient funds');
+}
+this.\_balance = this.\_balance.subtract(amount);
+}
 }
 {% endhighlight %}
 
-<h4>Value Objects</h4>
+<h5>Value Objects</h5>
 
 <p>The Money value object ensures consistent handling of monetary values:</p>
 
 {% highlight typescript %}
 export class Money {
-  private readonly _value: number;
+private readonly \_value: number;
 
-  constructor(value: number) {
-    this._value = Math.round(value * 100) / 100; // Round to 2 decimal places
-  }
+constructor(value: number) {
+this.\_value = Math.round(value \* 100) / 100; // Round to 2 decimal places
+}
 
-  get value(): number {
-    return this._value;
-  }
+get value(): number {
+return this.\_value;
+}
 
-  add(money: Money): Money {
-    return new Money(this._value + money.value);
-  }
+add(money: Money): Money {
+return new Money(this.\_value + money.value);
+}
 
-  subtract(money: Money): Money {
-    return new Money(this._value - money.value);
-  }
+subtract(money: Money): Money {
+return new Money(this.\_value - money.value);
+}
 }
 {% endhighlight %}
 
-<h4>Domain Services</h4>
+<h5>Domain Services</h5>
 
 <p>The AccountService handles operations involving multiple accounts:</p>
 
 {% highlight typescript %}
 export class AccountService {
-  transfer(fromAccount: Account, toAccount: Account, amount: Money): void {
-    if (amount.value <= 0) {
-      throw new Error('Transfer amount must be positive');
-    }
-    
+transfer(fromAccount: Account, toAccount: Account, amount: Money): void {
+if (amount.value <= 0) {
+throw new Error('Transfer amount must be positive');
+}
+
     fromAccount.withdraw(amount);
     toAccount.deposit(amount);
-  }
+
+}
 }
 {% endhighlight %}
 
-<h4>Repository Pattern</h4>
+<h5>Repository Pattern</h5>
 
 <p>Repositories abstract the data access logic:</p>
 
 {% highlight typescript %}
 export class AccountRepository implements IAccountRepository {
-  async findById(id: string): Promise<Account | null> {
-    const accountDoc = await AccountModel.findById(id);
-    if (!accountDoc) return null;
-    
+async findById(id: string): Promise<Account | null> {
+const accountDoc = await AccountModel.findById(id);
+if (!accountDoc) return null;
+
     return new Account(
       accountDoc._id.toString(),
       accountDoc.name,
       new Money(accountDoc.balance)
     );
-  }
-  
-  async save(account: Account): Promise<void> {
-    await AccountModel.findByIdAndUpdate(
-      account.id,
-      {
-        name: account.name,
-        balance: account.balance.value
-      },
-      { upsert: true }
-    );
-  }
+
+}
+
+async save(account: Account): Promise<void> {
+await AccountModel.findByIdAndUpdate(
+account.id,
+{
+name: account.name,
+balance: account.balance.value
+},
+{ upsert: true }
+);
+}
 }
 {% endhighlight %}
 
-<h4>API Controllers</h4>
+<h5>API Controllers</h5>
 
 <p>Controllers handle HTTP requests and delegate to application services:</p>
 
 {% highlight typescript %}
 export class AccountController {
-  constructor(private accountService: AccountService) {}
-  
-  async createAccount(req: Request, res: Response): Promise<void> {
-    const { name } = req.body;
-    const account = await this.accountService.createAccount(name);
-    res.status(201).json(account);
-  }
-  
-  async getAccount(req: Request, res: Response): Promise<void> {
-    const { id } = req.params;
-    const account = await this.accountService.getAccount(id);
-    if (!account) {
-      res.status(404).json({ message: 'Account not found' });
-      return;
-    }
-    res.status(200).json(account);
-  }
+constructor(private accountService: AccountService) {}
+
+async createAccount(req: Request, res: Response): Promise<void> {
+const { name } = req.body;
+const account = await this.accountService.createAccount(name);
+res.status(201).json(account);
+}
+
+async getAccount(req: Request, res: Response): Promise<void> {
+const { id } = req.params;
+const account = await this.accountService.getAccount(id);
+if (!account) {
+res.status(404).json({ message: 'Account not found' });
+return;
+}
+res.status(200).json(account);
+}
 }
 {% endhighlight %}
 
-<h3>Database Design</h3>
+<h4>Database Design</h4>
 
 <p>The MongoDB database uses two main collections:</p>
 
-<h4>Accounts Collection</h4>
+<h5>Accounts Collection</h5>
 {% highlight javascript %}
 {
   _id: ObjectId,
@@ -359,7 +310,7 @@ export class AccountController {
 }
 {% endhighlight %}
 
-<h4>Transactions Collection</h4>
+<h5>Transactions Collection</h5>
 {% highlight javascript %}
 {
   _id: ObjectId,
@@ -371,7 +322,7 @@ export class AccountController {
 }
 {% endhighlight %}
 
-<h3>Docker Setup</h3>
+<h4>Docker Setup</h4>
 
 <p>The application uses Docker Compose to run MongoDB and MongoDB Express:</p>
 
@@ -379,71 +330,56 @@ export class AccountController {
 version: '3.8'
 
 services:
-  mongo:
-    image: mongo:latest
-    container_name: banking-mongodb
-    restart: always
-    ports:
-      - "27017:27017"
-    environment:
-      - MONGO_INITDB_ROOT_USERNAME=admin
-      - MONGO_INITDB_ROOT_PASSWORD=password
-    volumes:
-      - mongodb-data:/data/db
-    networks:
-      - banking-network
+mongo:
+image: mongo:latest
+container_name: banking-mongodb
+restart: always
+ports: - "27017:27017"
+environment: - MONGO_INITDB_ROOT_USERNAME=admin - MONGO_INITDB_ROOT_PASSWORD=password
+volumes: - mongodb-data:/data/db
+networks: - banking-network
 
-  mongo-express:
-    image: mongo-express:latest
-    container_name: banking-mongo-express
-    restart: always
-    ports:
-      - "8081:8081"
-    depends_on:
-      - mongo
-    environment:
-      - ME_CONFIG_MONGODB_ADMINUSERNAME=admin
-      - ME_CONFIG_MONGODB_ADMINPASSWORD=password
-      - ME_CONFIG_MONGODB_SERVER=mongo
-      - ME_CONFIG_MONGODB_AUTH_USERNAME=admin
-      - ME_CONFIG_MONGODB_AUTH_PASSWORD=password
-      - ME_CONFIG_BASICAUTH_USERNAME=admin
-      - ME_CONFIG_BASICAUTH_PASSWORD=password
-    networks:
-      - banking-network
+mongo-express:
+image: mongo-express:latest
+container_name: banking-mongo-express
+restart: always
+ports: - "8081:8081"
+depends_on: - mongo
+environment: - ME_CONFIG_MONGODB_ADMINUSERNAME=admin - ME_CONFIG_MONGODB_ADMINPASSWORD=password - ME_CONFIG_MONGODB_SERVER=mongo - ME_CONFIG_MONGODB_AUTH_USERNAME=admin - ME_CONFIG_MONGODB_AUTH_PASSWORD=password - ME_CONFIG_BASICAUTH_USERNAME=admin - ME_CONFIG_BASICAUTH_PASSWORD=password
+networks: - banking-network
 
 networks:
-  banking-network:
-    driver: bridge
+banking-network:
+driver: bridge
 
 volumes:
-  mongodb-data:
+mongodb-data:
 {% endhighlight %}
 
-<h3>API Documentation</h3>
+<h4>API Documentation</h4>
 
 <p>The application uses Swagger UI for API documentation:</p>
 
 {% highlight typescript %}
 const swaggerOptions = {
-  definition: {
-    openapi: '3.0.0',
-    info: {
-      title: 'Banking API',
-      version: '1.0.0',
-      description: 'API for banking operations'
-    },
-    servers: [
-      {
-        url: '/api'
-      }
-    ]
-  },
-  apis: ['./src/api/routes/*.ts']
+definition: {
+openapi: '3.0.0',
+info: {
+title: 'Banking API',
+version: '1.0.0',
+description: 'API for banking operations'
+},
+servers: [
+{
+url: '/api'
+}
+]
+},
+apis: ['./src/api/routes/*.ts']
 };
 {% endhighlight %}
 
-<h3>Testing Strategy</h3>
+<h4>Testing Strategy</h4>
 
 <p>The application includes comprehensive tests:</p>
 
@@ -453,27 +389,27 @@ const swaggerOptions = {
   <li><strong>API Tests</strong>: Test the API endpoints</li>
 </ul>
 
-<h3>Challenges and Solutions</h3>
+<h4>Challenges and Solutions</h4>
 
-<h4>Challenge: UUID Compatibility with MongoDB</h4>
+<h5>Challenge: UUID Compatibility with MongoDB</h5>
 <p>MongoDB's ObjectId doesn't match the UUID format used in the domain layer.</p>
 
 <p><strong>Solution</strong>: Created a custom UUID field in the MongoDB schema and used it as the reference ID for domain entities.</p>
 
-<h4>Challenge: Transaction Consistency</h4>
+<h5>Challenge: Transaction Consistency</h5>
 <p>Ensuring that transfers between accounts are atomic.</p>
 
 <p><strong>Solution</strong>: Used MongoDB transactions to ensure that both the withdrawal and deposit operations succeed or fail together.</p>
 
-<h4>Challenge: Domain Logic vs. Persistence</h4>
+<h5>Challenge: Domain Logic vs. Persistence</h5>
 <p>Keeping domain logic separate from persistence concerns.</p>
 <p><strong>Solution</strong>: Used the repository pattern to abstract data access and implemented mappers to convert between domain entities and database models.</p>
 
-<h3>GitHub Repository</h3>
+<h4>GitHub Repository</h4>
 <p>The complete source code for this project is available on GitHub:
 <a href="https://github.com/aamersadiq/node-mongodb" target="_blank">https://github.com/aamersadiq/node-mongodb</a></p>
 
-<h3>Conclusion</h3>
+<h4>Conclusion</h4>
 
 <p>Building a banking application with Node.js, TypeScript, and MongoDB demonstrates how modern technologies can be combined with solid architectural principles to create robust, maintainable software. The domain-driven design approach ensures that the business logic remains the focus, while the layered architecture provides clear separation of concerns.</p>
 
@@ -487,5 +423,3 @@ const swaggerOptions = {
   <li>Containerize applications with Docker</li>
   <li>Implement comprehensive testing strategies</li>
 </ul>
-
-
