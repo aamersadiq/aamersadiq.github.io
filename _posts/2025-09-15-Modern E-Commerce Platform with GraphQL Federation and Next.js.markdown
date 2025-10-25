@@ -1,7 +1,7 @@
 ---
 title: "Modern E-Commerce Platform with GraphQL Federation and Next.js"
 date: 2025-09-15 16:23:33
-categories: [development]
+categories: [development, graphql, nextjs]
 tags: [development]
 ---
 

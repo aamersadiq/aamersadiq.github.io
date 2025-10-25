@@ -1,8 +1,8 @@
 ---
 title: "AI - Machine Learning"
 date: 2025-03-12 09:33:43
-categories: [ai]
-tags: [ai]
+categories: [ai, machine-learning]
+categories: [ai, machine-learning]
 ---
 
 I recently completed the <a href="https://learn.microsoft.com/api/credentials/share/en-us/AamerSadiq-9608/90234AA9C5746E38?sharingId=4D3B72AC4C8C2E1D" target="_blank">Azure AI Fundamentals</a> certification,

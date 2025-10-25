@@ -1,8 +1,8 @@
 ---
 title: "AI - Computer Vision"
 date: 2025-05-06 16:37:42
-categories: [ai]
-tags: [ai]
+categories: [ai, computer-vision, cnns, image-models, ocr]
+categories: [ai, computer-vision, cnns, image-models, ocr]
 ---
 
 Computer Vision, a subfield of Artificial Intelligence, focuses on enabling machines to extract, analyze, and interpret meaningful information from visual data. With the growth of computational power, data availability, and deep learning techniques, Computer Vision has evolved from basic image processing to complex visual understanding tasks.

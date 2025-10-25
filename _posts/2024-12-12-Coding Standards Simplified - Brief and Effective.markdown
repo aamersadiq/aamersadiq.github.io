@@ -1,8 +1,8 @@
 ---
 title: "Coding Best Practices Simplified - Brief and Effective"
 date: 2024-12-12 12:47:43
-categories: [development]
-tags: [development]
+categories: [development, coding-standards]
+categories: [development, coding-standards]
 ---
 
 <p>

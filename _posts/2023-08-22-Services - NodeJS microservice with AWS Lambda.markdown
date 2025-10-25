@@ -1,8 +1,8 @@
 ---
 title:  "Services - NodeJS Microservice with AWS Lambda"
 date:   2023-08-22 17:34:43
-categories: [services]
-tags: [services]	
+categories: [services, nodejs, lambda, microservices]
+categories: [services, nodejs, lambda, microservices]
 ---
 <h3>Introduction</h3>
 <p>

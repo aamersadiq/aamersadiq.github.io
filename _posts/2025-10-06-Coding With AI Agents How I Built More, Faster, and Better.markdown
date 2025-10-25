@@ -1,8 +1,8 @@
 ---
 title: "Coding With AI Agents: How I Built More, Faster, and Better"
 date: 2025-10-06 10:32:45
-categories: [ai]
-tags: [ai]
+categories: [ai, development, coding, tools]
+tags: [ai, development, coding, tools]
 ---
 
 I have been using AI agents <strong>Cline/Roo</strong>, <strong>Claude Code</strong>, and <strong>GitHub Copilot</strong> for some time and want to share what that experience has been like for me.

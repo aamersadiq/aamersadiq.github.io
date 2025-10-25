@@ -1,7 +1,7 @@
 ---
 title: "Setting Up Python in VS Code with WSL (Windows Subsystem for Linux)"
 date: 2025-06-08 16:37:42
-categories: [development, python, wsl]
+tags: [python, vscode, wsl, ubuntu, development-environment]
 tags: [python, vscode, wsl, ubuntu, development-environment]
 ---
 

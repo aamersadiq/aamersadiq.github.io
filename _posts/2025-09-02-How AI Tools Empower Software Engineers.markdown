@@ -1,8 +1,8 @@
 ---
 title: "How AI Tools Empower Software Engineers"
 date: 2025-09-02 16:32:42
-categories: [ai]
-tags: [ai]
+categories: [ai, development, coding, tools]
+categories: [ai, development, coding, tools]
 ---
 
 As a software engineer, embracing AI tools has significantly transformed the way I work, allowing me to learn faster, write cleaner code, and tackle more ambitious projects. These tools act as an intelligent assistant, helping bridge gaps in knowledge and boosting productivity across various aspects of development.
