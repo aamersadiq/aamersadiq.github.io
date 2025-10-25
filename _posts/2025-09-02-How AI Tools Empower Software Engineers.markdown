@@ -1,6 +1,6 @@
 ---
 title: "How AI Tools Empower Software Engineers"
-date: 2025-06-12 16:32:42
+date: 2025-09-02 16:32:42
 categories: [ai]
 tags: [ai]
 ---
