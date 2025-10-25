@@ -411,11 +411,9 @@ apis: ['./src/api/routes/*.ts']
 
 <h4>Conclusion</h4>
 
-<p>Building a banking application with Node.js, TypeScript, and MongoDB demonstrates how modern technologies can be combined with solid architectural principles to create robust, maintainable software. The domain-driven design approach ensures that the business logic remains the focus, while the layered architecture provides clear separation of concerns.</p>
-
 <p>This project showcases how to:</p>
 <ul>
-  <li>Implement domain-driven design in a Node.js application</li>
+  <li>Implement domain driven design in a Node.js application</li>
   <li>Use TypeScript for type safety and better developer experience</li>
   <li>Work with MongoDB and Mongoose for flexible data storage</li>
   <li>Create a RESTful API with Express</li>
