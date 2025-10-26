@@ -56,7 +56,7 @@ The architecture is designed to be modular and scalable, with separate subgraphs
 
 <h4>Architecture Overview</h4>
 The application follows a modern architecture with clear separation of concerns:
-<img src="{{ site.baseurl }}/images/blog//ecommerce/ecommerce-archi.PNG" class="eightypercentage-image" alt="Image">
+<img src="{{ site.baseurl }}/images/blog//ecommerce-graphql/ecommerce-archi.PNG" class="eightypercentage-image" alt="Image">
 
 <h5>Key Architectural Components</h5>
 <ol>
