@@ -39,7 +39,7 @@ In this blog post, I'll walk through the development of a robust banking applica
 </code></pre>
 
 <h5>Architecture Diagram</h5>
-<img src="{{ site.baseurl }}/images/blog//dotnet-mongodb/archi.PNG" class="eightypercentage-image" alt="Image">
+<img src="{{ site.baseurl }}/images/blog//dotnet-mongodb/archi.png" class="eightypercentage-image" alt="Image">
 
 <h5>Domain Layer</h5>
 
