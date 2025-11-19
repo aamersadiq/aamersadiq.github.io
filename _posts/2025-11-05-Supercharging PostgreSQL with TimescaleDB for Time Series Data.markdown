@@ -1,11 +1,9 @@
 ---
 title: "Supercharging PostgreSQL with TimescaleDB for Time Series Data"
-date: 2023-11-05
+date: 2025-11-05
 categories: [database, postgres, timeseries]
 tags: [database, postgres, timeseries]
 ---
-
-# Supercharging PostgreSQL with TimescaleDB for Time Series Data
 
 In today's data driven world, applications are generating massive amounts of time series data from IoT sensor readings and financial transactions to application metrics and user activity logs. While PostgreSQL is a powerful and versatile relational database, it was not specifically designed to handle the unique challenges of time series data at scale. This is where TimescaleDB comes in.
 
