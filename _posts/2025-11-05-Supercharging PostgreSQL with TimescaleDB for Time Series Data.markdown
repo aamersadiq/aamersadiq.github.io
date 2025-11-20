@@ -11,7 +11,7 @@ In today's data driven world, applications are generating massive amounts of tim
 
 TimescaleDB is an open source time series database built as an extension to PostgreSQL. It provides specialized features for storing, analyzing, and managing time series data while maintaining full SQL compatibility and leveraging the robust ecosystem of PostgreSQL.
 
-In our recent project, we built a financial transaction API using .NET 8, PostgreSQL, and TimescaleDB to handle high volume transaction data efficiently. This blog post explores the key TimescaleDB features we used and how they dramatically improved our application's performance and capabilities. The complete code for our project is available at [https://github.com/aamersadiq/postgres-timescale](https://github.com/aamersadiq/postgres-timescale) if you'd like to see a complete implementation.
+In our recent project, we built a financial transaction API using .NET 8, PostgreSQL, and TimescaleDB to handle high volume transaction data efficiently. This blog post explores the key TimescaleDB features we used and how they dramatically improved our application's performance and capabilities. The complete code for our project is available at [https://github.com/aamersadiq/postgres-timescaledb](https://github.com/aamersadiq/postgres-timescaledb) if you'd like to see a complete implementation.
 
 ## Hypertables: The Foundation of TimescaleDB
 
