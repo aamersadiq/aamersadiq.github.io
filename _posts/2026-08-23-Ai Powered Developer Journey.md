@@ -4,7 +4,7 @@ title: "AI Powered Developer Journey"
 subtitle: "From joining a new project to delivering the first feature"
 date: 2026-08-23
 categories: [ai, developer-tools]
-tags: [agent-skills, claude-code, onboarding, spec-driven-development, consulting]
+tags: [agent-skills, claude-code, spec-driven-development]
 description: "With the right agent skills, a developer joining a new project can have their first feature scoped, built, reviewed and merged by the end of week two. Which skills help at each stage, and how much time they save."
 excerpt: "Most of a new developer's first weeks go on setting up a machine, waiting for access, reading old documents and finding their way around unfamiliar code. That work repeats on every project, and repeatable work is what agent skills are for."
 ---
