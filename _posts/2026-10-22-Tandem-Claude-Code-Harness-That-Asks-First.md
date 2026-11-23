@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "Tandem: A Claude Code Harness"
-date: 2026-10-22
-last_modified_at: 2026-10-22
+date: 2026-10-23
+last_modified_at: 2026-10-23
 categories: [ai, developer-tools]
 tags: [claude-code, ai-agents, human-in-the-loop, multi-repo]
 description: "A lightweight Claude Code harness for the three things a new engineer does on a team: deliver a Jira ticket, review a teammate's pull request, and debug an issue. Built on the ideas of Spec Kit and superpowers, it works across several repos, asks one question at a time, records every decision, and stops at gates only a human can pass."
