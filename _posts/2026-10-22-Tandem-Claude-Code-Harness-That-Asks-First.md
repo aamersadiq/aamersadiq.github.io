@@ -33,7 +33,7 @@ Tandem covers exactly those three, plus the setup that comes before them:
 |---------|--------|
 | Get to know the team's repos | `/setup`: explores every repo, confirms what it found with you, writes the rules |
 | Deliver a Jira ticket | `/spec` → `/plan` → `/build` → `/review` → `/ship` |
-| Review a teammate's PR | `/code-review` (writes the review, never posts it) |
+| Review a teammate's PR | `/code-review` (writes the review) |
 | Debug an issue | `/debug` (root cause first, then the fix) |
 
 Spec Kit, superpowers and eng-flow are full-fledged harnesses, and they're excellent. Tandem is built on their ideas (the details are further down), but it's deliberately **lighter**. It's also shaped around **how a new developer is introduced to a team**:
